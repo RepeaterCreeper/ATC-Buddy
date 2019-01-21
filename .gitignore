@@ -1,0 +1,7 @@
+# Directories
+node_modules
+atc-buddy-win32-x64
+
+# Files
+package-lock.json
+*.zip

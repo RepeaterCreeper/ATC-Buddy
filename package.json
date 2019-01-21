@@ -1,0 +1,17 @@
+{
+  "name": "atc-buddy",
+  "version": "0.0.1",
+  "description": "ATC Buddy is a tool to help you make less errors as a controller.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "RepeaterCreeper",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.1"
+  },
+  "dependencies": {
+    "electron-reload": "^1.4.0"
+  }
+}

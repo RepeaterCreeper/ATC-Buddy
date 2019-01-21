@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>ATC Buddy</title>
+    </head>
+
+    <body>
+        <nav class="blue darken-3">
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+                <li style="padding: 32px;" class="blue">
+                    <h4 style="text-align: center; letter-spacing: 4px;">ATC Buddy</h4>
+                </li>
+                <li><a class="subheader" style="font-weight: 400;">MAIN</a></li>
+                <li class="active"><a class="waves-effect" data-section-target="aircraft_types"><i class="material-icons">airplanemode_active</i> Aircraft Types</a></li>
+                <li><a class="waves-effect" data-section-target="airlines"><i class="material-icons">send</i> Airlines</a></li>
+                <li><a class="waves-effect" data-section-target="airports"><i class="material-icons">flight_land</i> Airports</a></li>
+                <li><a class="waves-effect" data-section-target="equipment_suffixes"><i class="material-icons">gesture</i> Equipment Suffixes</a></li>
+                <li><a class="waves-effect" data-section-target="scratchpad_codes"><i class="material-icons">text_fields</i> Scratchpad Codes</a></li>
+                <li><a class="waves-effect" data-section-target="tec_routes"><i class="material-icons">near_me</i> TEC Routes</a></li>
+                
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">USER</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">OTHERS</a></li>
+                <li><a class="waves-effect" href="#!"><i class="material-icons">info</i>About</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </nav>
+
+        <section data-section="aircraft_types">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row card hoverable" style="margin: 8px;">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">search</i>
+                            <input type="text" onkeyup="showResults(this.value, 'aircraft_types')" style="border-bottom: none; margin-bottom: 0;">
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="col s12">
+                    <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+                    <ul class="collection" data-result-type="aircraft_types"></ul>
+                </div>
+            </div>
+        </section>
+        <section class="hide" data-section="airlines">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row card hoverable" style="margin: 8px;">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">search</i>
+                            <input type="text" onkeyup="showResults(this.value, 'airlines')" style="border-bottom: none; margin-bottom: 0;">
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="col s12">
+                    <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+                    <ul class="collection" data-result-type="airlines"></ul>
+                </div>
+            </div>
+        </section>
+        <section class="hide" data-section="airports">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row card hoverable" style="margin: 8px;">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">search</i>
+                            <input type="text" onkeyup="showResults(this.value, 'airports')" style="border-bottom: none; margin-bottom: 0;">
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="col s12">
+                    <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+                    <ul class="collection" data-result-type="airports"></ul>
+                </div>
+            </div>
+        </section>
+        <section class="hide" data-section="equipment_suffixes">
+            <div class="card hoverable" style="margin: 8px; padding: 8px;">
+                <b>No DME</b><br>
+                <p><span class="left">X</span> <span class="right">No transponder</span></p>
+            </div>
+            <div class="card hoverable" style="margin: 8px; padding: 8px;">
+                <b>DME</b>
+            </div>
+            <div class="card hoverable" style="margin: 8px; padding: 8px;">
+                <b>TACAN Only</b>
+            </div>
+            <div class="card hoverable" style="margin: 8px; padding: 8px;">
+                <b>RNAV</b>
+            </div>
+            <div class="card hoverable" style="margin: 8px; padding: 8px;">
+                <b>RNAV, GNSS</b>
+            </div>
+            <div class="card hoverable" style="margin: 8px; padding: 8px;">
+                <b>RVSM + Transponder with Mode C</b>
+            </div>
+        </section>
+        <section class="hide" data-section="scratchpad_codes">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row card hoverable" style="margin: 8px;">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">search</i>
+                            <input type="text" onkeyup="showResults(this.value, 'scratchpad_codes')" style="border-bottom: none; margin-bottom: 0;">
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="col s12">
+                    <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+                    <ul class="collection" data-result-type="scratchpad_codes"></ul>
+                </div>
+            </div>
+        </section>
+        <section class="hide" data-section="tec_routes">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row card hoverable" style="margin: 8px;">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">search</i>
+                            <input type="text" onkeyup="showResults(this.value, 'tec_routes')" style="border-bottom: none; margin-bottom: 0;">
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="col s12">
+                    <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+                    <ul class="collection" data-result-type="tec_routes"></ul>
+                </div>
+            </div>
+        </section>
+        <section class="hide" data-section="settings">
+            <div class="row">
+                
+            </div>
+        </section>
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

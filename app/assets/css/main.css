@@ -1,0 +1,13 @@
+header, main, section {
+    padding-left: 300px;
+}
+
+li.active {
+    background-color: #F8F !important;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, section {
+        padding-left: 0;
+    }
+}
