@@ -1,8 +1,6 @@
 /**
  * ZLA Info Tool
  */
-const fs = require("fs");
-
 // Initial
 M.AutoInit();
 
@@ -65,7 +63,7 @@ function showResults(queryString, type) {
                     switch (type) {
                         case "aircraft_types":
                             li.innerHTML = `
-                                <div class="row" style="margin-bottom: 0;">
+                                <div class="row" style="margin-bottom: 0; display: flex; overflow-y: hidden;">
                                     <div class="col s8" style="height: 42px;">
                                         <b>${result.manufacturer}</b><br>
                                         <p style="margin: 0">${result.model}</p>

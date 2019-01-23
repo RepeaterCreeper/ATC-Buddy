@@ -1,9 +1,13 @@
+:root {
+    --nav-active: #F8F;
+}
+
 header, main, section {
     padding-left: 300px;
 }
 
 li.active {
-    background-color: #F8F !important;
+    background-color: var(--nav-active) !important;
 }
 
 @media only screen and (max-width : 992px) {
