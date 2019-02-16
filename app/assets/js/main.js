@@ -1,3 +1,5 @@
+const rp = require("request-promise");
+const cheerio = require("cheerio");
 /**
  * ZLA Info Tool
  */
@@ -44,6 +46,73 @@ function switchSections(id) {
         }
     }
 }
+
+function formatAltitude(unparsedAltitude) {
+    let altitudeMatch = new RegExp(/[JMPQ]+[0-9]+/g),
+        tecAltitudes = unparsedAltitude.match(altitudeMatch),
+        parsed = [];
+
+    tecAltitudes.forEach((data) => {
+        parsed.push(data);
+    });
+
+    return parsed.join(", ");
+}
+
+function findTecRoute(departure, arrival) {
+    let DEPARTURE = departure !== undefined ? departure : document.querySelector("#tec_route_departure").value,
+        ARRIVAL = arrival !== undefined ? arrival : document.querySelector("#tec_route_arrival").value;
+    
+    let results = [];
+
+    if (DEPARTURE.length > 3) DEPARTURE = DEPARTURE.slice(1);
+    if (ARRIVAL.length > 3) ARRIVAL = ARRIVAL.slice(1);
+
+    if (DEPARTURE.length > 0 && ARRIVAL.length > 0) {
+        results = INFO_TOOL_DATA["tec_routes"].filter((data) => {
+            if (data.departure.includes(DEPARTURE) && data.arrival.includes(ARRIVAL)) return data;
+        });
+    } else {
+        results = INFO_TOOL_DATA["tec_routes"].filter((data) => {
+            if (DEPARTURE.length > 0) {
+                if (data.departure.includes(DEPARTURE)) return data;
+            } else {
+                if (data.arrival.includes(ARRIVAL)) return data;
+            }
+        });
+    }
+
+    /**
+     * Display Results
+     **/
+    let container_target = document.querySelector(`div[data-result-type='tec_routes']`);
+    container_target.innerHTML = ``;
+
+    results.forEach((result) => {
+        let div = document.createElement("div");
+
+        div.innerHTML = `
+            <div class="card-header white-text">
+                <b class="tecroute__title">${result.name}</b>
+                <p class="tecroute__altitudes" style="margin: 0;">${formatAltitude(result.altitudes)}</p>
+            </div>
+            <div class="card-content">
+                <p class="tecroute__route">${result.route}</p>
+            </div>
+            <div class="card-footer">
+                <span class="tecroute__note" style="margin: 8px;">${result.notes}</span>
+                <button class="btn blue tecroute__copy waves-effect waves-red" style="height: 48px;">
+                    <i class="material-icons">content_paste</i>
+                </button>
+            </div>
+        `;
+        div.classList.add("card", "hoverable", "tecroute__card");
+        container_target.append(div);
+    });
+
+    console.log(results);
+}
+
 
 function showResults(queryString, type) {
     let container_target = document.querySelector(`ul[data-result-type=${type}]`);
@@ -136,6 +205,16 @@ function showResults(queryString, type) {
     }
 }
 
+function voiceServerListener(frequency) {
+    rp("http://vhf.laartcc.org:18009/?opts=-R-D").then((html) => {
+        const $ = cheerio.load(html);
+
+        console.log($(`a:contains('${frequency}')`).text());
+        /*$(`p:contains('${frequency}')`).next().text().split("\n").filter((data) => {
+            if (data != "") return data;
+        });*/
+    });
+}
 /**
  * General
  */

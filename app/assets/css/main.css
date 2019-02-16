@@ -15,3 +15,25 @@ li.active {
         padding-left: 0;
     }
 }
+
+
+.tecroute__card .card-header {
+    padding: 8px;
+    background-color: #864A9F;
+}
+
+.tecroute_card .card-content {
+    background-color: #DEDEDE;
+}
+
+.tecroute__card .card-footer {
+    background-color: rgba(205, 117, 255, .5);
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.tecroute__card .card-footer button {
+    position: absolute;
+    right: 0;
+}
