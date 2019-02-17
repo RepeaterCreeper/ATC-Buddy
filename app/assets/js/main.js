@@ -109,8 +109,6 @@ function findTecRoute(departure, arrival) {
         div.classList.add("card", "hoverable", "tecroute__card");
         container_target.append(div);
     });
-
-    console.log(results);
 }
 
 
