@@ -1,279 +1,367 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css"  media="screen,projection"/>
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <title>ATC Buddy</title>
-    </head>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <body>
-        <nav class="blue darken-3">
-            <ul id="slide-out" class="sidenav sidenav-fixed">
-                <li style="padding: 32px;" class="blue">
-                    <h4 style="text-align: center; letter-spacing: 4px;">ATC Buddy</h4>
-                </li>
-                <li><a class="subheader" style="font-weight: 400;">MAIN</a></li>
-                <li class="active"><a class="waves-effect" data-section-target="aircraft_types"><i class="material-icons">airplanemode_active</i> Aircraft Types</a></li>
-                <li><a class="waves-effect" data-section-target="airlines"><i class="material-icons">send</i> Airlines</a></li>
-                <li><a class="waves-effect" data-section-target="airports"><i class="material-icons">flight_land</i> Airports</a></li>
-                <li><a class="waves-effect" data-section-target="equipment_suffixes"><i class="material-icons">gesture</i> Equipment Suffixes</a></li>
-                <li><a class="waves-effect" data-section-target="scratchpad_codes"><i class="material-icons">text_fields</i> Scratchpad Codes</a></li>
-                <li><a class="waves-effect" data-section-target="tec_routes"><i class="material-icons">near_me</i> TEC Routes</a></li>
-                
-                <li><div class="divider"></div></li>
-                <li><a class="subheader">USER</a></li>
-                <li><div class="divider"></div></li>
-                <li><a class="subheader">OTHERS</a></li>
-                <li><a class="waves-effect" href="#!"><i class="material-icons">info</i>About</a></li>
-            </ul>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </nav>
+    <title>ATC Buddy </title>
+</head>
 
-        <section data-section="aircraft_types">
-            <div class="row">
-                <div class="col s12">
-                    <div class="row card hoverable" style="margin: 8px;">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">search</i>
-                            <input type="text" onkeyup="showResults(this.value, 'aircraft_types')" style="border-bottom: none; margin-bottom: 0;">
-                        </div>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="col s12">
-                    <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
-                    <ul class="collection" data-result-type="aircraft_types"></ul>
-                </div>
-            </div>
-        </section>
-        <section class="hide" data-section="airlines">
-            <div class="row">
-                <div class="col s12">
-                    <div class="row card hoverable" style="margin: 8px;">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">search</i>
-                            <input type="text" onkeyup="showResults(this.value, 'airlines')" style="border-bottom: none; margin-bottom: 0;">
-                        </div>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="col s12">
-                    <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
-                    <ul class="collection" data-result-type="airlines"></ul>
-                </div>
-            </div>
-        </section>
-        <section class="hide" data-section="airports">
-            <div class="row">
-                <div class="col s12">
-                    <div class="row card hoverable" style="margin: 8px;">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">search</i>
-                            <input type="text" onkeyup="showResults(this.value, 'airports')" style="border-bottom: none; margin-bottom: 0;">
-                        </div>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="col s12">
-                    <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
-                    <ul class="collection" data-result-type="airports"></ul>
-                </div>
-            </div>
-        </section>
-        <section class="hide" data-section="equipment_suffixes">
-            <div class="row">
-                <div class="col s6">
-                    <div class="card hoverable">
-                        <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
-                            <span class="card-title white-text" style="font-size: 1.5rem;">No DME</span>
-                        </div>
-                        <div class="card-content">
-                            <table>
-                                <tr>
-                                    <td>X</td>
-                                    <td>No transponder</td>
-                                </tr>
-                                <tr>
-                                    <td>T</td>
-                                    <td>Transponder with no Mode C</td>
-                                </tr>
-                                <tr>
-                                    <td>U</td>
-                                    <td>Transponder with Mode C</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6">
-                    <div class="card hoverable">
-                        <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
-                            <span class="card-title white-text" style="font-size: 1.5rem;">DME</span>
-                        </div>
-                        <div class="card-content">
-                            <table>
-                                <tr>
-                                    <td>D</td>
-                                    <td>No transponder</td>
-                                </tr>
-                                <tr>
-                                    <td>B</td>
-                                    <td>Transponder with no Mode C</td>
-                                </tr>
-                                <tr>
-                                    <td>A</td>
-                                    <td>Transponder with Mode C</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6">
-                    <div class="card hoverable">
-                        <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
-                            <span class="card-title white-text" style="font-size: 1.5rem;">TACAN Only</span>
-                        </div>
-                        <div class="card-content">
-                            <table>
-                                <tr>
-                                    <td>M</td>
-                                    <td>No transponder</td>
-                                </tr>
-                                <tr>
-                                    <td>N</td>
-                                    <td>Transponder with no Mode C</td>
-                                </tr>
-                                <tr>
-                                    <td>P</td>
-                                    <td>Transponder with Mode C</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6">
-                    <div class="card hoverable">
-                        <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
-                            <span class="card-title white-text" style="font-size: 1.5rem;">RNAV</span>
-                        </div>
-                        <div class="card-content">
-                            <table>
-                                <tr>
-                                    <td>Y</td>
-                                    <td>No transponder</td>
-                                </tr>
-                                <tr>
-                                    <td>C</td>
-                                    <td>Transponder with no Mode C</td>
-                                </tr>
-                                <tr>
-                                    <td>I</td>
-                                    <td>Transponder with Mode C</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6">
-                    <div class="card hoverable">
-                        <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
-                            <span class="card-title white-text" style="font-size: 1.5rem;">RNAV, GNSS</span>
-                        </div>
-                        <div class="card-content">
-                            <table>
-                                <tr>
-                                    <td>V</td>
-                                    <td>No transponder</td>
-                                </tr>
-                                <tr>
-                                    <td>S</td>
-                                    <td>Transponder with no Mode C</td>
-                                </tr>
-                                <tr>
-                                    <td>G</td>
-                                    <td>Transponder with Mode C</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s6">
-                    <div class="card hoverable">
-                        <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
-                            <span class="card-title white-text" style="font-size: 1.5rem;">RVSM + Transponder with Mode C</span>
-                        </div>
-                        <div class="card-content">
-                            <table>
-                                <tr>
-                                    <td>W</td>
-                                    <td>No GNSS, No RNAV</td>
-                                </tr>
-                                <tr>
-                                    <td>Z</td>
-                                    <td>No GNSS, RNAV <small>(Deprecated: /E, /F, /J or /K)</small></td>
-                                </tr>
-                                <tr>
-                                    <td>L</td>
-                                    <td>GNSS, RNAV <small>(Deprecated: /R or /Q)</small></td>
-                                </tr>
-                            </table>
-                        </div>
+<body>
+    <nav class="blue darken-3">
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li style="padding: 32px;" class="blue">
+                <h4 style="text-align: center; letter-spacing: 4px;">ATC Buddy</h4>
+            </li>
+            <li><a class="subheader" style="font-weight: 400;">MAIN</a></li>
+            <li class="active"><a class="waves-effect" data-section-target="aircraft_types"><i class="material-icons">airplanemode_active</i> Aircraft Types</a></li>
+            <li><a class="waves-effect" data-section-target="airlines"><i class="material-icons">send</i> Airlines</a></li>
+            <li><a class="waves-effect" data-section-target="airports"><i class="material-icons">flight_land</i>Airports</a></li>
+            <li><a class="waves-effect" data-section-target="equipment_suffixes"><i class="material-icons">gesture</i>Equipment Suffixes</a></li>
+            <li><a class="waves-effect" data-section-target="scratchpad_codes"><i class="material-icons">text_fields</i>Scratchpad Codes</a></li>
+            <li><a class="waves-effect" data-section-target="tec_routes"><i class="material-icons">near_me</i> TEC Routes</a></li>
+
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">USER</a></li>
+            <li><div class="divider"></div></li>
+
+            <li><a class="subheader">OTHERS</a></li>
+            <li><a class="waves-effect" data-section-target="menu_alias_editor"><i class="material-icons">create</i>Alias Editor</a></li>
+            <li><a class="waves-effect"><i class="material-icons">info</i>About</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger" id="menu_trigger"><i class="material-icons">menu</i></a>
+        <a href="#" data-action="aliasEditorBack" class="hide" id="editor_back_trigger" style="z-index: 1; float: left;height: 64px;margin: 0px 18px;"><i class="material-icons" style="height: 64px; line-height: 64px;">arrow_back</i></a>
+    </nav>
+
+    <section data-section="aircraft_types">
+        <div class="row">
+            <div class="col s12">
+                <div class="row card hoverable" style="margin: 8px;">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">search</i>
+                        <input type="text" onkeyup="showResults(this.value, 'aircraft_types')" style="border-bottom: none; margin-bottom: 0;">
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="hide" data-section="scratchpad_codes">
-            <div class="row">
-                <div class="col s12">
-                    <div class="row card hoverable" style="margin: 8px;">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">search</i>
-                            <input type="text" onkeyup="showResults(this.value, 'scratchpad_codes')" style="border-bottom: none; margin-bottom: 0;">
-                        </div>
+            <div class="divider"></div>
+            <div class="col s12">
+                <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+                <ul class="collection" data-result-type="aircraft_types"></ul>
+            </div>
+        </div>
+    </section>
+    <section class="hide" data-section="airlines">
+        <div class="row">
+            <div class="col s12">
+                <div class="row card hoverable" style="margin: 8px;">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">search</i>
+                        <input type="text" onkeyup="showResults(this.value, 'airlines')"
+                            style="border-bottom: none; margin-bottom: 0;">
                     </div>
-                </div>
-                <div class="divider"></div>
-                <div class="col s12">
-                    <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
-                    <ul class="collection" data-result-type="scratchpad_codes"></ul>
                 </div>
             </div>
-        </section>
-        <section class="hide" data-section="tec_routes">
-            <div class="row">
-                <div class="col s12">
-                    <div class="row card hoverable" style="margin: 8px;">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">flight_takeoff</i>
-                            <input id="tec_route_departure" type="text" placeholder="Departure" maxlength="4">
-                        </div>
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">flight_land</i>
-                            <input id="tec_route_arrival" type="text" placeholder="Arrival" maxlength="4">
-                        </div>
-                         <Div class="col s12">
-                            <button onClick="findTecRoute()" class="btn blue col s12" style="margin-bottom: 8px;">Search</button>
-                         </Div>
+            <div class="divider"></div>
+            <div class="col s12">
+                <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+                <ul class="collection" data-result-type="airlines"></ul>
+            </div>
+        </div>
+    </section>
+    <section class="hide" data-section="airports">
+        <div class="row">
+            <div class="col s12">
+                <div class="row card hoverable" style="margin: 8px;">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">search</i>
+                        <input type="text" onkeyup="showResults(this.value, 'airports')" style="border-bottom: none; margin-bottom: 0;">
                     </div>
                 </div>
-                <div class="divider"></div>
-                <div class="col s12">
-                    <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
-                    <div data-result-type="tec_routes">
+            </div>
+            <div class="divider"></div>
+            <div class="col s12">
+                <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+                <ul class="collection" data-result-type="airports"></ul>
+            </div>
+        </div>
+    </section>
+    <section class="hide" data-section="equipment_suffixes">
+        <div class="row">
+            <div class="col s6">
+                <div class="card hoverable">
+                    <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
+                        <span class="card-title white-text" style="font-size: 1.5rem;">No DME</span>
+                    </div>
+                    <div class="card-content">
+                        <table>
+                            <tr>
+                                <td>X</td>
+                                <td>No transponder</td>
+                            </tr>
+                            <tr>
+                                <td>T</td>
+                                <td>Transponder with no Mode C</td>
+                            </tr>
+                            <tr>
+                                <td>U</td>
+                                <td>Transponder with Mode C</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card hoverable">
+                    <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
+                        <span class="card-title white-text" style="font-size: 1.5rem;">DME</span>
+                    </div>
+                    <div class="card-content">
+                        <table>
+                            <tr>
+                                <td>D</td>
+                                <td>No transponder</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>Transponder with no Mode C</td>
+                            </tr>
+                            <tr>
+                                <td>A</td>
+                                <td>Transponder with Mode C</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card hoverable">
+                    <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
+                        <span class="card-title white-text" style="font-size: 1.5rem;">TACAN Only</span>
+                    </div>
+                    <div class="card-content">
+                        <table>
+                            <tr>
+                                <td>M</td>
+                                <td>No transponder</td>
+                            </tr>
+                            <tr>
+                                <td>N</td>
+                                <td>Transponder with no Mode C</td>
+                            </tr>
+                            <tr>
+                                <td>P</td>
+                                <td>Transponder with Mode C</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card hoverable">
+                    <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
+                        <span class="card-title white-text" style="font-size: 1.5rem;">RNAV</span>
+                    </div>
+                    <div class="card-content">
+                        <table>
+                            <tr>
+                                <td>Y</td>
+                                <td>No transponder</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>Transponder with no Mode C</td>
+                            </tr>
+                            <tr>
+                                <td>I</td>
+                                <td>Transponder with Mode C</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card hoverable">
+                    <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
+                        <span class="card-title white-text" style="font-size: 1.5rem;">RNAV, GNSS</span>
+                    </div>
+                    <div class="card-content">
+                        <table>
+                            <tr>
+                                <td>V</td>
+                                <td>No transponder</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>Transponder with no Mode C</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>Transponder with Mode C</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card hoverable">
+                    <div class="card-header" style="padding: 8px; background-color: #2c3e50;">
+                        <span class="card-title white-text" style="font-size: 1.5rem;">RVSM + Transponder with Mode
+                            C</span>
+                    </div>
+                    <div class="card-content">
+                        <table>
+                            <tr>
+                                <td>W</td>
+                                <td>No GNSS, No RNAV</td>
+                            </tr>
+                            <tr>
+                                <td>Z</td>
+                                <td>No GNSS, RNAV <small>(Deprecated: /E, /F, /J or /K)</small></td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>GNSS, RNAV <small>(Deprecated: /R or /Q)</small></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hide" data-section="scratchpad_codes">
+        <div class="row">
+            <div class="col s12">
+                <div class="row card hoverable" style="margin: 8px;">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">search</i>
+                        <input type="text" onkeyup="showResults(this.value, 'scratchpad_codes')"
+                            style="border-bottom: none; margin-bottom: 0;">
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="col s12">
+                <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+                <ul class="collection" data-result-type="scratchpad_codes"></ul>
+            </div>
+        </div>
+    </section>
+    <section class="hide" data-section="tec_routes">
+        <div class="row">
+            <div class="col s12">
+                <div class="row card hoverable" style="margin: 8px;">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">flight_takeoff</i>
+                        <input id="tec_route_departure" type="text" placeholder="Departure" maxlength="4">
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">flight_land</i>
+                        <input id="tec_route_arrival" type="text" placeholder="Arrival" maxlength="4">
+                    </div>
+                    <Div class="col s12">
+                        <button onClick="findTecRoute()" class="btn blue col s12" style="margin-bottom: 8px;">Search</button>
+                    </Div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="col s12">
+                <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+                <div data-result-type="tec_routes">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alias Editor -->
+    <section class="hide" data-section="menu_alias_editor">
+        <div class="row" style="margin: 8px;">
+            <button data-target="new_alias_profile" class="btn waves-effect blue modal-trigger col s12">New Profile</button>
+        </div>
+        <div class="row">
+            <div id="alias_profiles" style="margin: 8px;">
+                <!-- This is where all Alias Profiles will be listed. -->
+            </div>
+        </div>
+    </section>
+    <section class="hide" data-section="main_alias_editor">
+        <div class="row" style="margin: 8px 0;">
+            <div class="col s12">
+                <ul class="tabs card pink darken-4 aliasNavigationTabs">
+                    <li class="tab col s3"><a class="active" href="#editor">Editor</a></li>
+                    <li class="tab col s3"><a href="#commandsList">Commands List</a></li>
+                    <li class="tab col s3"><a href="#artccConnection">ARTCC Connection</a></li>
+                    <li class="tab col s3"><a href="#help">Help</a></li>
+                </ul>
+            </div>
+            <div id="editor" class="col s12">
+                <div class="card">
+                    <div class="card-header">
                         
                     </div>
+                    <div class="card-content">
+                        asdsadsd
+                    </div>
+                    <div class="card-footer">
+
+                    </div>
                 </div>
             </div>
-        </section>
-        <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
-        <script type="text/javascript" src="./assets/js/main.js"></script>
-    </body>
+            <div id="commandsList" class="col s12">
+                <ul class="collection" id="commands-list-item__container">
+                    
+                </ul>
+            </div>
+            <div id="artccConnection" class="col s12">ARTCC Connection</div>
+            <div id="help" class="col s12">Help</div>
+        </div>
+    </section>
+    <section class="hide" data-section="changelog">
+        Auto update based on website portal.
+    </section>
+    <section class="hide" data-section="about">
+        
+    </section>
+
+    <!-- Modal -->
+    <div id="new_alias_profile" class="modal">
+        <div class="modal-header indigo darken-4 white-text" style="padding: 17px;">
+            <h4 style="margin: 0;">Alias Profile</h4>
+            <p style="margin: 0;">Create your Alias Profile by following the prompt!</p>
+        </div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Untitled Alias Profile" id="profile_name" type="text" class="validate">
+                    <label for="profile_name">Profile Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <div class="row">
+                        <div class="col s4">
+                            <button class="btn waves-effect blue" onclick="loadAliasFile()">Load Alias File</button>
+                        </div>
+                        <div class="col s8">
+                            <input placeholder="" id="alias_file_path" type="text" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-flat white-text waves-effect green waves-light modal-close" onclick="createAliasProfile()">Create</button>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./assets/js/vue.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
 </html>

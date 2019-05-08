@@ -1,25 +1,85 @@
 const rp = require("request-promise");
+const fs = require("fs");
 const cheerio = require("cheerio");
+const { dialog, app } = require("electron").remote;
+
 /**
  * ZLA Info Tool
  */
-// Initial
-M.AutoInit();
 
 const INFO_TOOL_DATA = require("./assets/data/data");
+const APP_DATA_PATH = app.getPath("userData");
+
+let config = {"user-preference": {},"aliasFile": []}
 
 let sessionData;
 
-if (!localStorage.getItem("data")) {
-    localStorage.setItem("data", JSON.stringify({
+if (!sessionStorage.getItem("data")) {
+    sessionStorage.setItem("data", JSON.stringify({
         "sectionActive": "aircraft_types"
     }));
 
-    sessionData = JSON.parse(localStorage.getItem("data"));
+    sessionData = JSON.parse(sessionStorage.getItem("data"));
 } else {
-    sessionData = JSON.parse(localStorage.getItem("data"));
+    sessionData = JSON.parse(sessionStorage.getItem("data"));
 }
 
+// Initialize App
+M.AutoInit();
+init();
+
+function init() {
+    // Check if a user-data file has been created already.
+    if (fs.existsSync(`${APP_DATA_PATH}/user-preference.json`)) {
+        fs.readFile(`${APP_DATA_PATH}/user-preference.json`, (err, data) => {
+            if (err) throw err;
+
+            let appData = JSON.parse(data);
+            config = appData;
+
+            reloadFiles()
+        });
+    } else {
+        fs.writeFile(`${APP_DATA_PATH}/user-preference.json`, JSON.stringify(config), (err) => {
+            if (err) throw err;
+        });
+    }
+}
+
+// temporary remeedy - will change in future version
+function modifiedConfig() {
+    fs.writeFile(`${APP_DATA_PATH}/user-preference.json`, JSON.stringify(config), (err) => {
+        if (err) throw err;
+        reloadFiles();
+    })
+}
+
+function reloadFiles() {
+    document.querySelector("#alias_profiles").innerHTML = "";
+
+    // Display Alias Profiles
+    config.aliasFile.forEach((aliasFile, index) => {
+        let aliasProfilesContainer = document.querySelector("#alias_profiles");
+
+        let div = document.createElement("div");
+
+        div.innerHTML = `
+            <div class="card-content row">
+                <div class="col s10">
+                    <b>${aliasFile.name}</b><br>
+                    <small>${aliasFile.filePath}</small>
+                </div>
+                <div class="col s2" style="height: 42px; display: flex; align-items: center; justify-content: space-evenly;">
+                    <i class="no-select material-icons small">error_outline</i>
+                    <i class="no-select material-icons small aliasMenu_button" data-position="top" data-tooltip="Edit" data-alias-id='${index}' data-alias-action="edit">edit</i>
+                    <i class="no-select material-icons small aliasMenu_button" data-position="top" data-tooltip="Delete" data-alias-id='${index}' data-alias-action="delete">close</i>
+                </div>
+            </div>
+        `;
+        div.classList.add("card", "hoverable");
+        aliasProfilesContainer.append(div);
+    });
+}
 
 function switchSections(id) {
     let specifiedSection = document.querySelector(`section[data-section='${id}']`),
@@ -41,7 +101,7 @@ function switchSections(id) {
          * nav-item.
          */
         let sidenavTrigger = document.querySelector(".sidenav-trigger");
-        if (sidenavTrigger.offsetWidth > 0 || sidenavTrigger.offsetHeight > 0) {
+        if (sidenavTrigger.offsetWidth > 0 || sidenavTrigger.offsetHeight > 0) {            
             M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
         }
     }
@@ -203,11 +263,68 @@ function showResults(queryString, type) {
     }
 }
 
+/***
+ * Alias Profile
+ */
+
+function createAliasProfile() {
+    // Validation
+    let profileName = document.querySelector("#profile_name").value,
+        aliasFilePath = document.querySelector("#alias_file_path").value;
+
+    if (profileName.length > 0 && aliasFilePath.length > 0) {
+        config.aliasFile.push({
+            name: profileName,
+            filePath: aliasFilePath
+        });
+
+        fs.writeFile(`${APP_DATA_PATH}/user-preference.json`, JSON.stringify(config), (err) => {
+            if (err) throw err;
+            reloadFiles();
+
+            // Clear Form
+            document.querySelector("#profile_name").value = "";
+            document.querySelector("#alias_file_path").value = "";
+        });
+    }
+}
+
+function loadAliasFile(){
+    dialog.showOpenDialog({
+        title: "Alias File...",
+        filters: [
+            { name: "Alias File", extensions: ["txt"] }
+        ]
+    }, (filePaths) => {
+        document.querySelector("#alias_file_path").value = filePaths[0];
+    });
+}
+
+function loadEditor(id) {
+    fs.readFile(config.aliasFile[id].filePath, "utf-8", (err, data) => {
+        if (err) throw err;
+
+        let commandsListContainer = document.querySelector("#commands-list-item__container");
+        commandsListContainer.innerHTML = "";
+
+        data.split("\n").forEach((line) => {
+            if (line.substring(0, 1) == ".") {
+                let li = document.createElement("li");
+                li.innerHTML = line.substring(1);
+
+                li.classList.add("collection-item");
+
+                commandsListContainer.append(li);
+            }
+        })
+    });
+}
+
 function voiceServerListener(frequency) {
     rp("http://vhf.laartcc.org:18009/?opts=-R-D").then((html) => {
         const $ = cheerio.load(html);
 
-        console.log($(`a:contains('${frequency}')`).text());
+        console.log($(`a:contains('${frequency}')`).text);
         /*$(`p:contains('${frequency}')`).next().text().split("\n").filter((data) => {
             if (data != "") return data;
         });*/
@@ -219,5 +336,39 @@ function voiceServerListener(frequency) {
 document.addEventListener("click", (event) => {
     if (event.target.hasAttribute("data-section-target")) {
         switchSections(event.target.getAttribute("data-section-target"));
+    } else if (event.target.hasAttribute("data-alias-id") && event.target.hasAttribute("data-alias-action")) {
+        let action = event.target.getAttribute("data-alias-action"),
+            id = event.target.getAttribute("data-alias-id");
+        
+        switch (action) {
+            case "edit": //Edit
+                document.querySelector("section[data-section='menu_alias_editor']").classList.toggle("hide");
+                document.querySelector("section[data-section='main_alias_editor']").classList.toggle("hide");
+
+                document.querySelector("#menu_trigger").classList.toggle("hide")
+                document.querySelector("#editor_back_trigger").classList.toggle("hide")
+                loadEditor(id);
+            break;
+            case "delete": //Delete
+                config.aliasFile.splice(id, 1);
+                modifiedConfig();
+            break;
+        }
     }
 });
+
+// Attach for alias Back
+let actionButtons = document.querySelector("a[data-action]");
+
+actionButtons.addEventListener("click", (e) => {
+    e.stopImmediatePropagation();
+    switch (e.path[1].getAttribute("data-action")) {
+        case "aliasEditorBack":
+            document.querySelector("section[data-section='menu_alias_editor']").classList.toggle("hide");
+            document.querySelector("section[data-section='main_alias_editor']").classList.toggle("hide");
+
+            document.querySelector("#menu_trigger").classList.toggle("hide")
+            document.querySelector("#editor_back_trigger").classList.toggle("hide")
+        break;
+    }
+})

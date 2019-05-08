@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, dialog } = require("electron");
 const path = require("path");
 
 /**
@@ -12,14 +12,15 @@ let mainWin;
 
 function init() {
     mainWin = new BrowserWindow({
-        minWidth: 800,
-        minHeight: 600,
+        resizable: false,
+        maxWidth: 800,
+        maxHeight: 600,
         show: false,
     });
 
     mainWin.loadFile("./app/index.html");
     mainWin.setIcon(path.join(__dirname, "app/assets/icons/icon.png"));
-
+    
     mainWin.on("ready-to-show", () => mainWin.show());
 }
 
