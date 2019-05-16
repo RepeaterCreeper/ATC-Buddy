@@ -301,20 +301,58 @@ function loadAliasFile(){
 }
 
 function loadEditor(id) {
+    
     fs.readFile(config.aliasFile[id].filePath, "utf-8", (err, data) => {
         if (err) throw err;
 
-        let commandsListContainer = document.querySelector("#commands-list-item__container");
+        let commandsListContainer = document.querySelector("#commandsList"),
+            commandGroupCount = 0;
+            
         commandsListContainer.innerHTML = "";
+
+
+        let containerList = ["collection", "command-group-container"];
+        
+        let commandGroupContainer = document.querySelectorAll(".command-group-container")[commandGroupCount];
 
         data.split("\n").forEach((line) => {
             if (line.substring(0, 1) == ".") {
-                let li = document.createElement("li");
-                li.innerHTML = line.substring(1);
+                let li = document.createElement("li"),
+                    kbd = document.createElement("kbd");
+
+                let aliasCommand = line.substring(1).split(" ")[0],
+                    command = line.substring(1).split(" ").slice(1).join(" ");
+
+                kbd.innerHTML = aliasCommand;
+                li.innerHTML += kbd.outerHTML + " " + command;
 
                 li.classList.add("collection-item");
 
-                commandsListContainer.append(li);
+                if (commandGroupContainer) {
+                    commandGroupContainer.append(li);
+                } else if(commandGroupCount == 0) {
+                    let ul = document.createElement("ul")
+                    ul.classList.add(...containerList);
+                    ul.setAttribute("data-command-group", commandGroupCount);
+                    
+                    commandsListContainer.append(ul);
+                    
+                    commandGroupContainer = document.querySelectorAll(".command-group-container")[commandGroupCount];
+                    commandGroupContainer.append(li);
+                }
+            } else if (line.substring(0,1) == "#"){
+                let ul = document.createElement("ul"),
+                    header = document.createElement("h5");
+                
+                ul.classList.add(...containerList);
+                header.innerHTML = line.substring(1);
+                header.style.fontWeight = "lighter";
+
+                commandsListContainer.append(header);
+                commandsListContainer.append(ul);
+
+                commandGroupCount += 1;
+                commandGroupContainer = document.querySelectorAll(".command-group-container")[commandGroupCount - 1];
             }
         })
     });

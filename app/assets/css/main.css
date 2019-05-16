@@ -69,3 +69,14 @@ li.active {
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */      
 }
+
+/**
+ *  Overrides
+ */
+kbd {
+    background-color: #34495e;
+    color: white;
+    padding: 4px;
+    margin-right: 16px;
+    border-radius: 4px;
+}
