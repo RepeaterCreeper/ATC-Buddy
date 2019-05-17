@@ -1,52 +1,55 @@
+const fs = require("fs");
+const path = require("path");
 const rp = require("request-promise");
 const cheerio = require("cheerio");
-/**
- * ZLA Info Tool
- */
-// Initial
-M.AutoInit();
+const Vue = require("vue/dist/vue.common");
+const VueRouter = require("vue-router");
 
+Vue.use(VueRouter);
+
+/**
+ * Setup
+ */
 const INFO_TOOL_DATA = require("./assets/data/data");
 
-let sessionData;
+// Router Pages
+const AircraftTypes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/AircraftTypes.vue", "utf-8") };
+const Airlines = { template: fs.readFileSync(path.resolve(__dirname) + "/views/Airlines.vue", "utf-8") };
+const Airports = { template: fs.readFileSync(path.resolve(__dirname) + "/views/Airports.vue", "utf-8") };
+const EquipmentSuffixes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/EquipmentSuffixes.vue", "utf-8") };
+const ScratchpadCodes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/ScratchpadCodes.vue", "utf-8") };
+const TECRoutes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/TecRoutes.vue", "utf-8") };
 
-if (!localStorage.getItem("data")) {
-    localStorage.setItem("data", JSON.stringify({
-        "sectionActive": "aircraft_types"
-    }));
+// Router Definition
+const routes = [
+    { path: "/aircraft-types", component: AircraftTypes },
+    { path: "/airlines", component: Airlines },
+    { path: "/airports", component: Airports },
+    { path: "/equipment-suffixes", component: EquipmentSuffixes },
+    { path: "/scratchpad-codes", component: ScratchpadCodes },
+    { path: "/tec-routes", component: TECRoutes },
+    { path: "*", redirect: "/aircraft-types"}
+];
 
-    sessionData = JSON.parse(localStorage.getItem("data"));
-} else {
-    sessionData = JSON.parse(localStorage.getItem("data"));
-}
+const router = new VueRouter({
+    routes
+});
 
-
-function switchSections(id) {
-    let specifiedSection = document.querySelector(`section[data-section='${id}']`),
-        sectionNavButton = document.querySelector(`a[data-section-target='${id}']`).parentElement;
-
-    if (specifiedSection.className == "hide") {
-        specifiedSection.classList.toggle("hide");
-        sectionNavButton.classList.toggle("active");
-
-        document.querySelector(`section[data-section='${sessionData.sectionActive}']`).classList.toggle("hide");
-        document.querySelector(`a[data-section-target='${sessionData.sectionActive}']`).parentElement.classList.toggle("active");
-
-        sessionData.sectionActive = id;
-
-        /**
-         * Simple check if sidenavTrigger is visible and if it is visible we can
-         * assume that they're in desktop view meaning sidenav is supposed to be
-         * fixed. Hence why we don't need to close the sidenav when they press a
-         * nav-item.
-         */
-        let sidenavTrigger = document.querySelector(".sidenav-trigger");
-        if (sidenavTrigger.offsetWidth > 0 || sidenavTrigger.offsetHeight > 0) {
+const app = new Vue({
+    router,
+    methods: {
+        sideNavClose: () => {
             M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
         }
     }
-}
+}).$mount("#app");
 
+M.AutoInit();
+
+/**
+ * Turn TEC altitude to a more standard format
+ * @param {string} unparsedAltitude 
+ */
 function formatAltitude(unparsedAltitude) {
     let altitudeMatch = new RegExp(/[JMPQ]+[0-9]+/g),
         tecAltitudes = unparsedAltitude.match(altitudeMatch),
@@ -83,8 +86,9 @@ function findTecRoute(departure, arrival) {
     }
 
     /**
-     * Display Results
-     **/
+     * 
+     */
+    
     let container_target = document.querySelector(`div[data-result-type='tec_routes']`);
     container_target.innerHTML = ``;
 
@@ -213,11 +217,3 @@ function voiceServerListener(frequency) {
         });*/
     });
 }
-/**
- * General
- */
-document.addEventListener("click", (event) => {
-    if (event.target.hasAttribute("data-section-target")) {
-        switchSections(event.target.getAttribute("data-section-target"));
-    }
-});

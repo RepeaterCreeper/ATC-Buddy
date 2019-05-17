@@ -14,7 +14,7 @@ function init() {
     mainWin = new BrowserWindow({
         minWidth: 800,
         minHeight: 600,
-        show: false,
+        show: false
     });
 
     mainWin.loadFile("./app/index.html");
