@@ -37,6 +37,9 @@ const router = new VueRouter({
 
 const app = new Vue({
     router,
+    data: {
+        results: []
+    },
     methods: {
         sideNavClose: () => {
             M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
@@ -62,33 +65,29 @@ function formatAltitude(unparsedAltitude) {
     return parsed.join(", ");
 }
 
-function findTecRoute(departure, arrival) {
-    let DEPARTURE = departure !== undefined ? departure : document.querySelector("#tec_route_departure").value,
-        ARRIVAL = arrival !== undefined ? arrival : document.querySelector("#tec_route_arrival").value;
+function findTecRoute(departureAirport, arrivalAirport) {
+    let departureAirport = departureAirport !== undefined ? departureAirport : document.querySelector("#tec_route_departureAirport").value,
+        arrivalAirport = arrivalAirport !== undefined ? arrivalAirport : document.querySelector("#tec_route_arrivalAirport").value;
     
     let results = [];
 
-    if (DEPARTURE.length > 3) DEPARTURE = DEPARTURE.slice(1);
-    if (ARRIVAL.length > 3) ARRIVAL = ARRIVAL.slice(1);
+    if (departureAirport.length > 3) departureAirport = departureAirport.slice(1);
+    if (arrivalAirport.length > 3) arrivalAirport = arrivalAirport.slice(1);
 
-    if (DEPARTURE.length > 0 && ARRIVAL.length > 0) {
+    if (departureAirport.length > 0 && arrivalAirport.length > 0) {
         results = INFO_TOOL_DATA["tec_routes"].filter((data) => {
-            if (data.departure.includes(DEPARTURE) && data.arrival.includes(ARRIVAL)) return data;
+            if (data.departureAirport.includes(departureAirport) && data.arrivalAirport.includes(arrivalAirport)) return data;
         });
     } else {
         results = INFO_TOOL_DATA["tec_routes"].filter((data) => {
-            if (DEPARTURE.length > 0) {
-                if (data.departure.includes(DEPARTURE)) return data;
+            if (departureAirport.length > 0) {
+                if (data.departureAirport.includes(departureAirport)) return data;
             } else {
-                if (data.arrival.includes(ARRIVAL)) return data;
+                if (data.arrivalAirport.includes(arrivalAirport)) return data;
             }
         });
     }
 
-    /**
-     * 
-     */
-    
     let container_target = document.querySelector(`div[data-result-type='tec_routes']`);
     container_target.innerHTML = ``;
 
