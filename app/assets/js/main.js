@@ -13,16 +13,69 @@ Vue.use(VueRouter);
 const INFO_TOOL_DATA = require("./assets/data/data");
 
 // Router Pages
-const AircraftTypes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/AircraftTypes.vue", "utf-8") };
-const Airlines = { template: fs.readFileSync(path.resolve(__dirname) + "/views/Airlines.vue", "utf-8") };
-const Airports = { template: fs.readFileSync(path.resolve(__dirname) + "/views/Airports.vue", "utf-8") };
-const EquipmentSuffixes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/EquipmentSuffixes.vue", "utf-8") };
-const ScratchpadCodes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/ScratchpadCodes.vue", "utf-8") };
-const TECRoutes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/TecRoutes.vue", "utf-8") };
+const AircraftTypes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/AircraftTypes.html", "utf-8") };
+const Airlines = { template: fs.readFileSync(path.resolve(__dirname) + "/views/Airlines.html", "utf-8") };
+const Airports = { template: fs.readFileSync(path.resolve(__dirname) + "/views/Airports.html", "utf-8") };
+const EquipmentSuffixes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/EquipmentSuffixes.html", "utf-8") };
+const ScratchpadCodes = { template: fs.readFileSync(path.resolve(__dirname) + "/views/ScratchpadCodes.html", "utf-8") };
+const TECRoutes = {
+    data: function() {
+        return {
+            results: []
+        }
+    },
+    template: fs.readFileSync(path.resolve(__dirname) + "/views/TecRoutes.html", "utf-8"),
+    methods: {
+        changeData: function(key, value) {
+            this.key = value;
+        },
+        getData: function(key) {
+            return this.key
+        },
+        findTecRoute: function() {
+            let departureAirport = document.querySelector("#tec_route_departure").value,
+                arrivalAirport = document.querySelector("#tec_route_arrival").value;
+            
+            if (departureAirport.length > 3) departureAirport = departureAirport.slice(1);
+            if (arrivalAirport.length > 3) arrivalAirport = arrivalAirport.slice(1);
+        
+            if (departureAirport.length > 0 && arrivalAirport.length > 0) {
+                let results = INFO_TOOL_DATA["tec_routes"].filter((data) => {
+                    if (data.departure.includes(departureAirport) && data.arrival.includes(arrivalAirport)) return data;
+                });
+                this.results = results;
+            } else {
+                let results = INFO_TOOL_DATA["tec_routes"].filter((data) => {
+                    if (departureAirport.length > 0) {
+                        if (data.departureAirport.includes(departureAirport)) return data;
+                    } else {
+                        if (data.arrivalAirport.includes(arrivalAirport)) return data;
+                    }
+                });
+                this.results = results;
+            }
+        },
+        /**
+         * Turn TEC altitude to a more standard format
+         * @param {string} unparsedAltitude 
+         */
+        formatAltitude(unparsedAltitude) {
+            let altitudeMatch = new RegExp(/[JMPQ]+[0-9]+/g),
+                tecAltitudes = unparsedAltitude.match(altitudeMatch),
+                parsed = [];
+
+            tecAltitudes.forEach((data) => {
+                parsed.push(data);
+            });
+
+            return parsed.join(", ");
+        }
+    }
+};
 
 // Router Definition
 const routes = [
-    { path: "/aircraft-types", component: AircraftTypes },
+    { path: "/aircraft-types", component: AircraftTypes},
     { path: "/airlines", component: Airlines },
     { path: "/airports", component: Airports },
     { path: "/equipment-suffixes", component: EquipmentSuffixes },
@@ -37,83 +90,14 @@ const router = new VueRouter({
 
 const app = new Vue({
     router,
-    data: {
-        results: []
-    },
     methods: {
         sideNavClose: () => {
             M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
-        }
+        },
     }
 }).$mount("#app");
 
 M.AutoInit();
-
-/**
- * Turn TEC altitude to a more standard format
- * @param {string} unparsedAltitude 
- */
-function formatAltitude(unparsedAltitude) {
-    let altitudeMatch = new RegExp(/[JMPQ]+[0-9]+/g),
-        tecAltitudes = unparsedAltitude.match(altitudeMatch),
-        parsed = [];
-
-    tecAltitudes.forEach((data) => {
-        parsed.push(data);
-    });
-
-    return parsed.join(", ");
-}
-
-function findTecRoute(departureAirport, arrivalAirport) {
-    let departureAirport = departureAirport !== undefined ? departureAirport : document.querySelector("#tec_route_departureAirport").value,
-        arrivalAirport = arrivalAirport !== undefined ? arrivalAirport : document.querySelector("#tec_route_arrivalAirport").value;
-    
-    let results = [];
-
-    if (departureAirport.length > 3) departureAirport = departureAirport.slice(1);
-    if (arrivalAirport.length > 3) arrivalAirport = arrivalAirport.slice(1);
-
-    if (departureAirport.length > 0 && arrivalAirport.length > 0) {
-        results = INFO_TOOL_DATA["tec_routes"].filter((data) => {
-            if (data.departureAirport.includes(departureAirport) && data.arrivalAirport.includes(arrivalAirport)) return data;
-        });
-    } else {
-        results = INFO_TOOL_DATA["tec_routes"].filter((data) => {
-            if (departureAirport.length > 0) {
-                if (data.departureAirport.includes(departureAirport)) return data;
-            } else {
-                if (data.arrivalAirport.includes(arrivalAirport)) return data;
-            }
-        });
-    }
-
-    let container_target = document.querySelector(`div[data-result-type='tec_routes']`);
-    container_target.innerHTML = ``;
-
-    results.forEach((result) => {
-        let div = document.createElement("div");
-
-        div.innerHTML = `
-            <div class="card-header white-text">
-                <b class="tecroute__title">${result.name}</b>
-                <p class="tecroute__altitudes" style="margin: 0;">${formatAltitude(result.altitudes)}</p>
-            </div>
-            <div class="card-content">
-                <p class="tecroute__route">${result.route}</p>
-            </div>
-            <div class="card-footer">
-                <span class="tecroute__note" style="margin: 8px;">${result.notes}</span>
-                <button class="btn blue tecroute__copy waves-effect waves-red" style="height: 48px;">
-                    <i class="material-icons">content_paste</i>
-                </button>
-            </div>
-        `;
-        div.classList.add("card", "hoverable", "tecroute__card");
-        container_target.append(div);
-    });
-}
-
 
 function showResults(queryString, type) {
     let container_target = document.querySelector(`ul[data-result-type=${type}]`);
