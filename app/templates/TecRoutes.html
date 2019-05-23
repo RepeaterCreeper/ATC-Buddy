@@ -1,0 +1,42 @@
+<section data-section="tec_routes">
+    <div class="row">
+        <div class="col s12">
+            <div class="row card hoverable" style="margin: 8px;">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">flight_takeoff</i>
+                    <input id="tec_route_departure" type="text" placeholder="Departure" maxlength="4">
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">flight_land</i>
+                    <input id="tec_route_arrival" type="text" placeholder="Arrival" maxlength="4">
+                </div>
+                <div class="col s12">
+                    <button @click="findTecRoute" class="btn blue col s12" style="margin-bottom: 8px;">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="col s12">
+            <p style="font-weight: light; margin-top: 8px;">RESULTS</p>
+            <div
+                class="card hoverable tecroute__card"
+                :key="index"
+                v-for="(result, index) in results"
+                >
+                <div class="card-header white-text">
+                    <b class="tecroute__title">{{ result.name }}</b>
+                    <p class="tecroute__altitudes" style="margin: 0;">{{ formatAltitude(result.altitudes) }}</p>
+                </div>
+                <div class="card-content">
+                    <p class="tecroute__route">{{ result.route }}</p>
+                </div>
+                <div class="card-footer">
+                    <span class="tecroute__note" style="margin: 8px;">{{ result.notes }}</span>
+                    <button class="btn blue tecroute__copy waves-effect waves-red" style="height: 48px;">
+                        <i class="material-icons">content_paste</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
