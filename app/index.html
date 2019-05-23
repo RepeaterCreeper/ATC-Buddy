@@ -1,46 +1,124 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css"  media="screen,projection"/>
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <title>ATC Buddy</title>
-    </head>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <body>
-        <div id="app">
-            <nav class="blue darken-3">
-                <ul id="slide-out" class="sidenav sidenav-fixed">
-                    <li style="padding: 32px;" class="blue">
-                        <h4 style="text-align: center; letter-spacing: 4px;">ATC Buddy</h4>
-                    </li>
-                    <li><a class="subheader" style="font-weight: 400;">MAIN</a></li>
-                    <router-link tag="li" active-class="active" to="/aircraft-types" v-on:click.native="sideNavClose"><a class="waves-effect"><i class="material-icons">airplanemode_active</i> Aircraft Types</a></router-link>
-                    <router-link tag="li" active-class="active" to="/airlines" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">send</i> Airlines</a></router-link>
-                    <router-link tag="li" active-class="active" to="/airports" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">flight_land</i> Airports</a></router-link>
-                    <router-link tag="li" active-class="active" to="/equipment-suffixes" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">gesture</i> Equipment Suffixes</a></router-link>
-                    <router-link tag="li" active-class="active" to="/scratchpad-codes" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">text_fields</i> Scratchpad Codes</a></router-link>
-                    <router-link tag="li" active-class="active" to="/tec-routes" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">near_me</i> TEC Routes</a></router-link>
-                    
-                    <li><div class="divider"></div></li>
-                    <li><a class="subheader">USER</a></li>
-                    <li><div class="divider"></div></li>
-                    <li><a class="subheader">OTHERS</a></li>
-                    <li><a class="waves-effect" href="#!"><i class="material-icons">info</i>About</a></li>
-                </ul>
-                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            </nav>
-            
-            <router-view></router-view>
+    <title>ATC Buddy </title>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="blue darken-3">
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+                <li style="padding: 32px;" class="blue">
+                    <h4 style="text-align: center; letter-spacing: 4px;">ATC Buddy</h4>
+                </li>
+                <li><a class="subheader" style="font-weight: 400;">MAIN</a></li>
+                <router-link tag="li" active-class="active" to="/aircraft-types" v-on:click.native="sideNavClose"><a class="waves-effect"><i class="material-icons">airplanemode_active</i> Aircraft Types</a></router-link>
+                <router-link tag="li" active-class="active" to="/airlines" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">send</i> Airlines</a></router-link>
+                <router-link tag="li" active-class="active" to="/airports" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">flight_land</i> Airports</a></router-link>
+                <router-link tag="li" active-class="active" to="/equipment-suffixes" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">gesture</i> Equipment Suffixes</a></router-link>
+                <router-link tag="li" active-class="active" to="/scratchpad-codes" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">text_fields</i> Scratchpad Codes</a></router-link>
+                <router-link tag="li" active-class="active" to="/tec-routes" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">near_me</i> TEC Routes</a></router-link>
+                
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">USER</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">OTHERS</a></li>
+                <li><a class="waves-effect" href="#!"><i class="material-icons">info</i>About</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </nav>
+        
+        <router-view></router-view>
+    </div>
+
+    <!-- Alias Editor -->
+    <section class="hide" data-section="menu_alias_editor">
+        <div class="row" style="margin: 8px;">
+            <button data-target="new_alias_profile" class="btn waves-effect blue modal-trigger col s12">New Profile</button>
         </div>
-        <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
-        <script type="text/javascript" src="./assets/js/main.js"></script>
-    </body>
+        <div class="row">
+            <div id="alias_profiles" style="margin: 8px;">
+                <!-- This is where all Alias Profiles will be listed. -->
+            </div>
+        </div>
+    </section>
+    <section class="hide" data-section="main_alias_editor">
+        <div class="row" style="margin: 8px 0;">
+            <div class="col s12">
+                <ul class="tabs card pink darken-4 aliasNavigationTabs">
+                    <li class="tab col s3"><a class="active" href="#editor">Editor</a></li>
+                    <li class="tab col s3"><a href="#commandsList">Commands List</a></li>
+                    <li class="tab col s3"><a href="#artccConnection">ARTCC Connection</a></li>
+                    <li class="tab col s3"><a href="#help">Help</a></li>
+                </ul>
+            </div>
+            <div id="editor" class="col s12">
+                <div class="card">
+                    <div class="card-header">
+                        
+                    </div>
+                    <div class="card-content">
+                    </div>
+                    <div class="card-footer">
+
+                    </div>
+                </div>
+            </div>
+            <div id="commandsList" class="col s12">
+                
+            </div>
+            <div id="artccConnection" class="col s12">ARTCC Connection</div>
+            <div id="help" class="col s12">Help</div>
+        </div>
+    </section>
+    <section class="hide" data-section="changelog">
+        Auto update based on website portal.
+    </section>
+    <section class="hide" data-section="about">
+        
+    </section>
+
+    <!-- Modal -->
+    <div id="new_alias_profile" class="modal">
+        <div class="modal-header indigo darken-4 white-text" style="padding: 17px;">
+            <h4 style="margin: 0;">Alias Profile</h4>
+            <p style="margin: 0;">Create your Alias Profile by following the prompt!</p>
+        </div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Untitled Alias Profile" id="profile_name" type="text" class="validate">
+                    <label for="profile_name">Profile Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <div class="row">
+                        <div class="col s4">
+                            <button class="btn waves-effect blue" onclick="loadAliasFile()">Load Alias File</button>
+                        </div>
+                        <div class="col s8">
+                            <input placeholder="" id="alias_file_path" type="text" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-flat white-text waves-effect green waves-light modal-close" onclick="createAliasProfile()">Create</button>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
 </html>
