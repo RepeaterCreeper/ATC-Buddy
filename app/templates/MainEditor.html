@@ -1,0 +1,42 @@
+<section>
+    <div class="row" style="margin: 8px 0;">
+        <div class="col s12">
+            <ul class="tabs card pink darken-4 aliasNavigationTabs">
+                <li class="tab col s3"><a class="active" href="#editor">Editor</a></li>
+                <li class="tab col s3"><a href="#commandsList">Commands List</a></li>
+                <li class="tab col s3"><a href="#artccConnection">ARTCC Connection</a></li>
+                <li class="tab col s3"><a href="#help">Help</a></li>
+            </ul>
+        </div>
+        <div id="editor" class="col s12">
+            <div class="card">
+                <div class="card-header">
+                    
+                </div>
+                <div class="card-content">
+                </div>
+                <div class="card-footer">
+
+                </div>
+            </div>
+        </div>
+        <div id="commandsList" class="col s12">
+            <ul class="collection">
+                <li
+                    class="collection-item command-group-container row"
+                    :key="index"
+                    v-for="(command, index) in commandsListContents"
+                >
+                    <div class="col s3">
+                        <kbd style="width: fit-content; float: right;">{{ command.content[0] }}</kbd>
+                    </div>
+                    <div class="col s8">
+                        <span>{{ command.content[1] }}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="artccConnection" class="col s12">ARTCC Connection</div>
+        <div id="help" class="col s12">Help</div>
+    </div>
+</section>

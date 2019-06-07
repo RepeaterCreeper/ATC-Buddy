@@ -1,7 +1,7 @@
 const fs = require("fs");
+const { app } = require("electron").remote;
 const path = require("path");
 const rp = require("request-promise");
-const fs = require("fs");
 const cheerio = require("cheerio");
 const Vue = require("vue/dist/vue.common");
 const VueRouter = require("vue-router");
@@ -14,61 +14,68 @@ Vue.use(VueRouter);
 const INFO_TOOL_DATA = require("./assets/data/data");
 const APP_DATA_PATH = app.getPath("userData");
 
-let config = {
-    "user-preference": {},
-    "aliasFile": []
-}
+const router = require("./assets/js/router.js");
 
-// Router Pages
-const AircraftTypes = require(path.join(__dirname, "/components/AircraftTypes.js"));
-const Airlines = require(path.join(__dirname, "/components/Airlines.js"));
-const Airports = require(path.join(__dirname, "/components/Airports.js"));
-const EquipmentSuffixes = require(path.join(__dirname, "/components/EquipmentSuffixes.js"));
-const ScratchpadCodes = require(path.join(__dirname, "/components/ScratchpadCodes.js"));
-const TECRoutes = require(path.join(__dirname, "/components/TECRoutes.js"));
-
-// Router Definition
-const routes = [
-    {
-        path: "/aircraft-types",
-        component: AircraftTypes
+/* const USER_DATA = Vuex.Store({
+    state: {
+        aliasFiles: [],
+        preferences: {
+            darkTheme: false
+        }
     },
-    {
-        path: "/airlines",
-        component: Airlines
-    },
-    {
-        path: "/airports",
-        component: Airports
-    },
-    {
-        path: "/equipment-suffixes",
-        component: EquipmentSuffixes
-    },
-    {
-        path: "/scratchpad-codes",
-        component: ScratchpadCodes
-    },
-    {
-        path: "/tec-routes",
-        component: TECRoutes
-    },
-    {
-        path: "*",
-        redirect: "/aircraft-types"
+    mutations: {
+        toggleDarkTheme(state) {
+            state.darkTheme = !state.darkTheme
+        },
+        addAliasProfile(state, aliasData) {
+            state.aliasFiles.push(aliasData)
+        },
+        removeAliasProfile(state, aliasId) {
+            state.aliasFiles.splice(aliasId, 1);
+        }
     }
-];
+}); */
 
-const router = new VueRouter({
-    routes
-});
-
-const app = new Vue({
+const vueApp = new Vue({
     router,
+    data: {
+        aliasView: false,
+        preferences: {
+            darkTheme: false
+        }
+    },
     methods: {
         sideNavClose: () => {
             M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
         },
+        navigate: function(where) {
+            router.go(where);
+        }
+    },
+    created: function() {
+        /**
+         * Load User Data file (if found)
+         */
+        if (fs.existsSync(`${APP_DATA_PATH}/user-data.json`)) {
+            fs.readFile(`${APP_DATA_PATH}/user-data.json`, (err, data) => {
+                if (err) throw err;
+    
+                this.USER_DATA = JSON.parse(data);
+            });
+        } else {
+            fs.writeFile(`${APP_DATA_PATH}/user-data.json`, JSON.stringify(USER_DATA), (err) => {
+                if (err) throw err;
+            });
+        }
+    },
+    watch: {
+        "$route" (to) {
+            if (to.path.match("alias-editor/alias")) {
+                this.aliasView = true;
+            } else {
+                this.aliasView = false;
+            }
+        }
     }
 }).$mount("#app");
 
@@ -100,21 +107,20 @@ function createAliasProfile() {
     }
 }
 
-function loadAliasFile() {
-    dialog.showOpenDialog({
-        title: "Alias File...",
-        filters: [{
-            name: "Alias File",
-            extensions: ["txt"]
-        }]
-    }, (filePaths) => {
-        document.querySelector("#alias_file_path").value = filePaths[0];
+
+
+async function loadEditor(id) {
+    const buf = (async function() {
+        try {
+            await fs.readFile(config.aliasFile[id].filePath)
+        } catch (err) {
+            throw err;
+        }
     });
-}
+    const content = buf.toString();
+    console.log(content);
 
-function loadEditor(id) {
-
-    fs.readFile(config.aliasFile[id].filePath, "utf-8", (err, data) => {
+    /* fs.readFile(config.aliasFile[id].filePath, "utf-8", (err, data) => {
         if (err) throw err;
 
         let commandsListContainer = document.querySelector("#commandsList"),
@@ -167,7 +173,7 @@ function loadEditor(id) {
                 commandGroupContainer = document.querySelectorAll(".command-group-container")[commandGroupCount - 1];
             }
         })
-    });
+    }); */
 }
 
 function voiceServerListener(frequency) {
@@ -183,7 +189,7 @@ function voiceServerListener(frequency) {
 /**
  * General
  */
-document.addEventListener("click", (event) => {
+/* document.addEventListener("click", (event) => {
     if (event.target.hasAttribute("data-alias-id") && event.target.hasAttribute("data-alias-action")) {
         let action = event.target.getAttribute("data-alias-action"),
             id = event.target.getAttribute("data-alias-id");
@@ -203,10 +209,10 @@ document.addEventListener("click", (event) => {
                 break;
         }
     }
-});
+}); */
 
 // Attach for alias Back
-let actionButtons = document.querySelector("a[data-action]");
+/*let actionButtons = document.querySelector("a[data-action]");
 
 actionButtons.addEventListener("click", (e) => {
     e.stopImmediatePropagation();
@@ -272,4 +278,4 @@ function reloadFiles() {
         div.classList.add("card", "hoverable");
         aliasProfilesContainer.append(div);
     });
-}
+}*/
