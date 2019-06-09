@@ -21,20 +21,31 @@
             </div>
         </div>
         <div id="commandsList" class="col s12">
-            <ul class="collection">
-                <li
-                    class="collection-item command-group-container row"
-                    :key="index"
-                    v-for="(command, index) in commandsListContents"
-                >
-                    <div class="col s3">
-                        <kbd style="width: fit-content; float: right;">{{ command.content[0] }}</kbd>
-                    </div>
-                    <div class="col s8">
-                        <span>{{ command.content[1] }}</span>
-                    </div>
-                </li>
-            </ul>
+            <div
+                class="card hoverable"
+                :key="index"
+                v-for="(header, index) in commandsListContents"
+            >
+                <div class="card-header" style="background-color: royalblue; padding: 8px; color: #FFF;">
+                    <h5 style="font-weight: lighter; margin: 0;">{{ header.name }}</h5>
+                </div>
+                <div class="card-content" style="padding: 0;">
+                    <ul class="collection" style="margin: 0;">
+                        <li
+                            class="collection-item row"
+                            v-for="(command, index) in header['commands']"
+                        >
+                            <div class="col s3">
+                                <kbd style="width: fit-content; float: right;">{{ command[0] }}</kbd>
+                            </div>
+                            <div class="col s8">
+                                <span>{{ command[1] }}</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
         <div id="artccConnection" class="col s12">ARTCC Connection</div>
         <div id="help" class="col s12">Help</div>
