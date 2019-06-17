@@ -9,6 +9,11 @@ const Alias = {
             commandsListContents: []
         }
     },
+    methods: {
+        updateAlias: function(data) {
+            
+        }
+    },
     template: fs.readFileSync(path.join(__dirname, "../../templates/MainEditor.html"), "utf-8"),
     created: function(){
         let { filepath } = this.$route.query.aliasFileData;
@@ -23,15 +28,15 @@ const Alias = {
                 }
             ];
 
-            data.split("\n").forEach(function (line) {
+            data.split("\n").forEach(function (line, index) {
                 if (line.substring(0, 1) == ".") {
                     let command = line.substring(1).split(" ")[0],
                         description = line.substring(1).split(" ").slice(1).join(" ");
 
                     if (temp.length == 1) {
-                        temp[0].commands.push([command, description]);
+                        temp[0].commands.push([command, description, index]);
                     } else {
-                        temp[temp.length - 1].commands.push([command, description]);
+                        temp[temp.length - 1].commands.push([command, description, index]);
                     }
                 } else if (line.substring(0, 1) == "#") {
                     if (temp.length == 1 && temp[0].name.length == 0) {
@@ -47,6 +52,11 @@ const Alias = {
 
             this.commandsListContents = temp;
         });
+    },
+    watch: {
+        commandsListContents: function(newVal, oldVal) {
+            
+        }
     },
     mounted: function(){
         this.$nextTick(function(){

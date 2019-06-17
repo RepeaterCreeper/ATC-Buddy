@@ -14,6 +14,7 @@
                     
                 </div>
                 <div class="card-content">
+                    
                 </div>
                 <div class="card-footer">
 
@@ -26,7 +27,7 @@
                 :key="index"
                 v-for="(header, index) in commandsListContents"
             >
-                <div class="card-header" style="background-color: royalblue; padding: 8px; color: #FFF;">
+                <div class="card-header" style="background-color: royalblue; padding: 8px; color: #FFF;" v-if="header.name">
                     <h5 style="font-weight: lighter; margin: 0;">{{ header.name }}</h5>
                 </div>
                 <div class="card-content" style="padding: 0;">
@@ -38,16 +39,19 @@
                             <div class="col s3">
                                 <kbd style="width: fit-content; float: right;">{{ command[0] }}</kbd>
                             </div>
-                            <div class="col s8">
+                            <div class="col s9">
                                 <span>{{ command[1] }}</span>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            
         </div>
         <div id="artccConnection" class="col s12">ARTCC Connection</div>
-        <div id="help" class="col s12">Help</div>
+        <div id="help" class="col s12">
+            <div class="card">
+                
+            </div>
+        </div>
     </div>
 </section>

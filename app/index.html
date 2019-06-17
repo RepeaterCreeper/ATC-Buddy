@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
     <title>ATC Buddy </title>
 </head>
 
@@ -36,7 +36,10 @@
                 
                 <li><a class="waves-effect" href="#!"><i class="material-icons">info</i>About</a></li>
             </ul>
+            
+            <!-- Alias -->
             <a href="#" v-if="aliasView" class="sidenav-trigger" @click="navigate(-1)"><i class="material-icons">chevron_left</i></a>
+
             <a href="#" data-target="slide-out" class="sidenav-trigger" v-else><i class="material-icons">menu</i></a>
         </nav>
 
