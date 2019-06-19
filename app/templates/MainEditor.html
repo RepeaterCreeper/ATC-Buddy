@@ -14,10 +14,17 @@
                     
                 </div>
                 <div class="card-content">
-                    
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="commandsEditor" v-model="commandsEditorContent" class="materialize-textarea"></textarea>
+                        </div>
+                    </div>
                 </div>
                 <div class="card-footer">
-
+                    <button
+                        class="btn blue"
+                        v-bind:class="{ disabled: !isUpdateAvailable }"
+                        @click="updateAlias"><i class="material-icons">save</i></button>
                 </div>
             </div>
         </div>
@@ -47,10 +54,12 @@
                 </div>
             </div>
         </div>
-        <div id="artccConnection" class="col s12">ARTCC Connection</div>
+        <div id="artccConnection" class="col s12">
+            This page will be implemented at a later versions of this program.
+        </div>
         <div id="help" class="col s12">
             <div class="card">
-                
+                Purpose?
             </div>
         </div>
     </div>

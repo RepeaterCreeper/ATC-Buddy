@@ -6,28 +6,29 @@ const Alias = {
     props: ["id"],
     data() {
         return {
-            commandsListContents: []
+            aliasFileData: this.$route.query.aliasFileData,
+            commandsEditorContentStore: "",
+            commandsEditorContent: "",
+            commandsListContents: [],
+            isUpdateAvailable: false
         }
     },
     methods: {
-        updateAlias: function(data) {
-            
-        }
-    },
-    template: fs.readFileSync(path.join(__dirname, "../../templates/MainEditor.html"), "utf-8"),
-    created: function(){
-        let { filepath } = this.$route.query.aliasFileData;
-        
-        fs.readFile(filepath, "utf-8", (err, data) => {
-            if (err) throw err;
+        updateAlias: function(){
+            fs.writeFile(this.aliasFileData.filepath, this.commandsEditorContent, (err) => {
+                if (err) throw err;
 
+                this.isUpdateAvailable = false;
+            });
+        },
+        parseAlias: function(data) {
             let temp = [
                 {
                     name: "",
                     commands: []
                 }
             ];
-
+            
             data.split("\n").forEach(function (line, index) {
                 if (line.substring(0, 1) == ".") {
                     let command = line.substring(1).split(" ")[0],
@@ -51,16 +52,39 @@ const Alias = {
             });
 
             this.commandsListContents = temp;
+        }
+    },
+    template: fs.readFileSync(path.join(__dirname, "../../templates/MainEditor.html"), "utf-8"),
+    created: function(){
+        let { filepath } = this.$route.query.aliasFileData;
+        
+        fs.readFile(filepath, "utf-8", (err, data) => {
+            if (err) throw err;
+
+            this.commandsEditorContent = data;
+            this.commandsEditorContentStore = data;
         });
     },
     watch: {
-        commandsListContents: function(newVal, oldVal) {
-            
+        commandsEditorContent: function(newVal) {
+            this.isUpdateAvailable = this.commandsEditorContentStore == newVal ? false : true;
+
+            if (newVal.length > 20000) {
+                setTimeout(function(){
+                    alert("This alias file is exceptionally big there might be some latency.");
+                }, 1000)
+            }
+
+            this.parseAlias(newVal);
         }
     },
     mounted: function(){
         this.$nextTick(function(){
             M.AutoInit();
+
+            setTimeout(function(){
+                M.textareaAutoResize(document.querySelector("#commandsEditor"))
+            }, 100)
         });
     }
 }
