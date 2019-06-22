@@ -2,7 +2,7 @@
     "name": "atc-buddy",
     "version": "1.1.0",
     "description": "ATC Buddy is a tool to help you make less errors as a controller.",
-    "main": "main.js",
+    "main": "electron.js",
     "scripts": {
         "start": "nodemon --exec babel-node main.js"
     },

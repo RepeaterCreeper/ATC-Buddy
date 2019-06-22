@@ -1,17 +1,16 @@
-// Router Pages
-const AircraftTypes = require(path.join(__dirname, "../../components/AircraftTypes.js"));
-const Airlines = require(path.join(__dirname, "../../components/Airlines.js"));
-const Airports = require(path.join(__dirname, "../../components/Airports.js"));
-const EquipmentSuffixes = require(path.join(__dirname, "../../components/EquipmentSuffixes.js"));
-const ScratchpadCodes = require(path.join(__dirname, "../../components/ScratchpadCodes.js"));
-const TECRoutes = require(path.join(__dirname, "../../components/TECRoutes.js"));
+const AircraftTypes = require(path.join(__dirname, "../components/AircraftTypes.js"));
+const Airlines = require(path.join(__dirname, "../components/Airlines.js"));
+const Airports = require(path.join(__dirname, "../components/Airports.js"));
+const EquipmentSuffixes = require(path.join(__dirname, "../components/EquipmentSuffixes.js"));
+const ScratchpadCodes = require(path.join(__dirname, "../components/ScratchpadCodes.js"));
+const TECRoutes = require(path.join(__dirname, "../components/TECRoutes.js"));
 
 /**
  * Alias Editor
  */
-const AliasEditor = require(path.join(__dirname, "../../components/AliasEditor.js"));
-const EDITOR_home = require(path.join(__dirname, "../../components/alias-editor/Home.js"));
-const EDITOR_alias = require(path.join(__dirname, "../../components/alias-editor/Alias.js"));
+const AliasEditor = require(path.join(__dirname, "../components/AliasEditor.js"));
+const EDITOR_home = require(path.join(__dirname, "../components/alias-editor/Home.js"));
+const EDITOR_alias = require(path.join(__dirname, "../components/alias-editor/Alias.js"));
 
 // Router Definition
 const routes = [

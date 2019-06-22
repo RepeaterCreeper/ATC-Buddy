@@ -14,7 +14,7 @@ var Home = {
             aliasFiles: []
         };
     },
-    template: fs.readFileSync(path.join(__dirname, "../../templates/HomeEditor.html"), "utf-8"),
+    template: fs.readFileSync(path.join(__dirname, ".././HomeEditor.html"), "utf-8"),
     methods: {
         createAliasProfile: function () {
             this.profileModal.name = this.profileModal.name.length > 0 ? this.profileModal.name : "Untitled Profile";

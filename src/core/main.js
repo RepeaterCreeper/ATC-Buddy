@@ -11,10 +11,10 @@ Vue.use(VueRouter);
 /**
  * Setup
  */
-const INFO_TOOL_DATA = require("./assets/data/data");
+const INFO_TOOL_DATA = require("./data/data.json");
 const APP_DATA_PATH = app.getPath("userData");
 
-const router = require("./assets/js/router.js");
+const router = require("./core/router.js");
 
 /* const USER_DATA = Vuex.Store({
     state: {

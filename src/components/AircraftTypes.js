@@ -1,4 +1,4 @@
-const Utils = require(path.join(__dirname, "../assets/js/utils.js"));
+const Utils = require(path.join(__dirname, "../core/utils.js"));
 
 const AircraftTypes = {
     data: function() {
@@ -7,7 +7,7 @@ const AircraftTypes = {
             inputText: ""
         }
     },
-    template: fs.readFileSync(path.join(__dirname, "../templates/AircraftTypes.html"), "utf-8"),
+    template: fs.readFileSync(path.join(__dirname, "./AircraftTypes.html"), "utf-8"),
     watch: {
         inputText: function(val) {
             this.results = Utils.showResults(val, "aircraft_types");

@@ -4,7 +4,7 @@ const TECRoutes = {
             results: []
         }
     },
-    template: fs.readFileSync(path.join(__dirname, "../templates/TecRoutes.html"), "utf-8"),
+    template: fs.readFileSync(path.join(__dirname, "./TecRoutes.html"), "utf-8"),
     methods: {
         changeData: function(key, value) {
             this.key = value;

@@ -17,12 +17,13 @@ function init() {
         maxHeight: 600,
         show: false,
         webPreferences: {
+            // temporary, we'll transfer over to a much more secure code in later development.
             nodeIntegration: true
         }
     });
 
-    mainWin.loadFile("./app/index.html");
-    mainWin.setIcon(path.join(__dirname, "app/assets/icons/icon.png"));
+    mainWin.loadFile("./src/index.html");
+    mainWin.setIcon("./src/icons/icon.png");
     
     mainWin.on("ready-to-show", () => mainWin.show());
 }

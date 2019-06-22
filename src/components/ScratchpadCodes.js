@@ -1,4 +1,4 @@
-const Utils = require(path.join(__dirname, "../assets/js/utils.js"));
+const Utils = require(path.join(__dirname, "../core/utils.js"));
 const ScratchpadCodes = {
     data: function() {
         return {
@@ -11,7 +11,7 @@ const ScratchpadCodes = {
             this.results = Utils.showResults(val, "scratchpad_codes");
         }
     },
-    template: fs.readFileSync(path.join(__dirname, "../templates/ScratchpadCodes.html"), "utf-8")
+    template: fs.readFileSync(path.join(__dirname, "./ScratchpadCodes.html"), "utf-8")
 };
 
 module.exports = ScratchpadCodes;

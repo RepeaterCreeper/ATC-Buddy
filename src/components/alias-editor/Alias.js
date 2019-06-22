@@ -54,7 +54,7 @@ const Alias = {
             this.commandsListContents = temp;
         }
     },
-    template: fs.readFileSync(path.join(__dirname, "../../templates/MainEditor.html"), "utf-8"),
+    template: fs.readFileSync(path.join(__dirname, ".././MainEditor.html"), "utf-8"),
     created: function(){
         let { filepath } = this.$route.query.aliasFileData;
         

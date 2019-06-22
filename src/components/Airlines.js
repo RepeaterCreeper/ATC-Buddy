@@ -1,4 +1,4 @@
-const Utils = require(path.join(__dirname, "../assets/js/utils.js"));
+const Utils = require(path.join(__dirname, "../core/utils.js"));
 const Airlines = {
     data: function() {
         return {
@@ -11,7 +11,7 @@ const Airlines = {
             this.results = Utils.showResults(val, "airlines");
         }
     },
-    template: fs.readFileSync(path.join(__dirname, "../templates/Airlines.html"), "utf-8")
+    template: fs.readFileSync(path.join(__dirname, "./Airlines.html"), "utf-8")
 };
 
 module.exports = Airlines;
