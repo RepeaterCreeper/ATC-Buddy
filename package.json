@@ -9,10 +9,6 @@
     "author": "RepeaterCreeper",
     "license": "MIT",
     "devDependencies": {
-        "@babel/cli": "^7.4.4",
-        "@babel/core": "^7.4.5",
-        "@babel/node": "^7.4.5",
-        "@babel/preset-env": "^7.4.5",
         "electron": "^4.2.4",
         "hoek": "^6.1.3"
     },

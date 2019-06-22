@@ -16,6 +16,9 @@ function init() {
         maxWidth: 800,
         maxHeight: 600,
         show: false,
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
 
     mainWin.loadFile("./app/index.html");
