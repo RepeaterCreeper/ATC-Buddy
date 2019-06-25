@@ -20,7 +20,10 @@ x Add own information [datapack or online]
 x Loading screen will now be visible if page has not loaded completely.
 - Fullscreen view has been removed.
 
-##### Miscellaneous
+##### All other changes
 x Data Pack that interferes with Airports, Airlines, etc. data will have the badge "Data Pack" attached to it.
 x Alias Editor validation to prevent invalid inputs.
 x About button will now open a modal that shows general information about the software.
+x There is now a 'Favorite' button for search query results.
+x Toggle between ICAO mode and General Search when querying for Airports, AIrlines, etc.
+x Clipboard function for TEC Route is now functional.

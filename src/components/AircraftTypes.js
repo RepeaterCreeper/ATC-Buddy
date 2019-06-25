@@ -11,6 +11,9 @@ const AircraftTypes = {
     watch: {
         inputText: function(val) {
             this.results = Utils.showResults(val, "aircraft_types");
+        },
+        type: function(val) {
+            this.type = val;
         }
     }
 };

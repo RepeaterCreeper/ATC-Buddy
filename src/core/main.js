@@ -42,7 +42,8 @@ const vueApp = new Vue({
         aliasView: false,
         preferences: {
             darkTheme: false
-        }
+        },
+        loading: true
     },
     methods: {
         sideNavClose: () => {
@@ -76,6 +77,12 @@ const vueApp = new Vue({
                 this.aliasView = false;
             }
         }
+    },
+    mounted: function(){
+        Vue.set(this, "loading", false);
+        /* this.$nextTick(function(){
+            this.loading = false;
+        }); */
     }
 }).$mount("#app");
 

@@ -2,6 +2,14 @@
     --nav-active: #F8F;
 }
 
+html, body {
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+}
+
 header, main, section {
     padding-left: 300px;
 }

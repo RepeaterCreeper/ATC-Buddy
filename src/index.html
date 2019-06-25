@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./css/material-icons.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="./css/materialize.css" media="screen,project" />
+
     <link rel="stylesheet" href="./css/main.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,26 +15,107 @@
 
 <body>
     <div id="app">
+        <div class="preloader-wrapper active" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" v-if="loading">
+            <div class="spinner-layer spinner-red-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
         <nav class="blue darken-3">
             <ul id="slide-out" class="sidenav sidenav-fixed">
                 <li style="padding: 32px;" class="blue">
                     <h4 style="text-align: center; letter-spacing: 4px;">ATC Buddy</h4>
                 </li>
-                <li><a class="subheader" style="font-weight: 400;">MAIN</a></li>
-                <router-link tag="li" active-class="active" to="/aircraft-types" v-on:click.native="sideNavClose"><a class="waves-effect"><i class="material-icons">airplanemode_active</i> Aircraft Types</a></router-link>
-                <router-link tag="li" active-class="active" to="/airlines" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">send</i> Airlines</a></router-link>
-                <router-link tag="li" active-class="active" to="/airports" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">flight_land</i> Airports</a></router-link>
-                <router-link tag="li" active-class="active" to="/equipment-suffixes" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">gesture</i> Equipment Suffixes</a></router-link>
-                <router-link tag="li" active-class="active" to="/scratchpad-codes" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">text_fields</i> Scratchpad Codes</a></router-link>
-                <router-link tag="li" active-class="active" to="/tec-routes" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">near_me</i> TEC Routes</a></router-link>
+                <li>
+                    <a class="subheader" style="font-weight: 400;">MAIN</a>
+                </li>
+                <router-link
+                    tag="li"
+                    active-class="active"
+                    to="/aircraft-types"
+                    v-on:click.native="sideNavClose">
+                    <a class="waves-effect"><i class="material-icons">airplanemode_active</i> Aircraft Types</a>
+                </router-link>
+                <router-link
+                    tag="li"
+                    active-class="active"
+                    to="/airlines"
+                    v-on:click.native="sideNavClose">
+                    <a class="waves-effects">
+                        <i class="material-icons">send</i> Airlines
+                    </a>
+                </router-link>
+                <router-link
+                    tag="li"
+                    active-class="active"
+                    to="/airports"
+                    v-on:click.native="sideNavClose">
+                    <a class="waves-effects">
+                        <i class="material-icons">flight_land</i> Airports
+                    </a>
+                    </router-link>
+                <router-link
+                    tag="li"
+                    active-class="active"
+                    to="/equipment-suffixes"
+                    v-on:click.native="sideNavClose">
+                    <a class="waves-effects">
+                        <i class="material-icons">gesture</i> Equipment Suffixes
+                    </a>
+                </router-link>
+                <router-link
+                    tag="li"
+                    active-class="active"
+                    to="/scratchpad-codes"
+                    v-on:click.native="sideNavClose">
+                    <a class="waves-effects">
+                        <i class="material-icons">text_fields</i> Scratchpad Codes
+                    </a>
+                </router-link>
+                <router-link
+                    tag="li"
+                    active-class="active"
+                    to="/tec-routes"
+                    v-on:click.native="sideNavClose">
+                    <a class="waves-effects">
+                        <i class="material-icons">near_me</i> TEC Routes
+                    </a>
+                </router-link>
                 
-                <li><div class="divider"></div></li>
-                <li><a class="subheader">USER</a></li>
-                <li><div class="divider"></div></li>
-                <li><a class="subheader">OTHERS</a></li>
-                <router-link tag="li" active-class="active" to="/alias-editor" v-on:click.native="sideNavClose"><a class="waves-effects"><i class="material-icons">edit</i> Alias Editor</a></router-link>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li>
+                    <a class="subheader">USER</a>
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li>
+                    <a class="subheader">OTHERS</a>
+                </li>
+                <router-link
+                    tag="li"
+                    active-class="active"
+                    to="/alias-editor"
+                    v-on:click.native="sideNavClose">
+                    <a class="waves-effects">
+                        <i class="material-icons">edit</i> Alias Editor
+                    </a>
+                </router-link>
                 
-                <li><a class="waves-effect" href="#!"><i class="material-icons">info</i>About</a></li>
+                <li>
+                    <a class="waves-effect" href="#!">
+                        <i class="material-icons">info</i>About
+                    </a>
+                </li>
             </ul>
             
             <!-- Alias -->
