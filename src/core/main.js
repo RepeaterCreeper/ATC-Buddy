@@ -21,22 +21,34 @@ const EQUIPMENT_SUFFIXES = require("./data/equipment_suffixes.json");
 const SCRATCHPAD_CODES = require("./data/scratchpad_codes.json");
 const TEC_ROUTES = require("./data/tec_routes.json");
 
-const APP_DATA_PATH = app.getPath("userData");
-
 const MEMES = [
     "https://www.youtube.com/watch?v=lhckuhUxcgA", // Laugh
     "https://www.youtube.com/watch?v=lXMskKTw3Bc", // Never gonna Give you up
     "https://www.youtube.com/watch?v=X2WH8mHJnhM" // My heart will go on flute
-]
+];
+
+let USER_DATA = {
+    "preferences": {
+        "darkTheme": false
+    },
+    "aliasFiles": [],
+    "favorites": {
+        "aircraft_types": [],
+        "airlines": [],
+        "airports": [],
+        "scratchpad_codes": [],
+        "tec_routes": []
+    }
+};
+
+const APP_DATA_PATH = app.getPath("userData");
+
 const router = require("./core/router.js");
 
 const vueApp = new Vue({
     router,
     data: {
         aliasView: false,
-        preferences: {
-            darkTheme: false
-        },
         loading: true
     },
     methods: {
@@ -57,23 +69,6 @@ const vueApp = new Vue({
             router.go(where);
         }
     },
-    created: function() {
-
-        /**
-         * Load User Data file (if found)
-         */
-        if (fs.existsSync(`${APP_DATA_PATH}/user-data.json`)) {
-            fs.readFile(`${APP_DATA_PATH}/user-data.json`, (err, data) => {
-                if (err) throw err;
-    
-                this.USER_DATA = JSON.parse(data);
-            });
-        } else {
-            fs.writeFile(`${APP_DATA_PATH}/user-data.json`, JSON.stringify(USER_DATA), (err) => {
-                if (err) throw err;
-            });
-        }
-    },
     watch: {
         "$route" (to) {
             if (to.path.match("alias-editor/alias")) {
@@ -86,15 +81,10 @@ const vueApp = new Vue({
     mounted: function(){
         Vue.set(this, "loading", false);
         ipcRenderer.send("atc-buddy", "ready");
-
-        /* this.$nextTick(function(){
-            this.loading = false;
-        }); */
     }
 }).$mount("#app");
 
 M.AutoInit();
-
 /***
  * Alias Profile
  */

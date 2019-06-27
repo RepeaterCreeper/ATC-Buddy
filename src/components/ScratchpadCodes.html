@@ -9,9 +9,39 @@
             </div>
         </div>
         <div class="divider"></div>
-        <div class="col s12">
-            <p style="font-weight: light; margin-top: 8px;">RESULTS (Showing {{ results ? results.length : "0" }} result)</p>
+        <div class="col s12" v-if="favorites.length > 0">
+            <p style="font-weight: light; margin-top: 8px;">Favorites</p>
             <ul class="collection">
+                <li
+                    :key="index"
+                    v-for="(result, index) in favorites"
+                    class="collection-item"
+                >
+                    <div class="row" style="margin-bottom: 0;">
+                        <div class="col s1" style="height: 42px; display: table; border-right: 1px solid #ffc8c89e;">
+                            <b style="vertical-align: middle; display: table-cell">{{ result.icao }}</b>
+                        </div>
+                        <div class="col s3" style="height: 42px; display: table; ">
+                            <span style="vertical-align: middle; display: table-cell">{{ result.procedure }}</span>
+                        </div>
+                        <div class="col s3" style="height: 42px; display: table;">
+                            <span style="vertical-align: middle; display: table-cell">{{ result.transition }}</span>
+                        </div>
+                        <div class="col s5" style="height: 42px; display: table;">
+                            <span style="vertical-align: middle; display: table-cell">{{ result.scratch }}</span>
+                        </div>
+                        <div style="position: absolute; right: 8px;">
+                            <button class="btn red waves-effect" @click="removeFavorite(index)">
+                                <i class="material-icons">favorite</i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col s12">
+            <p style="font-weight: light; margin-top: 8px;">RESULTS (Showing {{ results.length }} result)</p>
+            <ul class="collection" v-if="results.length > 0">
                 <li
                     :key="index"
                     v-for="(result, index) in results"
@@ -27,8 +57,13 @@
                         <div class="col s3" style="height: 42px; display: table;">
                             <span style="vertical-align: middle; display: table-cell">{{ result.transition }}</span>
                         </div>
-                        <div class="col s5" style="height: 42px; display: table; text-align: right;">
+                        <div class="col s5" style="height: 42px; display: table;">
                             <span style="vertical-align: middle; display: table-cell">{{ result.scratch }}</span>
+                        </div>
+                        <div style="position: absolute; right: 8px;">
+                            <button class="btn waves-effect" @click="addFavorite(index)">
+                                <i class="material-icons">favorite_border</i>
+                            </button>
                         </div>
                     </div>
                 </li>

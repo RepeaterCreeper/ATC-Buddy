@@ -14,6 +14,8 @@ module.exports.showResults = (queryString, typeContainer) => {
             }
         }
     }
+
+    return [];
 }
 
 module.exports.copyData = (key) => {

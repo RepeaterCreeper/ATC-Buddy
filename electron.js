@@ -35,7 +35,7 @@ function init() {
     mainWin.loadFile("./src/index.html");
     mainWin.setIcon("./src/icons/icon.png");
 
-    ipcMain.on("atc-buddy", function(event, messages){
+    ipcMain.once("atc-buddy", function(event, messages){
         mainWin.show();
 
         loadingWindow.close();
@@ -58,4 +58,11 @@ app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
         app.quit()
     }
-})
+});
+
+/**
+ * IPC Event Channels
+ */
+/* ipcMain.on("atc-buddy", (event, messages) => {
+    console.log(event, messages);
+}); */

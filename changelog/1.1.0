@@ -22,6 +22,7 @@ x Add own information [datapack or offline]
 - When searching up results, it will not show the count of results.
 - Loading screen will now be visible if page has not loaded completely.
 - Fullscreen view has been removed.
+- Empty results will no longer display the collection element.
 
 ##### All other changes
 x Data Pack that interferes with Airports, Airlines, etc. data will have the badge "Data Pack" attached to it.

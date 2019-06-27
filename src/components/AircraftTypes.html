@@ -9,9 +9,40 @@
             </div>
         </div>
         <div class="divider"></div>
-        <div class="col s12">
-            <p style="font-weight: light; margin-top: 8px;">RESULTS (Showing {{ results ? results.length : "0" }} result)</p>
+        <div class="col s12" v-if="favorites.length > 0">
+            <p>Favorites</p>
             <ul class="collection">
+                <li
+                    class="collection-item"
+                    :key="index"
+                    v-for="(favorite, index) in favorites"
+                    >
+                    <div class="row" style="margin-bottom: 0; display: flex; overflow-y: hidden;">
+                        <div class="col s8" style="height: 42px;">
+                            <b>{{ favorite.manufacturer }}</b><br>
+                            <p style="margin: 0">{{ favorite.model }}</p>
+                        </div>
+                        <div class="col s2" style="display: table; height: 42px;">
+                            <span style="vertical-align: middle; display: table-cell;">{{ favorite.code }}</span>
+                        </div>
+                        <div class="col s1" style="display: table; height: 42px;">
+                            <span style="vertical-align: middle; display: table-cell;">{{ favorite.tec_class }}</span>
+                        </div>
+                        <div class="col s1" style="display: table; height: 42px;">
+                            <span style="vertical-align: middle; display: table-cell;">{{ favorite.weight_class }}</span>
+                        </div>
+                        <div style="position: absolute; right: 8px;">
+                            <button class="btn red waves-effect" @click="removeFavorite(index)">
+                                <i class="material-icons">favorite</i>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col s12">
+            <p style="font-weight: light; margin-top: 8px;">RESULTS (Showing {{ results.length }} result)</p>
+            <ul class="collection" v-if="results.length > 0">
                 <li
                     class="collection-item"
                     :key="index"
@@ -22,7 +53,7 @@
                             <b>{{ result.manufacturer }}</b><br>
                             <p style="margin: 0">{{ result.model }}</p>
                         </div>
-                        <div class="col s2" style="display: table; height: 42px;">
+                        <div class="col s1" style="display: table; height: 42px;">
                             <span style="vertical-align: middle; display: table-cell;">{{ result.code }}</span>
                         </div>
                         <div class="col s1" style="display: table; height: 42px;">
@@ -30,6 +61,11 @@
                         </div>
                         <div class="col s1" style="display: table; height: 42px;">
                             <span style="vertical-align: middle; display: table-cell;">{{ result.weight_class }}</span>
+                        </div>
+                        <div class="col s1" style="display: table; height: 42px;">
+                            <button class="btn waves-effect" @click="addFavorite(index)">
+                                <i class="material-icons">favorite_border</i>
+                            </button>
                         </div>
                     </div>
                 </li>
