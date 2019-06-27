@@ -3,6 +3,7 @@
 ### Major Changes
 - Everything has been ported to Vue.js
 - Alias Editor feature implemented.
+- Transition from one huge data file to separate data files for easier access.
 x o Settings is now available
     + Dark Theme [optional]
     + Load Data Pack (see Asana for more information)
