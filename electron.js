@@ -1,5 +1,4 @@
-const { app, BrowserWindow } = require("electron");
-const path = require("path");
+const { app, BrowserWindow, ipcMain } = require("electron");
 
 /**
  * Variable Declarations
@@ -22,10 +21,30 @@ function init() {
         }
     });
 
+    loadingWindow = new BrowserWindow({
+        resizable: false,
+        show: true,
+        webPreferences: {
+            nodeIntegration: true
+        },
+        frame: false
+    });
+
+    loadingWindow.loadFile("./src/loading.html");
+    
     mainWin.loadFile("./src/index.html");
     mainWin.setIcon("./src/icons/icon.png");
+
+    ipcMain.on("atc-buddy", function(event, messages){
+        mainWin.show();
+
+        loadingWindow.close();
+    });
+
+    /* mainWin.loadFile("./src/index.html");
+    mainWin.setIcon("./src/icons/icon.png");
     
-    mainWin.on("ready-to-show", () => mainWin.show());
+    mainWin.on("ready-to-show", () => mainWin.show()); */
 }
 
 /**

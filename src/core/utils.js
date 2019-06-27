@@ -1,3 +1,5 @@
+const { clipboard } = require("electron");
+
 module.exports.showResults = (queryString, type) => {
     queryString = queryString.toLowerCase();
 
@@ -15,5 +17,5 @@ module.exports.showResults = (queryString, type) => {
 }
 
 module.exports.copyData = (key) => {
-    
+    clipboard.write()
 }

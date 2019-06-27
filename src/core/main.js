@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { ipcRenderer } = require("electron");
 const { app } = require("electron").remote;
 const path = require("path");
 const rp = require("request-promise");
@@ -16,26 +17,6 @@ const APP_DATA_PATH = app.getPath("userData");
 
 const router = require("./core/router.js");
 
-/* const USER_DATA = Vuex.Store({
-    state: {
-        aliasFiles: [],
-        preferences: {
-            darkTheme: false
-        }
-    },
-    mutations: {
-        toggleDarkTheme(state) {
-            state.darkTheme = !state.darkTheme
-        },
-        addAliasProfile(state, aliasData) {
-            state.aliasFiles.push(aliasData)
-        },
-        removeAliasProfile(state, aliasId) {
-            state.aliasFiles.splice(aliasId, 1);
-        }
-    }
-}); */
-
 const vueApp = new Vue({
     router,
     data: {
@@ -49,11 +30,16 @@ const vueApp = new Vue({
         sideNavClose: () => {
             M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
         },
+        openAbout: function() {
+            document.querySelector("#aboutModal").M_Modal.open();
+            this.sideNavClose();
+        },
         navigate: function(where) {
             router.go(where);
         }
     },
     created: function() {
+
         /**
          * Load User Data file (if found)
          */
@@ -80,6 +66,8 @@ const vueApp = new Vue({
     },
     mounted: function(){
         Vue.set(this, "loading", false);
+        ipcRenderer.send("atc-buddy", "ready");
+
         /* this.$nextTick(function(){
             this.loading = false;
         }); */

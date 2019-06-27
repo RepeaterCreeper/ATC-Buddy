@@ -15,19 +15,6 @@
 
 <body>
     <div id="app">
-        <div class="preloader-wrapper active" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" v-if="loading">
-            <div class="spinner-layer spinner-red-only">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
-                </div>
-            </div>
-        </div>
         <nav class="blue darken-3">
             <ul id="slide-out" class="sidenav sidenav-fixed">
                 <li style="padding: 32px;" class="blue">
@@ -112,8 +99,8 @@
                 </router-link>
                 
                 <li>
-                    <a class="waves-effect" href="#!">
-                        <i class="material-icons">info</i>About
+                    <a class="waves-effect" href="#!" @click="openAbout">
+                        <i class="material-icons">info</i> About
                     </a>
                 </li>
             </ul>
@@ -125,6 +112,29 @@
         </nav>
 
         <router-view></router-view>
+
+        <!-- About Modal -->
+        <div id="aboutModal" class="modal">
+            <div class="modal-content" style="background-color: whitesmoke; font-weight: lighter;">
+                <h5>ATC Buddy</h5>
+                <small>v1.1.0 - LATEST</small>
+                <p>
+                    The ATC Buddy software was created to provide a simple and efficient way to serve the VATSIM community. Not
+                    only does it provide information about Aircrafts, but it also automates certain redundant processes that usually
+                    causes some errors. In addition it improves existing tools that exist within current radar clients such as VRC, vSTARS,
+                    and many others.
+                </p>
+                <p>
+                    This software is under the MIT license. The source code is available at <a class="https://github.com/RepeaterCreeper/ATC-Buddy">GitHub</a>.
+                    For more information visit the GitHub page as shown page.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <div class="right">
+                    <button class="btn light-green waves-effect tooltipped" data-tooltip="Donate" data-position="top"><i class="material-icons">attach_money</i></button>
+                    <button class="btn light-green waves-effect tooltipped" data-tooltip="Leave a Feedback" data-position="top"><i class="material-icons">favorite_border</i></button>
+                </div>
+        </div>
     </div>
 
     <!--JavaScript at end of body for optimized loading-->

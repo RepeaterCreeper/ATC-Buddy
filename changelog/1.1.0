@@ -3,27 +3,29 @@
 ### Major Changes
 - Everything has been ported to Vue.js
 - Alias Editor feature implemented.
-x Settings is now available
+x o Settings is now available
     + Dark Theme [optional]
     + Load Data Pack (see Asana for more information)
     + ARTCC Connection Credentials / Login
-x ARTCC Connection [VATSIM Login]
+x o ARTCC Connection [VATSIM Login]
     + Retrieve all relevant information regarding Controller information.
-x Add own information [datapack or online]
+x o Add own information [datapack or online]
     * If search result returns nothing, show a button that will allow you to add "entry". User will need to be logged in, otherwise show the button, but make it redirect to login page (or just show an info that says they need to login).
+x Add own information [datapack or offline]
+    * Same as online, except doesn't get information from online database.
 
 ### Minor Changes
 
 ##### User Interface
 - Scrollbar has been redesigned to fit the Theme
 - When searching up results, it will not show the count of results.
-x Loading screen will now be visible if page has not loaded completely.
+- Loading screen will now be visible if page has not loaded completely.
 - Fullscreen view has been removed.
 
 ##### All other changes
 x Data Pack that interferes with Airports, Airlines, etc. data will have the badge "Data Pack" attached to it.
 x Alias Editor validation to prevent invalid inputs.
-x About button will now open a modal that shows general information about the software.
-x There is now a 'Favorite' button for search query results.
-x Toggle between ICAO mode and General Search when querying for Airports, AIrlines, etc.
+- About button will now open a modal that shows general information about the software.
+- There is now a 'Favorite' button for search query results.
+x o Toggle between ICAO mode and General Search when querying for Airports, AIrlines, etc.
 x Clipboard function for TEC Route is now functional.
