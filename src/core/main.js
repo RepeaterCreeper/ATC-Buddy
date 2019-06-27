@@ -23,6 +23,11 @@ const TEC_ROUTES = require("./data/tec_routes.json");
 
 const APP_DATA_PATH = app.getPath("userData");
 
+const MEMES = [
+    "https://www.youtube.com/watch?v=lhckuhUxcgA", // Laugh
+    "https://www.youtube.com/watch?v=lXMskKTw3Bc", // Never gonna Give you up
+    "https://www.youtube.com/watch?v=X2WH8mHJnhM" // My heart will go on flute
+]
 const router = require("./core/router.js");
 
 const vueApp = new Vue({
@@ -35,6 +40,9 @@ const vueApp = new Vue({
         loading: true
     },
     methods: {
+        meme: function(){
+            shell.openExternal(MEMES[(Math.random() * 2).toFixed(0)]);
+        },
         openLink: function(url){
             shell.openExternal(url);
         },
