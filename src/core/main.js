@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { ipcRenderer } = require("electron");
+const { ipcRenderer, shell } = require("electron");
 const { app } = require("electron").remote;
 const path = require("path");
 const rp = require("request-promise");
@@ -35,6 +35,9 @@ const vueApp = new Vue({
         loading: true
     },
     methods: {
+        openLink: function(url){
+            shell.openExternal(url);
+        },
         sideNavClose: () => {
             M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
         },

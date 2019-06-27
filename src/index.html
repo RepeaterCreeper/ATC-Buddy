@@ -125,13 +125,13 @@
                     and many others.
                 </p>
                 <p>
-                    This software is under the GPL 3.0 license. The source code is available at <a class="https://github.com/RepeaterCreeper/ATC-Buddy">GitHub</a>.
+                    This software is under the GPL 3.0 license. The source code is available at <a @click="openLink('https://github.com/RepeaterCreeper/ATC-Buddy')">GitHub</a>.
                 </p>
             </div>
             <div class="modal-footer">
                 <div class="right">
-                    <button class="btn light-green waves-effect tooltipped" data-tooltip="Donate" data-position="top"><i class="material-icons">attach_money</i></button>
-                    <button class="btn light-green waves-effect tooltipped" data-tooltip="Leave a Feedback" data-position="top"><i class="material-icons">favorite_border</i></button>
+                    <a class="btn light-green waves-effect tooltipped" data-tooltip="Donate" data-position="top" @click="openLink('https://paypal.me/RepeaterCreeper')"><i class="material-icons">attach_money</i></a>
+                    <a class="btn light-blue waves-effect tooltipped" data-tooltip="Leave a Feedback" data-position="top" @click="openLink('https://RepeaterCreeper.dev/ATC-Buddy/feedback')"><i class="material-icons">favorite_border</i></a>
                 </div>
         </div>
     </div>
