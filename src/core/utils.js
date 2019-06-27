@@ -1,10 +1,10 @@
 const { clipboard } = require("electron");
 
-module.exports.showResults = (queryString, type) => {
+module.exports.showResults = (queryString, typeContainer) => {
     queryString = queryString.toLowerCase();
 
     if (queryString.length >= 1) {
-        let results = INFO_TOOL_DATA[type].filter((data) => {
+        let results = typeContainer.filter((data) => {
             if (Object.values(data).join(" ").toLowerCase().includes(queryString)) return data;
         });
 

@@ -20,12 +20,12 @@ const TECRoutes = {
             if (arrivalAirport.length > 3) arrivalAirport = arrivalAirport.slice(1);
         
             if (departureAirport.length > 0 && arrivalAirport.length > 0) {
-                let results = INFO_TOOL_DATA["tec_routes"].filter((data) => {
+                let results = TEC_ROUTES.filter((data) => {
                     if (data.departure.includes(departureAirport) && data.arrival.includes(arrivalAirport)) return data;
                 });
                 this.results = results;
             } else {
-                let results = INFO_TOOL_DATA["tec_routes"].filter((data) => {
+                let results = TEC_ROUTES.filter((data) => {
                     if (departureAirport.length > 0) {
                         if (data.departureAirport.includes(departureAirport)) return data;
                     } else {

@@ -1,4 +1,4 @@
-const Utils = require(path.join(__dirname, "../core/utils.js"));
+
 const Airports = {
     data: function() {
         return {
@@ -8,7 +8,7 @@ const Airports = {
     },
     watch: {
         inputText: function(val) {
-            this.results = Utils.showResults(val, "airports");
+            this.results = Utils.showResults(val, AIRPORTS);
         },
         type: function(val) {
             this.type = val;

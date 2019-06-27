@@ -1,4 +1,4 @@
-const Utils = require(path.join(__dirname, "../core/utils.js"));
+
 
 const AircraftTypes = {
     data: function() {
@@ -10,7 +10,7 @@ const AircraftTypes = {
     template: fs.readFileSync(path.join(__dirname, "./AircraftTypes.html"), "utf-8"),
     watch: {
         inputText: function(val) {
-            this.results = Utils.showResults(val, "aircraft_types");
+            this.results = Utils.showResults(val, AIRCRAFT_TYPES);
         },
         type: function(val) {
             this.type = val;

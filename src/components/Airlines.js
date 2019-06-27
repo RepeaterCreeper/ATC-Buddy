@@ -1,4 +1,4 @@
-const Utils = require(path.join(__dirname, "../core/utils.js"));
+
 const Airlines = {
     data: function() {
         return {
@@ -8,7 +8,7 @@ const Airlines = {
     },
     watch: {
         inputText: function(val) {
-            this.results = Utils.showResults(val, "airlines");
+            this.results = Utils.showResults(val, AIRLINES);
         }
     },
     template: fs.readFileSync(path.join(__dirname, "./Airlines.html"), "utf-8")

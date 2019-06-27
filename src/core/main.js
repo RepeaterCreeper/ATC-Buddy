@@ -7,12 +7,20 @@ const cheerio = require("cheerio");
 const Vue = require("vue/dist/vue.common");
 const VueRouter = require("vue-router");
 
+const Utils = require(path.join(__dirname, "/core/utils.js"));
+
 Vue.use(VueRouter);
 
 /**
  * Setup
  */
-const INFO_TOOL_DATA = require("./data/data.json");
+const AIRCRAFT_TYPES = require("./data/aircraft_types.json");
+const AIRLINES = require("./data/airlines.json");
+const AIRPORTS = require("./data/airports.json");
+const EQUIPMENT_SUFFIXES = require("./data/equipment_suffixes.json");
+const SCRATCHPAD_CODES = require("./data/scratchpad_codes.json");
+const TEC_ROUTES = require("./data/tec_routes.json");
+
 const APP_DATA_PATH = app.getPath("userData");
 
 const router = require("./core/router.js");

@@ -1,4 +1,4 @@
-const Utils = require(path.join(__dirname, "../core/utils.js"));
+
 const ScratchpadCodes = {
     data: function() {
         return {
@@ -8,7 +8,7 @@ const ScratchpadCodes = {
     },
     watch: {
         inputText: function(val) {
-            this.results = Utils.showResults(val, "scratchpad_codes");
+            this.results = Utils.showResults(val, SCRATCHPAD_CODES);
         }
     },
     template: fs.readFileSync(path.join(__dirname, "./ScratchpadCodes.html"), "utf-8")
