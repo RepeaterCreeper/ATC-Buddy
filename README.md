@@ -1,4 +1,4 @@
-#ATC Buddy
+# ATC Buddy
 ![](https://img.shields.io/github/license/RepeaterCreeper/ATC-Buddy.svg?style=for-the-badge) ![](https://img.shields.io/github/repo-size/RepeaterCreeper/ATC-Buddy.svg?style=for-the-badge)
 
 ATC Buddy is a desktop application that is planned to contain a suite of ATC tools for use on the VATSIM network.
@@ -9,8 +9,6 @@ The goal of this project is to increase the simplicity of controlling, lower the
 - Electron (Building desktop application)
 - HTML, CSS, and JS (Front-end)
 - Node.JS (Backend)
-
-------------
 
 ## Planned Features
 
