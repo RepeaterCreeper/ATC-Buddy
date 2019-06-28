@@ -1,9 +1,10 @@
-var _a = require("electron").remote, dialog = _a.dialog, app = _a.app;
-var fs = require("fs");
-//const M = require("materialize-css")
-var APP_DATA_PATH = app.getPath("userData");
-var noob = true;
+const { app, dialog } = require("electron").remote; 
+const fs = require("fs");
+
+const APP_DATA_PATH = app.getPath("userData");
+
 var BASE_USER_DATA = {};
+
 var Home = {
     data: function () {
         return {
@@ -16,6 +17,9 @@ var Home = {
     },
     template: fs.readFileSync(path.join(__dirname, ".././HomeEditor.html"), "utf-8"),
     methods: {
+        refreshList: function(){
+            this.$forceUpdate();
+        },
         createAliasProfile: function () {
             this.profileModal.name = this.profileModal.name.length > 0 ? this.profileModal.name : "Untitled Profile";
             this.aliasFiles.push({
@@ -33,15 +37,14 @@ var Home = {
             this.aliasFiles.splice(id, 1);
         },
         openAliasDialog: function () {
-            var _this = this;
             dialog.showOpenDialog({
                 title: "Alias File...",
                 filters: [
-                    { name: "Alias File", extensions: ["txt"] }
+                    { name: "Alias File", extensions: ["txt", "buddyalias"] }
                 ]
-            }, function (filePaths) {
+            }, (filePaths) => {
                 if (filePaths) {
-                    _this.profileModal.filepath = filePaths[0];
+                    this.profileModal.filepath = filePaths[0];
                 }
             });
         },
@@ -50,21 +53,22 @@ var Home = {
         }
     },
     created: function () {
-        var _this = this;
         /**
          * Read user-data file to retrieve alias profiles created.
          */
-        fs.readFile(APP_DATA_PATH + "/user-data.json", function (err, data) {
-            if (err)
-                throw err;
+        fs.readFile(APP_DATA_PATH + "/user-data.json", "utf-8", (err, data) => {
+            if (err) throw err;
+
             BASE_USER_DATA = JSON.parse(data);
-            _this.aliasFiles = BASE_USER_DATA.aliasFiles;
+
+            this.aliasFiles = BASE_USER_DATA.aliasFiles;
+
             /**
              * Check if the alias files still exist.
              */
-            _this.aliasFiles.forEach(function (alias, index) {
+            this.aliasFiles.forEach((alias, index) => {
                 if (!fs.existsSync(alias.filepath)) {
-                    _this.aliasFiles[index].exists = false;
+                    this.aliasFiles[index].exists = false;
                 }
             });
         });
@@ -76,10 +80,9 @@ var Home = {
     },
     watch: {
         aliasFiles: function (val) {
-            BASE_USER_DATA.aliasFiles = val; // Update BASE alias data;
+            BASE_USER_DATA.aliasFiles = val;
             fs.writeFile(APP_DATA_PATH + "/user-data.json", JSON.stringify(BASE_USER_DATA), function (err) {
-                if (err)
-                    throw err;
+                if (err) throw err;
             });
         }
     }

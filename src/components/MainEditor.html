@@ -8,15 +8,12 @@
                 <li class="tab col s3"><a href="#help">Help</a></li>
             </ul>
         </div>
-        <div id="editor" class="col s12">
+        <div id="editor" class="col s12" style="overflow: none;">
             <div class="card">
-                <div class="card-header">
-                    
-                </div>
                 <div class="card-content">
                     <div class="row">
                         <div class="input-field col s12">
-                            <textarea id="commandsEditor" v-model="commandsEditorContent" class="materialize-textarea"></textarea>
+                            <textarea id="commandsEditor" style="font-family: monospace; height: -webkit-fill-available;" v-model="commandsEditorContent"></textarea>
                         </div>
                     </div>
                 </div>
@@ -28,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div id="commandsList" class="col s12">
+        <div id="commandsList" class="col s12" style="overflow-x: hidden; overflow-y: visible;">
             <div
                 class="card hoverable"
                 :key="index"
@@ -39,17 +36,19 @@
                 </div>
                 <div class="card-content" style="padding: 0;">
                     <ul class="collection" style="margin: 0;">
-                        <li
-                            class="collection-item row"
-                            v-for="(command, index) in header['commands']"
-                        >
-                            <div class="col s3">
-                                <kbd style="width: fit-content; float: right;">{{ command[0] }}</kbd>
-                            </div>
-                            <div class="col s9">
-                                <span>{{ command[1] }}</span>
-                            </div>
-                        </li>
+                        <virtual-list :size="50" :remain="10">
+                            <li
+                                class="collection-item row"
+                                v-for="(command, index) in header['commands']"
+                            >
+                                <div class="col s3">
+                                    <kbd style="width: fit-content; float: right;">{{ command[0] }}</kbd>
+                                </div>
+                                <div class="col s9">
+                                    <span>{{ command[1] }}</span>
+                                </div>
+                            </li>
+                        </virtual-list>
                     </ul>
                 </div>
             </div>

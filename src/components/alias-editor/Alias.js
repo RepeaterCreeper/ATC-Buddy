@@ -1,4 +1,5 @@
 const fs = require("fs");
+const virtualList = require("vue-virtual-scroll-list");
 
 const APP_DATA_PATH = app.getPath("userData");
 
@@ -10,7 +11,8 @@ const Alias = {
             commandsEditorContentStore: "",
             commandsEditorContent: "",
             commandsListContents: [],
-            isUpdateAvailable: false
+            isUpdateAvailable: false,
+            automaticSave: true
         }
     },
     methods: {
@@ -59,7 +61,12 @@ const Alias = {
         let { filepath } = this.$route.query.aliasFileData;
         
         fs.readFile(filepath, "utf-8", (err, data) => {
-            if (err) throw err;
+            if (err) {
+                // Navigate back and display error;
+                router.navigate(-1);
+
+                throw err;
+            };
 
             this.commandsEditorContent = data;
             this.commandsEditorContentStore = data;
@@ -69,23 +76,16 @@ const Alias = {
         commandsEditorContent: function(newVal) {
             this.isUpdateAvailable = this.commandsEditorContentStore == newVal ? false : true;
 
-            if (newVal.length > 20000) {
-                setTimeout(function(){
-                    alert("This alias file is exceptionally big there might be some latency.");
-                }, 1000)
-            }
-
             this.parseAlias(newVal);
         }
     },
     mounted: function(){
         this.$nextTick(function(){
             M.AutoInit();
-
-            setTimeout(function(){
-                M.textareaAutoResize(document.querySelector("#commandsEditor"))
-            }, 100)
         });
+    },
+    components: {
+        'virtual-list': virtualList
     }
 }
 

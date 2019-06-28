@@ -1,5 +1,6 @@
 <section>
     <div class="row" style="margin: 8px;">
+        <button class="btn waves-effect light-green col s12" @click="refreshList">Refresh List</button>
         <button data-target="newProfileModal" class="btn waves-effect blue modal-trigger col s12">New Profile</button>
     </div>
     <div class="row">
@@ -22,8 +23,8 @@
                             <span v-if="item.exists">check_circle_outline</span>
                             <span v-else>error_outline</span>
                         </i>
-                        <i class="no-select material-icons small aliasMenu_button" data-position="top" data-tooltip="Edit" @click="editAlias(index)">edit</i>
-                        <i class="no-select material-icons small aliasMenu_button" data-position="top" data-tooltip="Delete" @click="deleteAliasProfile(index)">close</i>
+                        <i class="no-select material-icons small aliasMenu_button" @click="editAlias(index)" v-if="item.exists">edit</i>
+                        <i class="no-select material-icons small aliasMenu_button" @click="deleteAliasProfile(index)" v-if="item.exists">close</i>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,7 @@
+# Changelog (v1.1.1)
+- Switched from basic textarea to Monaco for future development.
+
+
 # Changelog (V1.1.0)
 
 ### Major Changes
@@ -26,8 +30,11 @@ x Add own information [datapack or offline]
 
 ##### All other changes
 x Data Pack that interferes with Airports, Airlines, etc. data will have the badge "Data Pack" attached to it.
-x Alias Editor validation to prevent invalid inputs.
+- Alias Editor validation to prevent invalid inputs.
 - About button will now open a modal that shows general information about the software.
 - There is now a 'Favorite' button for search query results.
 x o Toggle between ICAO mode and General Search when querying for Airports, AIrlines, etc.
 x Clipboard function for TEC Route is now functional.
+
+### Improvements
+- Alias Editor is now faster when editing large files. This includes commands list and the editor itself.
