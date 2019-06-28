@@ -1,6 +1,16 @@
-# Changelog (v1.2)
-- Data Packs introduced. See Wiki for more information.
+# Changelog (v1.2.1)
+x Data Pack that interferes with Airports, Airlines, etc. data will have the badge "Data Pack" attached to it.
+x o Toggle between ICAO mode and General Search when querying for Airports, AIrlines, etc.
+x Clipboard function for TEC Route is now functional.
 
+# Changelog (v1.2)
+x Data Packs introduced. See Wiki for more information.
+x Settings is now available
+    + Dark Theme [optional]
+    + Load Data Pack (see Asana for more information)
+    + ARTCC Connection Credentials / Login
+x ARTCC Connection [VATSIM Login]
+    + Retrieve all relevant information regarding Controller information.
 
 # Changelog (v1.1.1)
 - Swiched from basic textarea to Monaco for future development.
@@ -13,16 +23,7 @@
 - Everything has been ported to Vue.js
 - Alias Editor feature implemented.
 - Transition from one huge data file to separate data files for easier access.
-x o Settings is now available
-    + Dark Theme [optional]
-    + Load Data Pack (see Asana for more information)
-    + ARTCC Connection Credentials / Login
-x o ARTCC Connection [VATSIM Login]
-    + Retrieve all relevant information regarding Controller information.
-x o Add own information [datapack or online]
-    * If search result returns nothing, show a button that will allow you to add "entry". User will need to be logged in, otherwise show the button, but make it redirect to login page (or just show an info that says they need to login).
-x Add own information [datapack or offline]
-    * Same as online, except doesn't get information from online database.
+- Adding data is now possible for Aircraft Types, Airlines, Airports, and Scratchpad Codes.
 
 ### Minor Changes
 
@@ -34,12 +35,8 @@ x Add own information [datapack or offline]
 - Empty results will no longer display the collection element.
 
 ##### All other changes
-x Data Pack that interferes with Airports, Airlines, etc. data will have the badge "Data Pack" attached to it.
-- Alias Editor validation to prevent invalid inputs.
 - About button will now open a modal that shows general information about the software.
 - There is now a 'Favorite' button for search query results.
-x o Toggle between ICAO mode and General Search when querying for Airports, AIrlines, etc.
-x Clipboard function for TEC Route is now functional.
-
-### Improvements
+- Alias Editor will no longer accept an empty filepath.
+- Alias Editor text input will no longer collide with placeholder. Since placeholder has been removed.
 - Alias Editor is now faster when editing large files. This includes commands list and the editor itself.
