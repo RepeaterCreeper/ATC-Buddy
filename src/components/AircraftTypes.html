@@ -70,6 +70,66 @@
                     </div>
                 </li>
             </ul>
+            <small style="display: flex; justify-content: center;">
+                <span>Not seeing the data you want? <a href="#" @click="openModal">Add</a> your own data.</span>
+            </small>
+        </div>
+    </div>
+
+    <div id="newEntry" class="modal">
+        <div class="modal-header indigo darken-4 white-text" style="padding: 8px;">
+            <h5 style="font-weight: lighter; margin: 0;">New Entry</h5>
+            <small>Aircraft type</small>
+        </div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="newEntry__manufacturer" v-model="entryPreview.manufacturer" type="text" class="validate">
+                    <label for="newEntry__manufacturer">Manufacturer</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="newEntry__model" v-model="entryPreview.model" type="text" class="validate">
+                    <label for="newEntry__model">Model</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="newEntry__code" v-model="entryPreview.code" type="text" class="validate">
+                    <label for="newEntry__code">Code</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="newEntry__tecClass" v-model="entryPreview.tec_class" type="text" class="validate">
+                    <label for="newEntry__tecClass">TEC Class</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="newEntry__weightClass" v-model="entryPreview.weight_class" type="text" class="validate">
+                    <label for="newEntry__weightClass">Weight Class</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s4 right">
+                    <button class="btn blue col s12" @click="addEntry">Add Entry</button>
+                </div>
+            </div>
+
+            <p>Preview</p>
+            <ul class="collection">
+                <li>
+                    <div class="row" style="margin-bottom: 0; display: flex; overflow-y: hidden;">
+                        <div class="col s8" style="height: 42px;">
+                            <b v-bind:value="entryPreview.manufacturer">{{ entryPreview.manufacturer }}</b><br>
+                            <p style="margin: 0">{{ entryPreview.model }}</p>
+                        </div>
+                        <div class="col s1" style="display: table; height: 42px;">
+                            <span style="vertical-align: middle; display: table-cell;">{{ entryPreview.code }}</span>
+                        </div>
+                        <div class="col s1" style="display: table; height: 42px;">
+                            <span style="vertical-align: middle; display: table-cell;">{{ entryPreview.tec_class }}</span>
+                        </div>
+                        <div class="col s1" style="display: table; height: 42px;">
+                            <span style="vertical-align: middle; display: table-cell;">{{ entryPreview.weight_class }}</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>

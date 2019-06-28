@@ -21,6 +21,8 @@ const EQUIPMENT_SUFFIXES = require("./data/equipment_suffixes.json");
 const SCRATCHPAD_CODES = require("./data/scratchpad_codes.json");
 const TEC_ROUTES = require("./data/tec_routes.json");
 
+const USER_CUSTOM_DATA = require("./data/custom/user-manual-data.json");
+
 const MEMES = [
     "https://www.youtube.com/watch?v=lhckuhUxcgA", // Laugh
     "https://www.youtube.com/watch?v=lXMskKTw3Bc", // Never gonna Give you up
@@ -120,4 +122,10 @@ function voiceServerListener(frequency) {
             if (data != "") return data;
         });*/
     });
+}
+
+function saveCustomData(){
+    fs.writeFile(path.join(__dirname, "data/custom/user-manual-data.json"), JSON.stringify(USER_CUSTOM_DATA), (err) => {
+        if (err) throw err;
+    })
 }

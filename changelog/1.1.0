@@ -1,6 +1,11 @@
-# Changelog (v1.1.1)
-- Switched from basic textarea to Monaco for future development.
+# Changelog (v1.2)
+- Data Packs introduced. See Wiki for more information.
 
+
+# Changelog (v1.1.1)
+- Swiched from basic textarea to Monaco for future development.
+- Improved UI for adding data
+- Editing GID data is now possible.
 
 # Changelog (V1.1.0)
 

@@ -68,6 +68,61 @@
                     </div>
                 </li>
             </ul>
+            <small style="display: flex; justify-content: center;">
+                <span>Not seeing the data you want? <a href="#" @click="openModal">Add</a> your own data.</span>
+            </small>
+        </div>
+
+        <div id="newEntry" class="modal">
+            <div class="modal-header indigo darken-4 white-text" style="padding: 8px;">
+                <h5 style="font-weight: lighter; margin: 0;">New Entry</h5>
+                <small>Scratchpad Codes</small>
+            </div>
+            <div class="modal-content">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="newEntry__icao" v-model="entryPreview.icao" type="text" class="validate">
+                        <label for="newEntry__icao">ICAO</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="newEntry__procedure" v-model="entryPreview.procedure" type="text" class="validate">
+                        <label for="newEntry__procedure">Procedure</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="newEntry__transition" v-model="entryPreview.transition" type="text" class="validate">
+                        <label for="newEntry__transition">Transition</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="newEntry__scratch" v-model="entryPreview.scratch" type="text" class="validate">
+                        <label for="newEntry__scratch">Scratch</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s4 right">
+                        <button class="btn blue col s12" @click="addEntry">Add Entry</button>
+                    </div>
+                </div>
+
+                <p>Preview</p>
+                <ul class="collection">
+                    <li>
+                        <div class="row" style="margin-bottom: 0;">
+                            <div class="col s1" style="height: 42px; display: table; border-right: 1px solid #ffc8c89e;">
+                                <b style="vertical-align: middle; display: table-cell">{{ entryPreview.icao }}</b>
+                            </div>
+                            <div class="col s3" style="height: 42px; display: table; ">
+                                <span style="vertical-align: middle; display: table-cell">{{ entryPreview.procedure }}</span>
+                            </div>
+                            <div class="col s3" style="height: 42px; display: table;">
+                                <span style="vertical-align: middle; display: table-cell">{{ entryPreview.transition }}</span>
+                            </div>
+                            <div class="col s5" style="height: 42px; display: table;">
+                                <span style="vertical-align: middle; display: table-cell">{{ entryPreview.scratch }}</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

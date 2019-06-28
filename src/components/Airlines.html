@@ -62,6 +62,54 @@
                     </div>
                 </li>
             </ul>
+            <small style="display: flex; justify-content: center;">
+                <span>Not seeing the data you want? <a href="#" @click="openModal">Add</a> your own data.</span>
+            </small>
+        </div>
+    </div>
+
+    <div id="newAirlines" class="modal">
+        <div class="modal-header indigo darken-4 white-text" style="padding: 8px;">
+            <h5 style="font-weight: lighter; margin: 0;">New Entry</h5>
+            <small>Airlines</small>
+        </div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="newEntry__name" v-model="entryPreview.name" type="text" class="validate">
+                    <label for="newEntry__name">Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="newEntry__code" v-model="entryPreview.code" type="text" class="validate">
+                    <label for="newEntry__code">Code</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="newEntry__callsign" v-model="entryPreview.callsign" type="text" class="validate">
+                    <label for="newEntry__callsign">Callsign</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s4 right">
+                    <button class="btn blue col s12" @click="addEntry">Add Entry</button>
+                </div>
+            </div>
+
+            <p>Preview</p>
+            <ul class="collection">
+                <li>
+                    <div class="row" style="margin-bottom: 0;">
+                        <div class="col s1" style="display: table; height: 42px;">
+                            <span style="vertical-align: middle; display: table-cell;" v-bind:value="entryPreview.name">{{ entryPreview.name }}</span>
+                        </div>
+                        <div class="col s3" style="display: table; height: 42px;">
+                            <span style="vertical-align: middle; display: table-cell;" v-bind:value="entryPreview.code">{{ entryPreview.code }}</span>
+                        </div>
+                        <div class="col s7" style="height: 42px; display: table;">
+                            <b style="vertical-align: middle; display: table-cell;" v-bind:value="entryPreview.callsign">{{ entryPreview.callsign }}</b>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>

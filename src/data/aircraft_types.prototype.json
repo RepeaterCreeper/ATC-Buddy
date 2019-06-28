@@ -1,0 +1,7294 @@
+{
+    "key": "aircraft_types",
+    "entries": [{
+        "manufacturer": "DOUGLAS",
+        "model": "AD-1 / A-1 / EA-1 SKYRAIDER",
+        "code": "A1",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "FAIRCHILD",
+        "model": "A-10 THUNDERBOLT 2",
+        "code": "A10",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AGUSTA",
+        "model": "A-109",
+        "code": "A109",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AGUSTA",
+        "model": "A-119 KOALA",
+        "code": "A119",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-124 RUSLAN",
+        "code": "A124",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AGUSTA",
+        "model": "A-129 MANGUSTA",
+        "code": "A129",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AGUSTA",
+        "model": "AB139 / AW139",
+        "code": "A139",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-140",
+        "code": "A140",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-148",
+        "code": "A148",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A319 NEO",
+        "code": "A19N",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "A-20 HAVOC",
+        "code": "A20",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A320 NEO",
+        "code": "A20N",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A321 NEO",
+        "code": "A21N",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-225 MRIYA",
+        "code": "A225",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AERO",
+        "model": "AE-270 IBIS",
+        "code": "A270",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "KAZAN",
+        "model": "ANSAT 2RT",
+        "code": "A2RT",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "A-3 SKYWARRIOR",
+        "code": "A3",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A300B4-600 /C4-600 / F4-600",
+        "code": "A306",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A300B2 / B4 / C4 / F4",
+        "code": "A30B",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A310 / CC-150 POLARIS",
+        "code": "A310",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A318",
+        "code": "A318",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A319",
+        "code": "A319",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A320",
+        "code": "A320",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A321",
+        "code": "A321",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A330-200",
+        "code": "A332",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A330-300",
+        "code": "A333",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A340-200",
+        "code": "A342",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A340-300",
+        "code": "A343",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A340-500",
+        "code": "A345",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A340-600",
+        "code": "A346",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A350-800",
+        "code": "A358",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A350-900",
+        "code": "A359",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "318 / A-37 DRAGONFLY",
+        "code": "A37",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A380-800",
+        "code": "A388",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AIRBUS",
+        "model": "A300-600ST BELUGA",
+        "code": "A3ST",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "A-4 SKYHAWK",
+        "code": "A4",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BERIEV",
+        "model": "A-50",
+        "code": "A50",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "ADAM",
+        "model": "A-500",
+        "code": "A500",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AVRO",
+        "model": "504",
+        "code": "A504",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "A-6 INTRUDER",
+        "code": "A6",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AYRES",
+        "model": "S-2R-T660 TURBO THRUSH",
+        "code": "A660",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CHANCE-VOUGHT",
+        "model": "A-7 CORSAIR 2",
+        "code": "A7",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "ADAM",
+        "model": "A-700 ADAMJET",
+        "code": "A700",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-74-300",
+        "code": "A743",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AVRO",
+        "model": "748",
+        "code": "A748",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AERO COMMANDER",
+        "model": "A-9 AG COMMANDER",
+        "code": "A9",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AMERICAN",
+        "model": "AA-1",
+        "code": "AA1",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AMERICAN",
+        "model": "AA-5",
+        "code": "AA5",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERO BOERO",
+        "model": "AB-115",
+        "code": "AB11",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERO BOERO",
+        "model": "AB-150",
+        "code": "AB15",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERO BOERO",
+        "model": "AB-180",
+        "code": "AB18",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERO BOERO",
+        "model": "AB-95",
+        "code": "AB95",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORTH AMERICAN ROCKWELL",
+        "model": "112 COMMANDER 112",
+        "code": "AC11",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERO COMMANDER",
+        "model": "500 COMMANDER 500",
+        "code": "AC50",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERO COMMANDER",
+        "model": "560 COMMANDER 560",
+        "code": "AC56",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERO COMMANDER",
+        "model": "680F COMMANDER",
+        "code": "AC68",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "NORTH AMERICAN ROCKWELL",
+        "model": "680FL COURSER COMMANDER",
+        "code": "AC6L",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERO COMMANDER",
+        "model": "720 ALTI CRUISER",
+        "code": "AC72",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERO COMMANDER",
+        "model": "680T / 680V TURBO COMMANDER",
+        "code": "AC80",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "ROCKWELL",
+        "model": "690 JETPROP COMMANDER 840",
+        "code": "AC90",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AMERICAN",
+        "model": "695 JETPROP COMMANDER 1000",
+        "code": "AC95",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "J-5 AUTOCAR",
+        "code": "ACAR",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "VICTA",
+        "model": "AIRCRUISER",
+        "code": "ACSR",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "J-5 ADVENTURER",
+        "code": "ADVE",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERO",
+        "model": "AE-45 / AE-145",
+        "code": "AE45",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TED SMITH",
+        "model": "AEROSTAR",
+        "code": "AEST",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "J-5 AIGLET TRAINER",
+        "code": "AIGT",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BEAGLE",
+        "model": "A-109 AIREDALE",
+        "code": "AIRD",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DORNIER",
+        "model": "ALPHA JET",
+        "code": "AJET",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "HAL",
+        "model": "DHRUV",
+        "code": "ALH",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BREGUET",
+        "model": "1050 ALIZ",
+        "code": "ALIZ",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SUD",
+        "model": "SA-318 / SA-3180 / SE-313 / SE-3130",
+        "code": "ALO2",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SUD",
+        "model": "SA-316 / SA-319 / SE-3160 ALOUETTE 3",
+        "code": "ALO3",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "J-5 ALPINE",
+        "code": "ALPI",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERMACCHI",
+        "model": "AM-3",
+        "code": "AM3",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AMX",
+        "model": "A-1",
+        "code": "AMX",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-12",
+        "code": "AN12",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-2",
+        "code": "AN2",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-22 ANTHEUS",
+        "code": "AN22",
+        "tec_class": "M",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-24",
+        "code": "AN24",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-26",
+        "code": "AN26",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-28",
+        "code": "AN28",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-3",
+        "code": "AN3",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-30",
+        "code": "AN30",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-32",
+        "code": "AN32",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-38",
+        "code": "AN38",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-70",
+        "code": "AN70",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-72",
+        "code": "AN72",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ANTONOV",
+        "model": "AN-8",
+        "code": "AN8",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AVRO",
+        "model": "652 ANSON",
+        "code": "ANSN",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "KAZAN",
+        "model": "ANSAT",
+        "code": "ANST",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AERONCA",
+        "model": "11 CHIEF",
+        "code": "AR11",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERONCA",
+        "model": "15 SEDAN",
+        "code": "AR15",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "ARADO",
+        "model": "AR-79",
+        "code": "AR79",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GENERAL AVIA",
+        "model": "F-220 AIRONE",
+        "code": "ARON",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "IAI",
+        "model": "ARAVA",
+        "code": "ARVA",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FFA",
+        "model": "AS-202 BRAVO",
+        "code": "AS02",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FFA",
+        "model": "AS-202-32TP TURBINE BRAVO",
+        "code": "AS2T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ATLAS",
+        "model": "SA-330 ORYX",
+        "code": "AS32",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "AS-332 MK2 SUPER PUMA",
+        "code": "AS3B",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "AS-350 ASTAR",
+        "code": "AS50",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "AS-355 ECUREUIL 2",
+        "code": "AS55",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "AS-365 DAUPHIN 2 / AS-366 DOLPHIN",
+        "code": "AS65",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "IAI",
+        "model": "1125 ASTRA",
+        "code": "ASTR",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AIDC",
+        "model": "AT-3 TZU-CHUNG",
+        "code": "AT3",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AIR TRACTOR",
+        "model": "AT-300 / AT-301 / AT-401",
+        "code": "AT3P",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AIR TRACTOR",
+        "model": "AT-302 / AT-400 / AT-402",
+        "code": "AT3T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ATR",
+        "model": "ATR 42-200 / 42-300",
+        "code": "AT43",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "ATR",
+        "model": "ATR-42-400",
+        "code": "AT44",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "ATR",
+        "model": "ATR-42-500",
+        "code": "AT45",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AIR TRACTOR",
+        "model": "AT-501",
+        "code": "AT5P",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AIR TRACTOR",
+        "model": "AT-502 / AT-503",
+        "code": "AT5T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AIR TRACTOR",
+        "model": "AT-602",
+        "code": "AT6T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ATR",
+        "model": "ATR 72",
+        "code": "AT72",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AIR TRACTOR",
+        "model": "AT-802",
+        "code": "AT8T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DASSAULT-BREGUET",
+        "model": "1150 ATLANTIC / ATLANTIQUE 2",
+        "code": "ATLA",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BAE",
+        "model": "ATP",
+        "code": "ATP",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BEAGLE",
+        "model": "E-3 AUSTER AOP11",
+        "code": "AU11",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "J-2 ARROW",
+        "code": "AUJ2",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "J-4 ARCHER",
+        "code": "AUJ4",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "AUSTER 3",
+        "code": "AUS3",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "AUSTER 4",
+        "code": "AUS4",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "AUSTER 5 ALPHA",
+        "code": "AUS5",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "AUSTER AOP6",
+        "code": "AUS6",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "AUSTER T7",
+        "code": "AUS7",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "AUSTER AOP9",
+        "code": "AUS9",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AVRO",
+        "model": "594 / 616 AVIAN",
+        "code": "AVIN",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AGUSTA",
+        "model": "AB-206 JETRANGER / LONGRANGER",
+        "code": "B06",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "TRIDAIR",
+        "model": "206L-ST GEMINI ST",
+        "code": "B06T",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "ROCKWELL",
+        "model": "B-1 LANCER",
+        "code": "B1",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BERIEV",
+        "model": "BE-103 BEKAS",
+        "code": "B103",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MBB",
+        "model": "BO-105",
+        "code": "B105",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BELLANCA",
+        "model": "14 CRUISAIR / CRUISEMASTER / JUNIOR",
+        "code": "B14A",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BELLANCA",
+        "model": "14 BELLANCA 260A / B / C",
+        "code": "B14C",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "B-17 FLYING FORTRESS",
+        "code": "B17",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "18 (TURBINE)",
+        "code": "B18T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "1900",
+        "code": "B190",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "NORTHROP",
+        "model": "B-2 SPIRIT",
+        "code": "B2",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOLKOW",
+        "model": "BO-209 MONSUN",
+        "code": "B209",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "212 TWIN TWO-TWELVE",
+        "code": "B212",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "214C BIGLIFTER",
+        "code": "B214",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "222",
+        "code": "B222",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "B-23 / UC-67 DRAGON",
+        "code": "B23",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "230",
+        "code": "B230",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "CONSOLIDATED",
+        "model": "B-24 LIBERATOR",
+        "code": "B24",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "NORTH AMERICAN",
+        "model": "B-25 MITCHELL",
+        "code": "B25",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "A-26 INVADER",
+        "code": "B26",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MARTIN",
+        "model": "B-26 MARAUDER",
+        "code": "B26M",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "B-29 SUPERFORTRESS",
+        "code": "B29",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "300 (B300) SUPER KING AIR 350",
+        "code": "B350",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "36 BONANZA (TURBINE)",
+        "code": "B36T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737 MAX 7 / MAX 7 BBJ",
+        "code": "B37M",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737 MAX 8 / MAX 8 BBJ",
+        "code": "B38M",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737 MAX 9 / MAX 9 BBJ",
+        "code": "B39M",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "407",
+        "code": "B407",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "412",
+        "code": "B412",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "427",
+        "code": "B427",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "429 GLOBALRANGER",
+        "code": "B429",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "430",
+        "code": "B430",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BAE",
+        "model": "BAE-146-100",
+        "code": "B461",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BAE",
+        "model": "BAE-146-200",
+        "code": "B462",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BAE",
+        "model": "BAE-146-300",
+        "code": "B463",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "47",
+        "code": "B47G",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "47J RANGER",
+        "code": "B47J",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "B-52 STRATOFORTRESS",
+        "code": "B52",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BELL-AGUSTA",
+        "model": "BA-609",
+        "code": "B609",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "707-100",
+        "code": "B701",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "707-300",
+        "code": "B703",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "717-200",
+        "code": "B712",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "720",
+        "code": "B720",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "727-100",
+        "code": "B721",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "727-200",
+        "code": "B722",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737-100",
+        "code": "B731",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737-200",
+        "code": "B732",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737-300",
+        "code": "B733",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737-400",
+        "code": "B734",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737-500",
+        "code": "B735",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737-600",
+        "code": "B736",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737-700",
+        "code": "B737",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737-800",
+        "code": "B738",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "737-900",
+        "code": "B739",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "747-100",
+        "code": "B741",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "747-200",
+        "code": "B742",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "747-300",
+        "code": "B743",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "747-400",
+        "code": "B744",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "747-800",
+        "code": "B748",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "747SR",
+        "code": "B74R",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "747SP",
+        "code": "B74S",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "757-200",
+        "code": "B752",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "757-300",
+        "code": "B753",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "767-200",
+        "code": "B762",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "767-300",
+        "code": "B763",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "767-400",
+        "code": "B764",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "777-200",
+        "code": "B772",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "777-300",
+        "code": "B773",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "777-200LR / 777-F",
+        "code": "B77L",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "777-300ER",
+        "code": "B77W",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "787-8 DREAMLINER",
+        "code": "B788",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "787-9 DREAMLINER",
+        "code": "B789",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BAC",
+        "model": "111 ONE-ELEVEN",
+        "code": "BA11",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CANADIAN HOME ROTORS",
+        "model": "BABY BELLE / SAFARI",
+        "code": "BABY",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "",
+        "model": "BALLOON",
+        "code": "BALL",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BEAGLE",
+        "model": "B-206",
+        "code": "BASS",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "F8F BEARCAT",
+        "code": "BCAT",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BOMBARDIER",
+        "model": "CSERIES CS100",
+        "code": "BCS1",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOMBARDIER",
+        "model": "CSERIES CS300",
+        "code": "BCS3",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BEAGLE",
+        "model": "B-125 BULLDOG",
+        "code": "BDOG",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "100 KING AIR",
+        "code": "BE10",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BERIEV",
+        "model": "BE-12 TCHAIKA",
+        "code": "BE12",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "17 STAGGERWING",
+        "code": "BE17",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "18",
+        "code": "BE18",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "1300 COMMUTER",
+        "code": "BE20",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "23 MUSKETEER",
+        "code": "BE23",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "24 MUSKETEER SUPER",
+        "code": "BE24",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "300 SUPER KING AIR",
+        "code": "BE30",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BERIEV",
+        "model": "BE-30",
+        "code": "BE32",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "33 BONANZA",
+        "code": "BE33",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "35 BONANZA",
+        "code": "BE35",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "36 BONANZA",
+        "code": "BE36",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "400 BEECHJET",
+        "code": "BE40",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "50 TWIN BONANZA",
+        "code": "BE50",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "55 BARON",
+        "code": "BE55",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "58 BARON",
+        "code": "BE58",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "60 DUKE",
+        "code": "BE60",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "65 QUEEN AIR",
+        "code": "BE65",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "70 QUEEN AIR",
+        "code": "BE70",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "76 DUCHESS",
+        "code": "BE76",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "77 SKIPPER",
+        "code": "BE77",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "80 QUEEN AIR",
+        "code": "BE80",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "88 QUEEN AIR",
+        "code": "BE88",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "95 TRAVEL AIR",
+        "code": "BE95",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "99 AIRLINER",
+        "code": "BE99",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "90 KING AIR",
+        "code": "BE9L",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "90 (F90) KING AIR",
+        "code": "BE9T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SHORTS",
+        "model": "SC-5 BELFAST",
+        "code": "BELF",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BERIEV",
+        "model": "BE-200 ALTAIR",
+        "code": "BER2",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BERIEV",
+        "model": "A-40 ALBATROSS",
+        "code": "BER4",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BRISTOL",
+        "model": "F-2B FIGHTER",
+        "code": "BFIT",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "EUROCOPTER",
+        "model": "BK-117",
+        "code": "BK17",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BLERIOT",
+        "model": "11  / XI",
+        "code": "BL11",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BELLANCA",
+        "model": "17 SUPER VIKING",
+        "code": "BL17",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BELLANCA",
+        "model": "19 SKYROCKET",
+        "code": "BL19",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BELLANCA",
+        "model": "8 DECATHLON",
+        "code": "BL8",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "747-400LCF DREAMLIFTER",
+        "code": "BLCF",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BRISTOL",
+        "model": "149 BLENHEIM",
+        "code": "BLEN",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BRITTEN NORMAN",
+        "model": "BN-2 ISLANDER",
+        "code": "BN2P",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BRITTEN NORMAN",
+        "model": "BN-2T DEFENDER 4000 / TURBINE ISLANDER",
+        "code": "BN2T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BREGUET",
+        "model": "14 REPLICA",
+        "code": "BR14",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BRANTLY",
+        "model": "B-2",
+        "code": "BRB2",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MAX HOLSTE",
+        "model": "MH-1521 BROUSSARD",
+        "code": "BROU",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "747SCA SHUTTLE CARRIER",
+        "code": "BSCA",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "214ST SUPERTRANSPORT",
+        "code": "BSTP",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CASA",
+        "model": "1-131",
+        "code": "BU31",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CASA",
+        "model": "1-133",
+        "code": "BU33",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BüCKER",
+        "model": "B",
+        "code": "BU81",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HAWKER-SIDDELEY",
+        "model": "BUCCANEER",
+        "code": "BUC",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "402 (TURBINE)",
+        "code": "C02T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "404 (TURBINE)",
+        "code": "C04T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "206 (TURBINE)",
+        "code": "C06T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "207 (TURBINE)",
+        "code": "C07T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "KAWASAKI",
+        "model": "C-1",
+        "code": "C1",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CASA",
+        "model": "C-101 AVIOJET",
+        "code": "C101",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "P210 (TURBINE)",
+        "code": "C10T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FAIRCHILD",
+        "model": "C-119 FLYING BOXCAR",
+        "code": "C119",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "120",
+        "code": "C120",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FAIRCHILD",
+        "model": "C-123 PROVIDER",
+        "code": "C123",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "NORTHROP",
+        "model": "C-125 RAIDER",
+        "code": "C125",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "C-130 HERCULES",
+        "code": "C130",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "C-133 CARGOMASTER",
+        "code": "C133",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "C-135 STRATOLIFTER",
+        "code": "C135",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "140",
+        "code": "C140",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "C-141 STARLIFTER",
+        "code": "C141",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "414 (TURBINE)",
+        "code": "C14T",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "150",
+        "code": "C150",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "152",
+        "code": "C152",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "TRANSPORT ALLIANZ",
+        "model": "C-160",
+        "code": "C160",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "162 SKYCATCHER",
+        "code": "C162",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "C-17 GLOBEMASTER 3",
+        "code": "C17",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "170",
+        "code": "C170",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "172",
+        "code": "C172",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "175",
+        "code": "C175",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "177",
+        "code": "C177",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "180",
+        "code": "C180",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "182",
+        "code": "C182",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "185 SKYWAGON",
+        "code": "C185",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "188 AGPICKUP / AGWAGON",
+        "code": "C188",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "190",
+        "code": "C190",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "195",
+        "code": "C195",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "C-2 GREYHOUND",
+        "code": "C2",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "205",
+        "code": "C205",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "206 STATIONAIR / SUPER SKYWAGON",
+        "code": "C206",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "207 SKYWAGON 207",
+        "code": "C207",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "208 CARAVAN 1",
+        "code": "C208",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "210 CENTURION",
+        "code": "C210",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CASA",
+        "model": "C-212 AVIOCAR",
+        "code": "C212",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "421 (TURBINE)",
+        "code": "C21T",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "525A CITATION CJ2",
+        "code": "C25A",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "525B CITATION CJ3",
+        "code": "C25B",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CAUDRON",
+        "model": "C-272 / C-275 LUCIOLE",
+        "code": "C270",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERITALIA",
+        "model": "C-27J SPARTAN",
+        "code": "C27J",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CASA",
+        "model": "C-295",
+        "code": "C295",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "T303 CRUSADER",
+        "code": "C303",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "C-130J HERCULES",
+        "code": "C30J",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "310",
+        "code": "C310",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "320 EXECUTIVE SKYKNIGHT",
+        "code": "C320",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "335",
+        "code": "C335",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "336 SKYMASTER",
+        "code": "C336",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "337 SUPER SKYMASTER",
+        "code": "C337",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "340",
+        "code": "C340",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EKW",
+        "model": "C-3605",
+        "code": "C365",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "401",
+        "code": "C402",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "404 TITAN",
+        "code": "C404",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "411",
+        "code": "C411",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "414",
+        "code": "C414",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "421 GOLDEN EAGLE",
+        "code": "C421",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "425 CONQUEST 1",
+        "code": "C425",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "441 CONQUEST 2",
+        "code": "C441",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CURTISS",
+        "model": "C-46 COMMANDO",
+        "code": "C46",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "C-5 GALAXY",
+        "code": "C5",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "500 CITATION 1",
+        "code": "C500",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "501 CITATION 1SP",
+        "code": "C501",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "510 CITATION MUSTANG",
+        "code": "C510",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "525 CITATION CJ1",
+        "code": "C525",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "526 CITATIONJET",
+        "code": "C526",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "550 CITATION 2",
+        "code": "C550",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "551 CITATION 2SP",
+        "code": "C551",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "560 CITATION 5",
+        "code": "C560",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "560XL CITATION EXCEL",
+        "code": "C56X",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "650 CITATION 3",
+        "code": "C650",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "680 CITATION SOVEREIGN",
+        "code": "C680",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "172RG CUTLASS RG",
+        "code": "C72R",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "750 CITATION X",
+        "code": "C750",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "177RG CARDINAL RG",
+        "code": "C77R",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FAIRCHILD",
+        "model": "C-82 PACKET",
+        "code": "C82",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "R182 SKYLANE RG",
+        "code": "C82R",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "C-97 STRATOFREIGHTER",
+        "code": "C97",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CAC",
+        "model": "BOOMERANG",
+        "code": "CA19",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "CAC",
+        "model": "CA-25 WINJEEL",
+        "code": "CA25",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SOPWITH",
+        "model": "CAMEL",
+        "code": "CAML",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AVIATION TRADERS",
+        "model": "ATL-98 CARVAIR",
+        "code": "CARV",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CONSOLIDATED",
+        "model": "CATALINA / CANSO",
+        "code": "CAT",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CERVA",
+        "model": "CE-43 GUEPARD",
+        "code": "CE43",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CAUDRON",
+        "model": "G-3",
+        "code": "CG3",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AIDC",
+        "model": "A-CH-1 CHUNG-TSING",
+        "code": "CH1",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "JAI",
+        "model": "CH-2000 SAMA",
+        "code": "CH2T",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CAMPION",
+        "model": "402 LANCER",
+        "code": "CH40",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERONCA",
+        "model": "7 CHAMPION",
+        "code": "CH7A",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BELLANCA",
+        "model": "CITABRIA (7GCBC/7KCAB)",
+        "code": "CH7B",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "JAI",
+        "model": "CH-8000 HAWK 1",
+        "code": "CH80",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "NANCHANG",
+        "model": "CJ-6",
+        "code": "CJ6",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AIDC",
+        "model": "F-CK-1 CHING-KUO",
+        "code": "CKUO",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-215",
+        "code": "CL2P",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-215T",
+        "code": "CL2T",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BOMBARDIER",
+        "model": "BD-100 CHALLENGER 300",
+        "code": "CL30",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-41 TUTOR",
+        "code": "CL41",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-44 FORTY FOUR",
+        "code": "CL44",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-44-O GUPPY",
+        "code": "CL4G",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-600 CHALLENGER 600",
+        "code": "CL60",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AERO COMMANDER",
+        "model": "AG COMMANDER (B-1)",
+        "code": "CLB1",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "AIRMASTER",
+        "code": "CMAS",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AIRTECH",
+        "model": "CN-235",
+        "code": "CN35",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BAC",
+        "model": "CANBERRA",
+        "code": "CNBR",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "CONSTELLATION / SUPER CONSTELLATION",
+        "code": "CONI",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CHANCE-VOUGHT",
+        "model": "F4U CORSAIR",
+        "code": "CORS",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "HELIO",
+        "model": "COURIER",
+        "code": "COUR",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CAP",
+        "model": "CAP-10",
+        "code": "CP10",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PIEL",
+        "model": "SUPER EMERAUDE (CP-1310/1315/1330)",
+        "code": "CP13",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MUDRY",
+        "model": "CAP-20",
+        "code": "CP20",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MUDRY",
+        "model": "CAP-21",
+        "code": "CP21",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CAP",
+        "model": "CAP-222",
+        "code": "CP22",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MUDRY",
+        "model": "CAP-230",
+        "code": "CP23",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PIEL",
+        "model": "EMERAUDE",
+        "code": "CP30",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PIEL",
+        "model": "SUPER EMERAUDE (CP-320/325/328)",
+        "code": "CP32",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PIEL",
+        "model": "DIAMANT",
+        "code": "CP60",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PIEL",
+        "model": "B",
+        "code": "CP75",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PIEL",
+        "model": "Z",
+        "code": "CP80",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PIEL",
+        "model": "PINOCCHIO",
+        "code": "CP90",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PAC",
+        "model": "CRESCO",
+        "code": "CRES",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-600 REGIONAL JET CRJ-100",
+        "code": "CRJ1",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-600 REGIONAL JET CRJ-200",
+        "code": "CRJ2",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-600 REGIONAL JET CRJ-700",
+        "code": "CRJ7",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-600 REGIONAL JET CRJ-900",
+        "code": "CRJ9",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AESL",
+        "model": "CT-4 AIRTRAINER",
+        "code": "CT4",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CONVAIR",
+        "model": "C-131",
+        "code": "CVLP",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "COSMOPOLITAN",
+        "code": "CVLT",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "HAWKER",
+        "model": "CYGNET",
+        "code": "CYGT",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "JODEL",
+        "model": "D-11",
+        "code": "D11",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "JODEL",
+        "model": "D-140 ABEILLE",
+        "code": "D140",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "JODEL",
+        "model": "D-150 MASCARET",
+        "code": "D150",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "JODEL",
+        "model": "D-18",
+        "code": "D18",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DORNIER",
+        "model": "228",
+        "code": "D228",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "ROBIN",
+        "model": "DR-200",
+        "code": "D250",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ROBIN",
+        "model": "DR-253 REGENT",
+        "code": "D253",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DORNIER",
+        "model": "DO-28D SKYSERVANT",
+        "code": "D28D",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DORNIER",
+        "model": "128-6 TURBO SKYSERVANT",
+        "code": "D28T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DORNIER",
+        "model": "328",
+        "code": "D328",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "D-4",
+        "code": "D4",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "D-5",
+        "code": "D5",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "D-6",
+        "code": "D6",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FOKKER",
+        "model": "D-7 REPLICA",
+        "code": "D7",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FOKKER",
+        "model": "D-8 REPLICA",
+        "code": "D8",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DIAMOND",
+        "model": "DA-40",
+        "code": "DA40",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DIAMOND",
+        "model": "DA-42",
+        "code": "DA42",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DIAMOND",
+        "model": "DA-50",
+        "code": "DA50",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MCDONNELL DOUGLAS",
+        "model": "DC-10",
+        "code": "DC10",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-2",
+        "code": "DC2",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-3",
+        "code": "DC3",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "SUPER DC-3",
+        "code": "DC3S",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BASLER",
+        "model": "BT-67 TURBO 67",
+        "code": "DC3T",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-4",
+        "code": "DC4",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-6",
+        "code": "DC6",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-7",
+        "code": "DC7",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-8-50",
+        "code": "DC85",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-8-60",
+        "code": "DC86",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-8-70",
+        "code": "DC87",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-9-10",
+        "code": "DC91",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-9-20",
+        "code": "DC92",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-9-30",
+        "code": "DC93",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-9-40",
+        "code": "DC94",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "DC-9-50",
+        "code": "DC95",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-2 MK3 TURBO BEAVER",
+        "code": "DH2T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-3 TURBO OTTER",
+        "code": "DH3T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-60 MOTH",
+        "code": "DH60",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-80 PUSS MOTH",
+        "code": "DH80",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-82 TIGER MOTH",
+        "code": "DH82",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-83 FOX MOTH",
+        "code": "DH83",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-85 LEOPARD MOTH",
+        "code": "DH85",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-87 HORNET MOTH",
+        "code": "DH87",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-88 COMET REPLICA",
+        "code": "DH88",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-89 DRAGON RAPIDE",
+        "code": "DH89",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-8-100 DASH 8",
+        "code": "DH8A",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-8-200 DASH 8",
+        "code": "DH8B",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-8-300 DASH 8",
+        "code": "DH8C",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-8-400 DASH 8",
+        "code": "DH8D",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-90 DRAGONFLY",
+        "code": "DH90",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-94 MOTH MINOR",
+        "code": "DH94",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND AUSTRALIA",
+        "model": "DHA-3 DROVER",
+        "code": "DHA3",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DHC-1 CHIPMUNK",
+        "code": "DHC1",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-2 MK1 BEAVER",
+        "code": "DHC2",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-3 OTTER",
+        "code": "DHC3",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-4 CARIBOU",
+        "code": "DHC4",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-5 BUFFALO",
+        "code": "DHC5",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-6 TWIN OTTER",
+        "code": "DHC6",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "DHC-7 DASH 7",
+        "code": "DHC7",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DIAMOND",
+        "model": "D-JET",
+        "code": "DJET",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SUD-OUEST",
+        "model": "SO-1221 DJINN",
+        "code": "DJIN",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "DORNIER",
+        "model": "DO-27",
+        "code": "DO27",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DORNIER",
+        "model": "DO-28A / DO-28B",
+        "code": "DO28",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-104 DOVE",
+        "code": "DOVE",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FOKKER",
+        "model": "DR-1 REPLICA",
+        "code": "DR1",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ROBIN",
+        "model": "AMBASSADEUR",
+        "code": "DR10",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DIAMOND",
+        "model": "KATANA (DA-20/DV-20)",
+        "code": "DV20",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DEWOITINE",
+        "model": "D-27",
+        "code": "DWD2",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-110 BANDEIRANTE",
+        "code": "E110",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-120 BRASILIA",
+        "code": "E120",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-121 XINGU",
+        "code": "E121",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-135 / ERJ-135",
+        "code": "E135",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-145 / ERJ-145",
+        "code": "E145",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-170 / EMB-175 / ERJ-170 / ERJ-175",
+        "code": "E170",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-190 / EMB-195 / ERJ-190 / ERJ-195",
+        "code": "E190",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "E-2 HAWKEYE",
+        "code": "E2",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "EXTRA",
+        "model": "EA-200",
+        "code": "E200",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EXTRA",
+        "model": "EA-230",
+        "code": "E230",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EXTRA",
+        "model": "EA-300",
+        "code": "E300",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-314 SUPER TUCANO",
+        "code": "E314",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "E-3 (CFM56) SENTRY",
+        "code": "E3CF",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "E-3 (TF33) SENTRY",
+        "code": "E3TF",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "EXTRA",
+        "model": "EA-400",
+        "code": "E400",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-145XR / ERJ-145XR",
+        "code": "E45X",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "EXTRA",
+        "model": "EA-500",
+        "code": "E500",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-500 PHENOM 100",
+        "code": "E50P",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-505 PHENOM 300",
+        "code": "E55P",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "E-6 MERCURY",
+        "code": "E6",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "ECLIPSE",
+        "model": "ECLIPSE 500",
+        "code": "EA50",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CHRISTEN",
+        "model": "EAGLE",
+        "code": "EAGL",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "EUROCOPTER",
+        "model": "EC-120 COLIBRI",
+        "code": "EC20",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "EUROCOPTER",
+        "model": "EC-225 SUPER PUMA MK2+",
+        "code": "EC25",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "EUROCOPTER",
+        "model": "EC-130",
+        "code": "EC30",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "EUROCOPTER",
+        "model": "EC-135",
+        "code": "EC35",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "EUROCOPTER",
+        "model": "BK-117C-2",
+        "code": "EC45",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "EUROCOPTER",
+        "model": "EC-155",
+        "code": "EC55",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "ZIVKO",
+        "model": "EDGE 540",
+        "code": "EDGE",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "EH INDUSTRIES",
+        "model": "CH-149 CORMORANT",
+        "code": "EH10",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "PüTZER",
+        "model": "ELSTER",
+        "code": "ELST",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ENSTROM",
+        "model": "280 SHARK",
+        "code": "EN28",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "ENSTROM",
+        "model": "480",
+        "code": "EN48",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AIR PRODUCTS",
+        "model": "AIRCOUPE",
+        "code": "ERCO",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "ETENDARD 4",
+        "code": "ETAR",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "EUROFIGHTER",
+        "model": "C-16 TYPHOON",
+        "code": "EUFI",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MD HELICOPTERS",
+        "model": "MD-902 EXPLORER",
+        "code": "EXPL",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MITSUBISHI",
+        "model": "F-1",
+        "code": "F1",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "FOKKER",
+        "model": "100",
+        "code": "F100",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "F-104 STARFIGHTER",
+        "code": "F104",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CONVAIR",
+        "model": "QF-106 DELTA DART",
+        "code": "F106",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "GENERAL DYNAMICS",
+        "model": "F-111",
+        "code": "F111",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "F-117 NIGHTHAWK",
+        "code": "F117",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "F-14 TOMCAT",
+        "code": "F14",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "F-15 EAGLE",
+        "code": "F15",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MORANE-SAULNIER",
+        "model": "CRIQUET",
+        "code": "F156",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GENERAL DYNAMICS",
+        "model": "F-16 FIGHTING FALCON",
+        "code": "F16",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "FA-18 HORNET",
+        "code": "F18",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MITSUBISHI",
+        "model": "F-2",
+        "code": "F2",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "F-22 RAPTOR",
+        "code": "F22",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AERMACCHI",
+        "model": "SF-260",
+        "code": "F260",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SIAI-MARCHETTI",
+        "model": "SF-260TP",
+        "code": "F26T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FOKKER",
+        "model": "F-27 FRIENDSHIP",
+        "code": "F27",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "FOKKER",
+        "model": "F-28 FELLOWSHIP",
+        "code": "F28",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "FALCON 2000",
+        "code": "F2TH",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "F-35 LIGHTNING II",
+        "code": "F35",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "F3F REPLICA",
+        "code": "F3F",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MCDONNELL",
+        "model": "F-4 PHANTOM 2",
+        "code": "F4",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "F406 CARAVAN 2",
+        "code": "F406",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CF-5",
+        "code": "F5",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FOKKER",
+        "model": "50",
+        "code": "F50",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "FOKKER",
+        "model": "60",
+        "code": "F60",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SIAI-MARCHETTI",
+        "model": "SF-600 CANGURO",
+        "code": "F600",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FOKKER",
+        "model": "70",
+        "code": "F70",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CHANCE-VOUGHT",
+        "model": "F8 CRUSADER",
+        "code": "F8",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-13 SABRE",
+        "code": "F86",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AVIAMILANO",
+        "model": "F-8L FALCO",
+        "code": "F8L",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "FALCON 900",
+        "code": "F900",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "F9F PANTHER",
+        "code": "F9F",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "FALCON 10",
+        "code": "FA10",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FAIRCHILD",
+        "model": "F-11 HUSKY",
+        "code": "FA11",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "FALCON 20",
+        "code": "FA20",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FAIRCHILD",
+        "model": "UC-61 ARGUS",
+        "code": "FA24",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "FALCON 50",
+        "code": "FA50",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FAIRCHILD",
+        "model": "CORNELL",
+        "code": "FA62",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "FALCON 7X",
+        "code": "FA7X",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MILES",
+        "model": "M-3 FALCON MAJOR",
+        "code": "FALM",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "RFB",
+        "model": "FANTRAINER",
+        "code": "FANT",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CHENGDU",
+        "model": "FC-1 SUPER 7",
+        "code": "FC1",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "FAIREY",
+        "model": "FIREFLY",
+        "code": "FFLY",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FAIRCHILD-HILLER",
+        "model": "FH-1100",
+        "code": "FH11",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "FLAMANT",
+        "code": "FLAM",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SIAI-MARCHETTI",
+        "model": "FN-333 RIVIERA",
+        "code": "FN33",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "CM-170R MAGISTER",
+        "code": "FOUG",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "SA-321 SUPER FRELON",
+        "code": "FREL",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "FLETCHER",
+        "model": "FU-24",
+        "code": "FU24",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HAWKER",
+        "model": "FURY",
+        "code": "FURY",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FOCKE-WULF",
+        "model": "FW-44 STIEGLITZ",
+        "code": "FW44",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FOCKE-WULF",
+        "model": "FW-190 REPLICA",
+        "code": "FW90",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GROB",
+        "model": "G-109",
+        "code": "G109",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GROB",
+        "model": "G-115",
+        "code": "G115",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GROB",
+        "model": "G-120",
+        "code": "G120",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "GROB",
+        "model": "G-140TP",
+        "code": "G140",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "IAI",
+        "model": "GULFSTREAM G150",
+        "code": "G150",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "G-159 GULFSTREAM 1",
+        "code": "G159",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GROB",
+        "model": "G-115T ACRO",
+        "code": "G15T",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GROB",
+        "model": "G-160 RANGER",
+        "code": "G160",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AMERICAN",
+        "model": "G-164 AG-CAT",
+        "code": "G164",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "G-21A GOOSE",
+        "code": "G21",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERITALIA",
+        "model": "C-27A SPARTAN",
+        "code": "G222",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SOKO",
+        "model": "G-2 GALEB",
+        "code": "G2GL",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "G-44 WIDGEON",
+        "code": "G44",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FIAT",
+        "model": "G-46",
+        "code": "G46",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SOKO",
+        "model": "G-4 SUPER GALEB",
+        "code": "G4SG",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FIAT",
+        "model": "G-59",
+        "code": "G59",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SCHWEIZER",
+        "model": "G-164 AG-CAT TURBINE",
+        "code": "G64T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "G-73 MALLARD",
+        "code": "G73",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "G-73T TURBO MALLARD",
+        "code": "G73T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "G-96 TRADER",
+        "code": "G96",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "GIPPSLAND",
+        "model": "FATMAN",
+        "code": "GA20",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AMERICAN",
+        "model": "GA-7 COUGAR",
+        "code": "GA7",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GIPPSLAND",
+        "model": "GA-8 AIRVAN",
+        "code": "GA8",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "IAI",
+        "model": "1126 GALAXY",
+        "code": "GALX",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "FAIREY",
+        "model": "GANNET",
+        "code": "GANT",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "GLOSTER",
+        "model": "GAUNTLET",
+        "code": "GAUN",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SOKO",
+        "model": "H-45 PARTIZAN",
+        "code": "GAZL",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GLOBE",
+        "model": "GC-1 SWIFT",
+        "code": "GC1",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MILES",
+        "model": "M-65 GEMINI",
+        "code": "GEMI",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GROB",
+        "model": "GF-200",
+        "code": "GF20",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BOMBARDIER",
+        "model": "BD-700 GLOBAL 5000",
+        "code": "GL5T",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "GLOSTER",
+        "model": "GLADIATOR",
+        "code": "GLAD",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BOMBARDIER",
+        "model": "BD-700 GLOBAL EXPRESS",
+        "code": "GLEX",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "G-1159 GULFSTREAM 2",
+        "code": "GLF2",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "GULFSTREAM",
+        "model": "G-1159A GULFSTREAM 3",
+        "code": "GLF3",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "GULFSTREAM",
+        "model": "G-4 GULFSTREAM 4",
+        "code": "GLF4",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "GULFSTREAM",
+        "model": "G-5 GULFSTREAM 5",
+        "code": "GLF5",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "GULFSTREAM AEROSPACE",
+        "model": "GULFSTREAM G650",
+        "code": "GLF6",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "",
+        "model": "GLIDER",
+        "code": "GLID",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "FOLLAND",
+        "model": "FO-144 GNAT",
+        "code": "GNAT",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "",
+        "model": "MICROLIGHT / ULTRALIGHT AUTOGYRO",
+        "code": "GRYO",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "GROB",
+        "model": "G-180 SPN UTILITY JET",
+        "code": "GSPN",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "GY-80 HORIZON",
+        "code": "GY80",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CASA",
+        "model": "2-111",
+        "code": "H111",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "HILLER",
+        "model": "UH-12ET",
+        "code": "H12T",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "KAMAN",
+        "model": "SH-2 SEASPRITE",
+        "code": "H2",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-125",
+        "code": "H25A",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BAE",
+        "model": "BAE-125-700",
+        "code": "H25B",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BAE",
+        "model": "BAE-125-1000",
+        "code": "H25C",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "HUGHES",
+        "model": "269",
+        "code": "H269",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "KAMAN",
+        "model": "HH-43A",
+        "code": "H43A",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "KAMAN",
+        "model": "HH-43B HUSKIE",
+        "code": "H43B",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING VERTOL",
+        "model": "107",
+        "code": "H46",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BOEING VERTOL",
+        "model": "CH-47 CHINOOK",
+        "code": "H47",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "HUGHES",
+        "model": "369",
+        "code": "H500",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "CH-53",
+        "code": "H53",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "CH-53E SUPER STALLION",
+        "code": "H53S",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "AH-60 BLACK HAWK",
+        "code": "H60",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "HUGHES",
+        "model": "77 APACHE",
+        "code": "H64",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BOEING-SIKORSKY",
+        "model": "RAH-66 COMANCHE",
+        "code": "H66",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "HAL",
+        "model": "HA-31 BASANT",
+        "code": "HA31",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HAWKER-BEECHCRAFT",
+        "model": "4000 HAWKER HORIZON",
+        "code": "HA4T",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "AV-8 HARRIER",
+        "code": "HAR",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BAE",
+        "model": "HAWK",
+        "code": "HAWK",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "F6F HELLCAT",
+        "code": "HCAT",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HONDA",
+        "model": "HA-420 HONDAJET",
+        "code": "HDJT",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-114 HERON",
+        "code": "HERN",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "HFB",
+        "model": "HFB-320 HANSA",
+        "code": "HF20",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "HIRTH",
+        "model": "HI-27 ACROSTAR",
+        "code": "HI27",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HAWKER",
+        "model": "HIND",
+        "code": "HIND",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ROBIN",
+        "model": "HR-100",
+        "code": "HR10",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ROBIN",
+        "model": "HR-200",
+        "code": "HR20",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HAL",
+        "model": "HJT-16 KIRAN",
+        "code": "HT16",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HAL",
+        "model": "HT-2",
+        "code": "HT2",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HAL",
+        "model": "HPT-32 DEEPAK",
+        "code": "HT32",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HAL",
+        "model": "HJT-36 SITARA",
+        "code": "HT36",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "209 HUEYCOBRA",
+        "code": "HUCO",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "HAWKER",
+        "model": "HUNTER",
+        "code": "HUNT",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "HAWKER",
+        "model": "HURRICANE",
+        "code": "HURI",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AVIAT",
+        "model": "A-1 HUSKY",
+        "code": "HUSK",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "ILYUSHIN",
+        "model": "IL-103",
+        "code": "I103",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ILYUSHIN",
+        "model": "IL-114",
+        "code": "I114",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "POLIKARPOV",
+        "model": "I-153",
+        "code": "I153",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "POLIKARPOV",
+        "model": "I-15BIS",
+        "code": "I15B",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "POLIKARPOV",
+        "model": "I-16",
+        "code": "I16",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL SWIDNIK",
+        "model": "I-23 MANAGER",
+        "code": "I23",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TECHNOAVIA (INTERAVIA)",
+        "model": "I-3",
+        "code": "I3",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FMA",
+        "model": "IA-46 RANQUEL",
+        "code": "IA46",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FMA",
+        "model": "IA-50 GUARANI 2",
+        "code": "IA50",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "FMA",
+        "model": "IA-51 TEHUELCHE",
+        "code": "IA51",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FMA",
+        "model": "IA-58 PUCAR",
+        "code": "IA58",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FMA",
+        "model": "IA-63 PAMPA",
+        "code": "IA63",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "ILYUSHIN",
+        "model": "IL-14",
+        "code": "IL14",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ILYUSHIN",
+        "model": "IL-18",
+        "code": "IL18",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "HARBIN",
+        "model": "H-5",
+        "code": "IL28",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ILYUSHIN",
+        "model": "IL-38",
+        "code": "IL38",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ILYUSHIN",
+        "model": "IL-62",
+        "code": "IL62",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "ILYUSHIN",
+        "model": "IL-76",
+        "code": "IL76",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "ILYUSHIN",
+        "model": "IL-86",
+        "code": "IL86",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "ILYUSHIN",
+        "model": "IL-96",
+        "code": "IL96",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-200 IPANEMA",
+        "code": "IPAN",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ROMBAC",
+        "model": "IAR-827 DACIC",
+        "code": "IR27",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "IAR",
+        "model": "IAR-46",
+        "code": "IR46",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "IAR",
+        "model": "IS-28M2",
+        "code": "IS28",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AUSTER",
+        "model": "J-1 AIGLET",
+        "code": "J1",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CHENGDU",
+        "model": "F-10",
+        "code": "J10",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "CUB (J-2)",
+        "code": "J2",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "CUB (J-3/L-4/NE)",
+        "code": "J3",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FAIRCHILD-DORNIER",
+        "model": "328JET",
+        "code": "J328",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "J-4 CUB COUPE",
+        "code": "J4",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "J-5 CUB CRUISER",
+        "code": "J5",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SHENYANG",
+        "model": "F-8-1",
+        "code": "J8A",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SHENYANG",
+        "model": "F-8-2 /-3 /-4",
+        "code": "J8B",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BAC",
+        "model": "JAGUAR",
+        "code": "JAGR",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SOKO",
+        "model": "JASTREB",
+        "code": "JAST",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "IAI",
+        "model": "1121 COMMODORE JET",
+        "code": "JCOM",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CAUDRON",
+        "model": "CR-760 CYCLONE REPLICA",
+        "code": "JN76",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GAP",
+        "model": "JP100 KESTREL",
+        "code": "JP10",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BAC",
+        "model": "167 STRIKEMASTER",
+        "code": "JPRO",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HANDLEY PAGE",
+        "model": "HP-137 JETSTREAM 1",
+        "code": "JS1",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "HANDLEY PAGE",
+        "model": "HP-137 JETSTREAM 200",
+        "code": "JS20",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BAE",
+        "model": "BAE-3100 JETSTREAM 31",
+        "code": "JS31",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BAE",
+        "model": "BAE-3200 JETSTREAM SUPER 31",
+        "code": "JS32",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BAE",
+        "model": "BAE-4100 JETSTREAM 41",
+        "code": "JS41",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CASA",
+        "model": "352L",
+        "code": "JU52",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BöLKOW",
+        "model": "BO-208 JUNIOR",
+        "code": "JUNR",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "KAMOV",
+        "model": "KA-126",
+        "code": "K126",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "KAMOV",
+        "model": "KA-226",
+        "code": "K226",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "KC-135A STRATOTANKER",
+        "code": "K35A",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "KC-135D/E STRATOTANKER",
+        "code": "K35E",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "KC-135R/T STRATOTANKER",
+        "code": "K35R",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "KAI",
+        "model": "A-50 GOLDEN EAGLE",
+        "code": "K50",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "NANCHANG",
+        "model": "JL-8 KARAKORUM",
+        "code": "K8",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "KAMOV",
+        "model": "KA-25",
+        "code": "KA25",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "KAMOV",
+        "model": "KA-26",
+        "code": "KA26",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "KAMOV",
+        "model": "KA-27",
+        "code": "KA27",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "KAMOV",
+        "model": "KA-50",
+        "code": "KA50",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "KAMOV",
+        "model": "KA-52",
+        "code": "KA52",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "KAMOV",
+        "model": "KA-60",
+        "code": "KA62",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "KE-3",
+        "code": "KE3",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "IAI",
+        "model": "KFIR",
+        "code": "KFIR",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "KAWASAKI",
+        "model": "KH-4",
+        "code": "KH4",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BöLKOW",
+        "model": "KL-107",
+        "code": "KL07",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "KLEMM",
+        "model": "L-25",
+        "code": "KL25",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "KLEMM",
+        "model": "KL-35",
+        "code": "KL35",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FUJI",
+        "model": "KM-2",
+        "code": "KM2",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "KAMAN",
+        "model": "K-1200 K-MAX",
+        "code": "KMAX",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "FAIRCHILD",
+        "model": "CHALLENGER",
+        "code": "KR34",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SOKO",
+        "model": "J-20 KRAGUJ",
+        "code": "KRAG",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "KAI",
+        "model": "KO-1 WOONG-BEE",
+        "code": "KT1",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "L-10 ELECTRA",
+        "code": "L10",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "L-1011 TRISTAR",
+        "code": "L101",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "LUSCOMBE",
+        "model": "11A SEDAN",
+        "code": "L11",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "L-12 ELECTRA JUNIOR",
+        "code": "L12",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CONVAIR",
+        "model": "L-13",
+        "code": "L13",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "L-14 HUDSON",
+        "code": "L14",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AERO",
+        "model": "L-159 ALBATROS 2",
+        "code": "L159",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "L-18 LODESTAR",
+        "code": "L18",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "L-188 ELECTRA",
+        "code": "L188",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LET",
+        "model": "L-200 MORAVA",
+        "code": "L200",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERO",
+        "model": "L-29 DELFIN",
+        "code": "L29",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "L-1329 JETSTAR 6 / 8",
+        "code": "L29A",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "L-1329 JETSTAR 2",
+        "code": "L29B",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "B-34 LEXINGTON",
+        "code": "L37",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AERO",
+        "model": "L-39 ALBATROS",
+        "code": "L39",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ORLICAN",
+        "model": "L-40 META SOKOL",
+        "code": "L40",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LET",
+        "model": "L-410 TURBOLET",
+        "code": "L410",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "STINSON",
+        "model": "L-5 SENTINEL",
+        "code": "L5",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERO",
+        "model": "L-59",
+        "code": "L59",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERO",
+        "model": "L-60 BRIGADYR",
+        "code": "L60",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LET",
+        "model": "L-610",
+        "code": "L610",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "LUSCOMBE",
+        "model": "8",
+        "code": "L8",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERMACCHI",
+        "model": "M-290TP REDIGO",
+        "code": "L90",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LAKE AIRCRAFT",
+        "model": "LA-250 / LA-270",
+        "code": "LA25",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LAKE AIRCRAFT",
+        "model": "LA-4 / LA-200 BUCCANEER",
+        "code": "LA4",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AERMACCHI",
+        "model": "AL-60",
+        "code": "LA60",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HAL",
+        "model": "SA-315 CHEETAH / CHEETAL / LANCER",
+        "code": "LAMA",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AVRO",
+        "model": "683 LANCASTER",
+        "code": "LANC",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "NORTH AMERICAN ROCKWELL",
+        "model": "100 LARK COMMANDER",
+        "code": "LARK",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LEARJET",
+        "model": "23",
+        "code": "LJ23",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LEARJET",
+        "model": "24",
+        "code": "LJ24",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LEARJET",
+        "model": "25",
+        "code": "LJ25",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LEARJET",
+        "model": "31",
+        "code": "LJ31",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LEARJET",
+        "model": "35",
+        "code": "LJ35",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LEARJET",
+        "model": "40",
+        "code": "LJ40",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "LEARJET",
+        "model": "45",
+        "code": "LJ45",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LEARJET",
+        "model": "55",
+        "code": "LJ55",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LEARJET",
+        "model": "60",
+        "code": "LJ60",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BAC",
+        "model": "LIGHTNING",
+        "code": "LTNG",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "WESTLAND",
+        "model": "LYNX",
+        "code": "LYNX",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "WESTLAND",
+        "model": "LYSANDER",
+        "code": "LYSA",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MOONEY",
+        "model": "M-10 CADET",
+        "code": "M10",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MYASISHCHEV",
+        "model": "M-101",
+        "code": "M101",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AVIAT",
+        "model": "110 SPECIAL",
+        "code": "M110",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "PZL MIELEC",
+        "model": "M-15 BELPHEGOR",
+        "code": "M15",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MYASISHCHEV",
+        "model": "M-17 STRATOSFERA",
+        "code": "M17",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "PZL MIELEC",
+        "model": "M-18 DROMADER",
+        "code": "M18",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL MIELEC",
+        "model": "M-18 TURBINE DROMADER",
+        "code": "M18T",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORTH AMERICAN ROCKWELL",
+        "model": "COMMANDER 200",
+        "code": "M200",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MYASISHCHEV",
+        "model": "M-203 BARSUK",
+        "code": "M203",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MOONEY",
+        "model": "M-20",
+        "code": "M20P",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MOONEY",
+        "model": "M-20K 252TSE / M-20M",
+        "code": "M20T",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MOONEY",
+        "model": "M-22 MUSTANG",
+        "code": "M22",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PZL MIELEC",
+        "model": "M-28 SKYTRUCK",
+        "code": "M28",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MILES",
+        "model": "M-2 HAWK MAJOR",
+        "code": "M2HK",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERMACCHI",
+        "model": "MB-308",
+        "code": "M308",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "AT-26 XAVANTE",
+        "code": "M326",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERMACCHI",
+        "model": "MB-339",
+        "code": "M339",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MARTIN",
+        "model": "404",
+        "code": "M404",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MYASISHCHEV",
+        "model": "M-55 GEOPHYSICA",
+        "code": "M55",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MILES",
+        "model": "M-14 MAGISTER",
+        "code": "MAGI",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MARTIN",
+        "model": "JRM MARS",
+        "code": "MARS",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MCDONNELL DOUGLAS",
+        "model": "MD-11",
+        "code": "MD11",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "MCDONNELL DOUGLAS",
+        "model": "AH-6J",
+        "code": "MD52",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MCDONNELL DOUGLAS",
+        "model": "MD-600N",
+        "code": "MD60",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MCDONNELL DOUGLAS",
+        "model": "MD-81",
+        "code": "MD81",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MCDONNELL DOUGLAS",
+        "model": "MD-82",
+        "code": "MD82",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MCDONNELL DOUGLAS",
+        "model": "MD-83",
+        "code": "MD83",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MCDONNELL DOUGLAS",
+        "model": "MD-87",
+        "code": "MD87",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MCDONNELL DOUGLAS",
+        "model": "MD-88",
+        "code": "MD88",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MCDONNELL DOUGLAS",
+        "model": "MD-90",
+        "code": "MD90",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "NORD",
+        "model": "1001 PINGOUIN 1",
+        "code": "ME08",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MESSERSCHMITT",
+        "model": "BF-109",
+        "code": "ME09",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MESSERSCHMITT",
+        "model": "ME-262 REPLICA",
+        "code": "ME62",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MILES",
+        "model": "M-38 MESSENGER",
+        "code": "MESS",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ARMSTRONG WITHWORTH",
+        "model": "METEOR",
+        "code": "METR",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SAAB",
+        "model": "MFI-15 SAFARI",
+        "code": "MF17",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL MIELEC",
+        "model": "LIM-1",
+        "code": "MG15",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SHENYANG",
+        "model": "F-5",
+        "code": "MG17",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NANCHANG",
+        "model": "F-6",
+        "code": "MG19",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CHENGDU",
+        "model": "F-7",
+        "code": "MG21",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MIKOYAN",
+        "model": "MIG-23",
+        "code": "MG23",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MIKOYAN",
+        "model": "MIG-25",
+        "code": "MG25",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MIKOYAN",
+        "model": "MIG-29",
+        "code": "MG29",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MIKOYAN",
+        "model": "MIG-31",
+        "code": "MG31",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MIKOYAN",
+        "model": "MIG 1-44",
+        "code": "MG44",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MIKOYAN",
+        "model": "MIG-AT",
+        "code": "MGAT",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MITSUBISHI",
+        "model": "MH-2000",
+        "code": "MH20",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-10",
+        "code": "MI10",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-14",
+        "code": "MI14",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-2",
+        "code": "MI2",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-24",
+        "code": "MI24",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-26",
+        "code": "MI26",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-28",
+        "code": "MI28",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-34",
+        "code": "MI34",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-38",
+        "code": "MI38",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-4",
+        "code": "MI4",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-6",
+        "code": "MI6",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "MIL",
+        "model": "MI-17",
+        "code": "MI8",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "MIRAGE 2000",
+        "code": "MIR2",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "MIRAGE 4",
+        "code": "MIR4",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CAC",
+        "model": "CA-29 MIRAGE 3",
+        "code": "MIRA",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MOONEY",
+        "model": "M-18",
+        "code": "MITE",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MILES",
+        "model": "M-17 MONARCH",
+        "code": "MONA",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-98 MOSQUITO",
+        "code": "MOSQ",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "MIRAGE F1",
+        "code": "MRF1",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "MS-200FG MORANE",
+        "code": "MS18",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MORANE-SAULNIER",
+        "model": "MS-230",
+        "code": "MS23",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "MS-200RG MORANE",
+        "code": "MS25",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "MS-300 EPSILON 2",
+        "code": "MS30",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MORANE-SAULNIER",
+        "model": "MS-315",
+        "code": "MS31",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MORANE-SAULNIER",
+        "model": "MS-733 ALCYON",
+        "code": "MS73",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MORANE-SAULNIER",
+        "model": "MS-760 PARIS",
+        "code": "MS76",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MORANE-SAULNIER",
+        "model": "AI",
+        "code": "MSAI",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MITSUBISHI",
+        "model": "T-2",
+        "code": "MT2",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "MITSUBISHI",
+        "model": "MU-2",
+        "code": "MU2",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MITSUBISHI",
+        "model": "MU-300 DIAMOND",
+        "code": "MU30",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MYASISHCHEV",
+        "model": "M-4",
+        "code": "MYA4",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "MD-454A MYST",
+        "code": "MYS4",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "NORD",
+        "model": "1100 NORALPHA",
+        "code": "N110",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORD",
+        "model": "1200 NORECRIN",
+        "code": "N120",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORD",
+        "model": "260 SUPER BROUSSARD",
+        "code": "N260",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "NORD",
+        "model": "262",
+        "code": "N262",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "NORD",
+        "model": "3202",
+        "code": "N320",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORD",
+        "model": "3400",
+        "code": "N340",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NANCHANG",
+        "model": "N-5",
+        "code": "N5",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORTH AMERICAN",
+        "model": "NAVION",
+        "code": "NAVI",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "NORD",
+        "model": "NC-854",
+        "code": "NC85",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AVIAMILANO",
+        "model": "F-14 NIBBIO",
+        "code": "NIBB",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BAE",
+        "model": "NIMROD",
+        "code": "NIM",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AVIONS FAIREY",
+        "model": "T-66 NIPPER",
+        "code": "NIPR",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GAF",
+        "model": "NOMAD",
+        "code": "NOMA",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "NORD",
+        "model": "2501 NORATLAS",
+        "code": "NORA",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "NOORDUYN",
+        "model": "NORSEMAN",
+        "code": "NORS",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "BIRD DOG",
+        "code": "O1",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "KAWASAKI",
+        "model": "OH-1",
+        "code": "OH1",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "OPTICA",
+        "model": "EA-7 OPTICA",
+        "code": "OPCA",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PARTENAVIA",
+        "model": "P-64 OSCAR",
+        "code": "OSCR",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIAGGIO",
+        "model": "P-136",
+        "code": "P136",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIAGGIO",
+        "model": "P-148",
+        "code": "P148",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FOCKE-WULF",
+        "model": "FWP-149",
+        "code": "P149",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PIAGGIO",
+        "model": "P-180 AVANTI",
+        "code": "P180",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AVIAMILANO",
+        "model": "P-19 SCRICCIOLO",
+        "code": "P19",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "P-2 NEPTUNE",
+        "code": "P2",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "P210 PRESSURIZED CENTURION",
+        "code": "P210",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "CHEROKEE (PA-28-140/150/160/180)",
+        "code": "P28A",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "CHEROKEE (PA-28-235)",
+        "code": "P28B",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-28R-180 CHEROKEE ARROW",
+        "code": "P28R",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-28RT-201 ARROW 4",
+        "code": "P28T",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "CP-140 AURORA",
+        "code": "P3",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-32R-300 CHEROKEE LANCE",
+        "code": "P32R",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-32RT-300T TURBO LANCE 2",
+        "code": "P32T",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "REIMS",
+        "model": "FT337G PRESSURIZED SKYMASTER",
+        "code": "P337",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "F-5 LIGHTNING",
+        "code": "P38",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BELL AIRCRAFT",
+        "model": "P-39 AIRACOBRA",
+        "code": "P39",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CURTISS",
+        "model": "KITTYHAWK",
+        "code": "P40",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-46-500TP MALIBU MERIDIAN",
+        "code": "P46T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "REPUBLIC",
+        "model": "F-47 THUNDERBOLT",
+        "code": "P47",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CONVAIR",
+        "model": "PB4Y PRIVATEER",
+        "code": "P4Y",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "CAC",
+        "model": "CA-18 MUSTANG",
+        "code": "P51",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PARTENAVIA",
+        "model": "P-57 FACHIRO 2",
+        "code": "P57",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORTHROP",
+        "model": "P-61 BLACK WIDOW",
+        "code": "P61",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BELL AIRCRAFT",
+        "model": "P-63 KINGCOBRA",
+        "code": "P63",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PIAGGIO",
+        "model": "P-166",
+        "code": "P66P",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIAGGIO",
+        "model": "P-166DL3",
+        "code": "P66T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PARTENAVIA",
+        "model": "P-68 OBSERVER",
+        "code": "P68",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PARTENAVIA",
+        "model": "AP-68TP-300 SPARTACUS",
+        "code": "P68T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PAC",
+        "model": "750XL",
+        "code": "P750",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BOEING",
+        "model": "P-8 POSEIDON",
+        "code": "P8",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "PIAGGIO",
+        "model": "PD-808",
+        "code": "P808",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "NORTH AMERICAN",
+        "model": "F-82 TWIN MUSTANG",
+        "code": "P82",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-11 CUB SPECIAL",
+        "code": "PA11",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-12 SUPER CRUISER",
+        "code": "PA12",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-14 FAMILY CRUISER",
+        "code": "PA14",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-15 VAGABOND",
+        "code": "PA15",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-16 CLIPPER",
+        "code": "PA16",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-17 VAGABOND",
+        "code": "PA17",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-18 SUPER CUB",
+        "code": "PA18",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-20 PACER",
+        "code": "PA20",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-22 CARIBBEAN",
+        "code": "PA22",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-23 APACHE",
+        "code": "PA23",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-24 COMANCHE",
+        "code": "PA24",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "PA-25 PAWNEE",
+        "code": "PA25",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-23 AZTEC",
+        "code": "PA27",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-30 TWIN COMANCHE",
+        "code": "PA30",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-820 NAVAJO",
+        "code": "PA31",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-720 MINUANO",
+        "code": "PA32",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-810 SENECA",
+        "code": "PA34",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-36 PAWNEE BRAVE",
+        "code": "PA36",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-38 TOMAHAWK",
+        "code": "PA38",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-44 SEMINOLE",
+        "code": "PA44",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-46-310P MALIBU",
+        "code": "PA46",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "",
+        "model": "POWERED PARACHUTE / PARAPLANE",
+        "code": "PARA",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-31T3-500 T-1040",
+        "code": "PAT4",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-31T1-500 CHEYENNE 1",
+        "code": "PAY1",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-31T-620 CHEYENNE 2",
+        "code": "PAY2",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "PA-42-1000 CHEYENNE 400",
+        "code": "PAY4",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PILATUS",
+        "model": "PC-12",
+        "code": "PC12",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PILATUS",
+        "model": "PC-21",
+        "code": "PC21",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "PILATUS",
+        "model": "PC-6 PORTER",
+        "code": "PC6P",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PILATUS",
+        "model": "PC-6A/B/C TURBO-PORTER",
+        "code": "PC6T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "ATLAS",
+        "model": "PC-7 ASTRA",
+        "code": "PC7",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PILATUS",
+        "model": "PC-9",
+        "code": "PC9",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GENERAL AVIA",
+        "model": "F-20 PEGASO",
+        "code": "PEGA",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HUNTING",
+        "model": "P-66 PEMBROKE",
+        "code": "PEMB",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GENERAL AVIA",
+        "model": "F-15 DELFINO",
+        "code": "PICO",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CASA",
+        "model": "E-26 TAMIZ",
+        "code": "PILL",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "GENERAL AVIA",
+        "model": "F-22 PINGUINO",
+        "code": "PINO",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "AUSTER 1  / PLUS C / PLUS D",
+        "code": "PLUS",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL MIELEC",
+        "model": "CSS-13",
+        "code": "PO2",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "POTEZ",
+        "model": "60 SAUTERELLE",
+        "code": "PO60",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "PILATUS",
+        "model": "P-2",
+        "code": "PP2",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PILATUS",
+        "model": "P-3",
+        "code": "PP3",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HUNTING",
+        "model": "P-56 PROVOST",
+        "code": "PPRO",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PERCIVAL",
+        "model": "P-57 SEA PRINCE",
+        "code": "PRCE",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PERCIVAL",
+        "model": "P-40 PRENTICE",
+        "code": "PREN",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HAWKER-BEECHCRAFT",
+        "model": "390 PREMIER 1",
+        "code": "PRM1",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PERCIVAL",
+        "model": "PROCTOR",
+        "code": "PROC",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL SWIDNIK",
+        "model": "SW-4",
+        "code": "PSW4",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "RYAN",
+        "model": "PT-22 RECRUIT",
+        "code": "PT22",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PITTS",
+        "model": "S-12 MACHO STINKER",
+        "code": "PTMS",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AVIAT",
+        "model": "PITTS S-1 SPECIAL",
+        "code": "PTS1",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AVIAT",
+        "model": "PITTS S-2 SPECIAL",
+        "code": "PTS2",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "AVIAT",
+        "model": "S-1-11 SUPER STINKER",
+        "code": "PTSS",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "IAR",
+        "model": "IAR-330 PUMA",
+        "code": "PUMA",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BEAGLE",
+        "model": "B-121 PUP",
+        "code": "PUP",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-101 GAWRON",
+        "code": "PZ01",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-102 KOS",
+        "code": "PZ02",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-104 WILGA",
+        "code": "PZ04",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-105 FLAMING",
+        "code": "PZ05",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-106 KRUK",
+        "code": "PZ06",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-112 KOLIBER JUNIOR",
+        "code": "PZ12",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-126 MR",
+        "code": "PZ26",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-130 ORLIK",
+        "code": "PZ3T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-104M WILGA 2000",
+        "code": "PZ4M",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-106AT TURBO KRUK",
+        "code": "PZ6T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NANCHANG",
+        "model": "A-5",
+        "code": "Q5",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ROBIN",
+        "model": "R-1180 AIGLON",
+        "code": "R100",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "RC-135",
+        "code": "R135",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "ROBIN",
+        "model": "ALPHA",
+        "code": "R200",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ROBIN",
+        "model": "R-3000",
+        "code": "R300",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "727-100RE SUPER 27",
+        "code": "R721",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "727-200RE SUPER 27",
+        "code": "R722",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "RUSCHMEYER",
+        "model": "R-90-230FG",
+        "code": "R90F",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "RUSCHMEYER",
+        "model": "R-90-230RG",
+        "code": "R90R",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "RUSCHMEYER",
+        "model": "R-90-420AT",
+        "code": "R90T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "PZL-110 KOLIBER",
+        "code": "RALL",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "REPUBLIC",
+        "model": "RC-3 SEABEE",
+        "code": "RC3",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ROCKWELL",
+        "model": "COMMANDER 700",
+        "code": "RC70",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "STINSON",
+        "model": "RELIANT",
+        "code": "RELI",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FOURNIER",
+        "model": "RF-10",
+        "code": "RF10",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SPORTAVIA-PüTZER",
+        "model": "RF-4",
+        "code": "RF4",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FOURNIER",
+        "model": "RF-47",
+        "code": "RF47",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SPORTAVIA-PüTZER",
+        "model": "RF-5",
+        "code": "RF5",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SLINGSBY",
+        "model": "FIREFLY",
+        "code": "RF6",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "FOURNIER",
+        "model": "RF-9",
+        "code": "RF9",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "RAFALE",
+        "code": "RFAL",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BAE",
+        "model": "AVRO RJ-100",
+        "code": "RJ1H",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BAE",
+        "model": "AVRO RJ-70",
+        "code": "RJ70",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BAE",
+        "model": "AVRO RJ-85",
+        "code": "RJ85",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AMBROSINI",
+        "model": "F-4 RONDONE",
+        "code": "ROND",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MITSUBISHI",
+        "model": "RP-1",
+        "code": "RP1",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SPORTAVIA-PüTZER",
+        "model": "RS-180 SPORTSMAN",
+        "code": "RS18",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "VANS",
+        "model": "RV-10",
+        "code": "RV10",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "VANS",
+        "model": "RV-3",
+        "code": "RV3",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "VANS",
+        "model": "RV-4",
+        "code": "RV4",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "VANS",
+        "model": "RV-4T",
+        "code": "RV4T",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "VANS",
+        "model": "RV-6",
+        "code": "RV6",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "VANS",
+        "model": "RV-7",
+        "code": "RV7",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "VANS",
+        "model": "RV-8",
+        "code": "RV8",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "VANS",
+        "model": "RV-9",
+        "code": "RV9",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DENEL",
+        "model": "AH-2 ROOIVALK",
+        "code": "RVAL",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "RYAN",
+        "model": "PT-20",
+        "code": "RYST",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SIAI-MARCHETTI",
+        "model": "S-205-18F / S-205-20F",
+        "code": "S05F",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SIAI-MARCHETTI",
+        "model": "S-205-18R / S-205-20R / S-205-22R",
+        "code": "S05R",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "STINSON",
+        "model": "10 VOYAGER",
+        "code": "S10",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PIPER",
+        "model": "108 STATION WAGON",
+        "code": "S108",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FOKKER",
+        "model": "S-11 INSTRUCTOR",
+        "code": "S11",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SIAI-MARCHETTI",
+        "model": "S-208",
+        "code": "S208",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "SE-210 CARAVELLE",
+        "code": "S210",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SIAI-MARCHETTI",
+        "model": "M-311",
+        "code": "S211",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CASA",
+        "model": "223 FLAMINGO",
+        "code": "S223",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HESA",
+        "model": "SHAHED 278",
+        "code": "S278",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "DE HAVILLAND CANADA",
+        "model": "S-2 TRACKER",
+        "code": "S2P",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "S-2 TURBO TRACKER",
+        "code": "S2T",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "S-3 VIKING",
+        "code": "S3",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SCHWEIZER",
+        "model": "269D 330",
+        "code": "S330",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "SA-360 DAUPHIN",
+        "code": "S360",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "S-37 BERKUT",
+        "code": "S37",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "S-38 REPLICA",
+        "code": "S38",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "S-39",
+        "code": "S39",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "HO3S",
+        "code": "S51",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "HO5S",
+        "code": "S52",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "CH-19",
+        "code": "S55P",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "S-55T",
+        "code": "S55T",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "CH-34 CHOCKTAW",
+        "code": "S58P",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "S-58T",
+        "code": "S58T",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "SN-601 CORVETTE",
+        "code": "S601",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MITSUBISHI",
+        "model": "HSS-2",
+        "code": "S61",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "CH-3",
+        "code": "S61R",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "HH-52 SEAGUARD",
+        "code": "S62",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "CH-54 TARHE",
+        "code": "S64",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "SA-365C DAUPHIN 2",
+        "code": "S65C",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "S-76",
+        "code": "S76",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SIKORSKY",
+        "model": "S-92 HELIBUS",
+        "code": "S92",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "BERIEV",
+        "model": "SA-20",
+        "code": "SA20",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SCHWEIZER",
+        "model": "SA-2-37A CONDOR",
+        "code": "SA37",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SHORTS",
+        "model": "S-25 SANDRINGHAM",
+        "code": "SAND",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "PIEL",
+        "model": "CP-1320 SAPHIR",
+        "code": "SAPH",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SUPERMARINE",
+        "model": "SPITFIRE MK25",
+        "code": "SASP",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "HISPANO",
+        "model": "HA-200 SAETA",
+        "code": "SATA",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ZLIN",
+        "model": "SAVAGE",
+        "code": "SAVG",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SAAB",
+        "model": "105",
+        "code": "SB05",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SAAB",
+        "model": "2000",
+        "code": "SB20",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SAAB",
+        "model": "29 / J29",
+        "code": "SB29",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SAAB",
+        "model": "32 / J32 LANSEN",
+        "code": "SB32",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SAAB",
+        "model": "35 / J35 DRAKEN",
+        "code": "SB35",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SAAB",
+        "model": "37 / JA37 VIGGEN",
+        "code": "SB37",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SAAB",
+        "model": "39 GRIPEN",
+        "code": "SB39",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SAAB",
+        "model": "91 SAFIR",
+        "code": "SB91",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DOUGLAS",
+        "model": "SBD DAUNTLESS",
+        "code": "SBD",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORTH AMERICAN",
+        "model": "SABRELINER",
+        "code": "SBR1",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "NORTH AMERICAN ROCKWELL",
+        "model": "NA-265 SABRE 75",
+        "code": "SBR2",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SHORTS",
+        "model": "SC-7 SKYVAN",
+        "code": "SC7",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "WESTLAND",
+        "model": "SCOUT",
+        "code": "SCOU",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "ROYAL AIRCRAFT FACTORY",
+        "model": "SE-5A REPLICA",
+        "code": "SE5R",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SAAB",
+        "model": "340",
+        "code": "SF34",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "TECHNOAVIA (INTERAVIA)",
+        "model": "SM-92T TURBO FINIST",
+        "code": "SG92",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SHORTS",
+        "model": "330",
+        "code": "SH33",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SHORTS",
+        "model": "360",
+        "code": "SH36",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "HARBIN",
+        "model": "SH-5",
+        "code": "SH5",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AVRO",
+        "model": "696 SHACKLETON",
+        "code": "SHAC",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ARMSTRONG WITHWORTH",
+        "model": "SEA HAWK",
+        "code": "SHAW",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "",
+        "model": "AIRSHIP",
+        "code": "SHIP",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SINO SWEARINGEN",
+        "model": "SJ-30",
+        "code": "SJ30",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TECHNOAVIA (INTERAVIA)",
+        "model": "I-1",
+        "code": "SL90",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SIAI-MARCHETTI",
+        "model": "SM-1019",
+        "code": "SM19",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TECHNOAVIA (INTERAVIA)",
+        "model": "SM-2000",
+        "code": "SM20",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "STINSON",
+        "model": "SM-6000 TRI-MOTOR",
+        "code": "SM60",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "TECHNOAVIA (INTERAVIA)",
+        "model": "SM-92 FINIST",
+        "code": "SM92",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DASSAULT",
+        "model": "SUPER MYST",
+        "code": "SMB2",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BENES-MRAZ",
+        "model": "M-1 SOKOL",
+        "code": "SOKL",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LUSCOMBE",
+        "model": "11E SPARTAN 185",
+        "code": "SP18",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TECHNOAVIA (INTERAVIA)",
+        "model": "SP-55",
+        "code": "SP55",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "TECHNOAVIA (INTERAVIA)",
+        "model": "SP-91 SLAVA",
+        "code": "SP91",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TECHNOAVIA (INTERAVIA)",
+        "model": "SP-95",
+        "code": "SP95",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SUPERMARINE",
+        "model": "SEAFIRE",
+        "code": "SPIT",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CIRRUS",
+        "model": "SR-20",
+        "code": "SR20",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CIRRUS",
+        "model": "SR-22",
+        "code": "SR22",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "SR-71 BLACKBIRD",
+        "code": "SR71",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "NORTH AMERICAN ROCKWELL",
+        "model": "AG COMMANDER",
+        "code": "SS2P",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AYRES",
+        "model": "TURBO THRUSH (S-2R-G/T EXCEPT T660)",
+        "code": "SS2T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORTH AMERICAN",
+        "model": "F-100 SUPER SABRE",
+        "code": "SSAB",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "ST-10",
+        "code": "ST10",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BOEING",
+        "model": "75 KAYDET",
+        "code": "ST75",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "2000 STARSHIP",
+        "code": "STAR",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "HELIO",
+        "model": "STALLION",
+        "code": "STLN",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SOPWITH",
+        "model": "TRIPLANE REPLICA",
+        "code": "STRI",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "SU-15",
+        "code": "SU15",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "SU-17",
+        "code": "SU17",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "SU-24",
+        "code": "SU24",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "SU-25",
+        "code": "SU25",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "SU-26",
+        "code": "SU26",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SHENYANG",
+        "model": "J-11",
+        "code": "SU27",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "SU-29",
+        "code": "SU29",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "SU-31",
+        "code": "SU31",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "SU-38",
+        "code": "SU38",
+        "tec_class": "PQ",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "SU-7",
+        "code": "SU7",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SUKHOI",
+        "model": "SU-80",
+        "code": "SU80",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "FUJI",
+        "model": "FA-200 AERO SUBARU",
+        "code": "SUBA",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "SUPERCOBRA",
+        "code": "SUCO",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "NORD",
+        "model": "SV-4",
+        "code": "SV4",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SWEARINGEN",
+        "model": "SA-26 MERLIN 2",
+        "code": "SW2",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FAIRCHILD",
+        "model": "MERLIN 3",
+        "code": "SW3",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FAIRCHILD",
+        "model": "MERLIN 23",
+        "code": "SW4",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SUPERMARINE",
+        "model": "SWIFT",
+        "code": "SWIF",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BLACKBURN",
+        "model": "SWORDFISH",
+        "code": "SWOR",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "BRISTOL",
+        "model": "171 SYCAMORE",
+        "code": "SYCA",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "FUJI",
+        "model": "T-1",
+        "code": "T1",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-134",
+        "code": "T134",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-144",
+        "code": "T144",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-154",
+        "code": "T154",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-160",
+        "code": "T160",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "NORTH AMERICAN",
+        "model": "T-2 BUCKEYE",
+        "code": "T2",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-204",
+        "code": "T204",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-22M",
+        "code": "T22M",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BELLANCA",
+        "model": "T-250 ARIES",
+        "code": "T250",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORTH AMERICAN",
+        "model": "T-28 TROJAN",
+        "code": "T28",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CANADAIR",
+        "model": "CL-30 SILVER STAR",
+        "code": "T33",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-334",
+        "code": "T334",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "45 MENTOR",
+        "code": "T34P",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "T-34C TURBO MENTOR",
+        "code": "T34T",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "CESSNA",
+        "model": "318 / T-37",
+        "code": "T37",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "NORTHROP",
+        "model": "T-38 TALON",
+        "code": "T38",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "KAWASAKI",
+        "model": "T-4",
+        "code": "T4",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "FUJI",
+        "model": "KM-2KAI",
+        "code": "T5",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NOORDUYN",
+        "model": "AT-16 HARVARD",
+        "code": "T6",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FUJI",
+        "model": "T-7",
+        "code": "T7",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "15 FOURSOME",
+        "code": "TA15",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "20 RANCHWAGON",
+        "code": "TA20",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "TAMPICO",
+        "code": "TAMP",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "A",
+        "code": "TAYA",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "BC",
+        "code": "TAYB",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "DC",
+        "code": "TAYD",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AEROSPATIALE",
+        "model": "TB-30 EPSILON",
+        "code": "TB30",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "TB-31 OMEGA",
+        "code": "TB31",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "TBF AVENGER",
+        "code": "TBM",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "TBM-700",
+        "code": "TBM7",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "TBM-850",
+        "code": "TBM8",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "F7F TIGERCAT",
+        "code": "TCAT",
+        "tec_class": "PQ",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "HELIO",
+        "model": "TWIN COURIER",
+        "code": "TCOU",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "HAWKER-BEECHCRAFT",
+        "model": "CT-156 HARVARD 2",
+        "code": "TEX2",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "SPORTSMAN (F-19)",
+        "code": "TF19",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "F-21",
+        "code": "TF21",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "TAYLORCRAFT",
+        "model": "F-22",
+        "code": "TF22",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "EUROCOPTER",
+        "model": "EC-665 TIGER / TIGRE",
+        "code": "TIGR",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "AVIONS FAIREY",
+        "model": "TIPSY JUNIOR",
+        "code": "TIJU",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AVIONS FAIREY",
+        "model": "TIPSY B",
+        "code": "TIPB",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "TB-10 TOBAGO",
+        "code": "TOBA",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PANAVIA",
+        "model": "TORNADO",
+        "code": "TOR",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AESL",
+        "model": "AIRTOURER",
+        "code": "TOUR",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SCOTTISH AVIATION",
+        "model": "TWIN PIONEER",
+        "code": "TPIN",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-121 TRIDENT",
+        "code": "TRID",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "FORD",
+        "model": "4-AT TRI-MOTOR",
+        "code": "TRIM",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SOCATA",
+        "model": "TB-20 TRINIDAD",
+        "code": "TRIN",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BRITTEN NORMAN",
+        "model": "BN-2A MK3 TRISLANDER",
+        "code": "TRIS",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "STINSON",
+        "model": "TRI-MOTOR (A)",
+        "code": "TRMA",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "PZL MIELEC",
+        "model": "TS-11 ISKRA",
+        "code": "TS11",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL MIELEC",
+        "model": "TS-8 BIES",
+        "code": "TS8",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-16",
+        "code": "TU16",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-22",
+        "code": "TU22",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-4",
+        "code": "TU4",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "TUPOLEV",
+        "model": "TU-142",
+        "code": "TU95",
+        "tec_class": "M",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "EMBRAER",
+        "model": "EMB-312 TUCANO",
+        "code": "TUCA",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AVRO",
+        "model": "621 TUTOR",
+        "code": "TUTR",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "ALBATROSS",
+        "code": "U16",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "U-2",
+        "code": "U2",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BEECH",
+        "model": "U-21A UTE",
+        "code": "U21",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "UH-1 IROQUOIS",
+        "code": "UH1",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "FAIRCHILD-HILLER",
+        "model": "OH-23 RAVEN",
+        "code": "UH12",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "UH-1Y",
+        "code": "UH1Y",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "",
+        "model": "MICROLIGHT / ULTRALIGHT HELICOPTER",
+        "code": "UHEL",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "",
+        "model": "MICROLIGHT / ULTRALIGHT AIRCRAFT",
+        "code": "ULAC",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "SHIN MEIWA",
+        "model": "US-1",
+        "code": "US1",
+        "tec_class": "M",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "UTVA",
+        "model": "60",
+        "code": "UT60",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "UTVA",
+        "model": "65 PRIVREDNIK",
+        "code": "UT65",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "UTVA",
+        "model": "66",
+        "code": "UT66",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "UTVA",
+        "model": "75",
+        "code": "UT75",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "UDET",
+        "model": "U-12 FLAMINGO REPLICA",
+        "code": "UU12",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "OV-1 MOHAWK",
+        "code": "V1",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "NORTH AMERICAN",
+        "model": "OV-10 BRONCO",
+        "code": "V10",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "BELL HELICOPTER",
+        "model": "V-22 OSPREY",
+        "code": "V22",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "CONVAIR",
+        "model": "BT-13 VALIANT",
+        "code": "VALI",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-100 VAMPIRE",
+        "code": "VAMP",
+        "tec_class": "J",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "SUD",
+        "model": "SO-4050 VAUTOUR",
+        "code": "VAUT",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "BAC",
+        "model": "VC-10",
+        "code": "VC10",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "VFW",
+        "model": "VFW-614",
+        "code": "VF14",
+        "tec_class": "J",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "LOCKHEED",
+        "model": "F-35B LIGHTNING II",
+        "code": "VF35",
+        "tec_class": "J",
+        "weight_class": ""
+    }, {
+        "manufacturer": "PERCIVAL",
+        "model": "VEGA GULL",
+        "code": "VGUL",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "VICKERS",
+        "model": "FB-27 VIMY REPLICA",
+        "code": "VIMY",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "VICKERS",
+        "model": "VISCOUNT",
+        "code": "VISC",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "MYASISHCHEV",
+        "model": "VM-T ATLANT",
+        "code": "VMT",
+        "tec_class": "J",
+        "weight_class": "H"
+    }, {
+        "manufacturer": "DE HAVILLAND",
+        "model": "DH-112 VENOM",
+        "code": "VNOM",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "AERO COMMANDER",
+        "model": "COMMANDER 100",
+        "code": "VO10",
+        "tec_class": "PQ",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "EVANS",
+        "model": "VP-2 VOLKSPLANE",
+        "code": "VP2",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PARTENAVIA",
+        "model": "AP-68TP-600 VIATOR",
+        "code": "VTOR",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "PZL SWIDNIK",
+        "model": "W-3 SOK",
+        "code": "W3",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "WASSMER",
+        "model": "WA-40 SUPER 4",
+        "code": "WA40",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WASSMER",
+        "model": "WA-41 BALADOU",
+        "code": "WA41",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WASSMER",
+        "model": "WA-421 PRESTIGE",
+        "code": "WA42",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WASSMER",
+        "model": "WA-51 PACIFIC",
+        "code": "WA50",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WASSMER",
+        "model": "WA-80 PIRANHA",
+        "code": "WA80",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WACO",
+        "model": "9",
+        "code": "WAC9",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "WACO",
+        "model": "IBA, PBA, PLA, RBA, UBA, ULA",
+        "code": "WACA",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "WACO",
+        "model": "YKC, YKS, YOC, YQC, ZGC, ZKS, ZQC",
+        "code": "WACC",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WACO",
+        "model": "S3HD",
+        "code": "WACD",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WACO",
+        "model": "E (ARE/HRE/SRE) ARISTOCRAT",
+        "code": "WACE",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WACO CLASSIC",
+        "model": "YMF",
+        "code": "WACF",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WACO",
+        "model": "CRG",
+        "code": "WACG",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WACO",
+        "model": "JWM, JYM",
+        "code": "WACM",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "WACO",
+        "model": "AVN",
+        "code": "WACN",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "WACO",
+        "model": "10",
+        "code": "WACO",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WACO",
+        "model": "RPT",
+        "code": "WACT",
+        "tec_class": "PQ",
+        "weight_class": ""
+    }, {
+        "manufacturer": "WESTLAND",
+        "model": "WASP",
+        "code": "WASP",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "GRUMMAN",
+        "model": "F4F WILDCAT",
+        "code": "WCAT",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "WESTLAND",
+        "model": "WESSEX",
+        "code": "WESX",
+        "tec_class": "M",
+        "weight_class": ""
+    }, {
+        "manufacturer": "WESTLAND",
+        "model": "30",
+        "code": "WG30",
+        "tec_class": "M",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "MILES",
+        "model": "M-11 WHITNEY STRAIGHT",
+        "code": "WHIT",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "CAC",
+        "model": "CA-16 WIRRAWAY",
+        "code": "WIRR",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "IAI",
+        "model": "1123 WESTWIND",
+        "code": "WW23",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "IAI",
+        "model": "1124 WESTWIND",
+        "code": "WW24",
+        "tec_class": "J",
+        "weight_class": "S"
+    }, {
+        "manufacturer": "HARBIN",
+        "model": "Y-11",
+        "code": "Y11",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-112",
+        "code": "Y112",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "HARBIN",
+        "model": "Y-12",
+        "code": "Y12",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AERMACCHI",
+        "model": "M-346",
+        "code": "Y130",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-141",
+        "code": "Y141",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "TECHNOAVIA (INTERAVIA)",
+        "model": "SM-2000P",
+        "code": "Y18T",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-3",
+        "code": "YAK3",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-9",
+        "code": "YAK9",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NORTH AMERICAN",
+        "model": "YALE",
+        "code": "YALE",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LET",
+        "model": "C-11",
+        "code": "YK11",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "PZL OKECIE",
+        "model": "YAK-12",
+        "code": "YK12",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NANCHANG",
+        "model": "CJ-5",
+        "code": "YK18",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-28",
+        "code": "YK28",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-38",
+        "code": "YK38",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-40",
+        "code": "YK40",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-142",
+        "code": "YK42",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-50",
+        "code": "YK50",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "AEROSTAR",
+        "model": "YAK-52",
+        "code": "YK52",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-53",
+        "code": "YK53",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-54",
+        "code": "YK54",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-55",
+        "code": "YK55",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "YAKOVLEV",
+        "model": "YAK-58",
+        "code": "YK58",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "NAMC",
+        "model": "YS-11",
+        "code": "YS11",
+        "tec_class": "M",
+        "weight_class": "L"
+    }, {
+        "manufacturer": "IAR",
+        "model": "IAR-93 / J-22 ORAO",
+        "code": "YURO",
+        "tec_class": "J",
+        "weight_class": "M"
+    }, {
+        "manufacturer": "ZLIN",
+        "model": "Z-22 JUNAK",
+        "code": "Z22",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ZLIN",
+        "model": "Z-126 TRENER 2",
+        "code": "Z26",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "LET",
+        "model": "Z-237 CMEL",
+        "code": "Z37P",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ZLIN",
+        "model": "Z-137 AGRO TURBO",
+        "code": "Z37T",
+        "tec_class": "M",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ZLIN",
+        "model": "Z-142",
+        "code": "Z42",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ZLIN",
+        "model": "Z-143",
+        "code": "Z43",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "ZLIN",
+        "model": "Z-50",
+        "code": "Z50",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }, {
+        "manufacturer": "MITSUBISHI",
+        "model": "A6M ZERO",
+        "code": "ZERO",
+        "tec_class": "PQ",
+        "weight_class": "LT"
+    }]
+}

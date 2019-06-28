@@ -86,4 +86,5 @@ var Home = {
         }
     }
 };
+
 module.exports = Home;
