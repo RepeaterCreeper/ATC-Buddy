@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
+const path = require("path")
 
 /**
  * Variable Declarations
@@ -30,10 +31,10 @@ function init() {
         frame: false
     });
 
-    loadingWindow.loadFile("./src/loading.html");
+    loadingWindow.loadFile(path.join(__dirname, "./src/loading.html"));
     
-    mainWin.loadFile("./src/index.html");
-    mainWin.setIcon("./src/icons/icon.png");
+    mainWin.loadFile(path.join(__dirname, "./src/index.html"));
+    mainWin.setIcon(path.join(__dirname, "./src/icons/icon.png"));
 
     ipcMain.once("atc-buddy", function(event, messages){
         mainWin.show();
