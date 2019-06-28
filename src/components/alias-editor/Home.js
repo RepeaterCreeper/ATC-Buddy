@@ -17,8 +17,14 @@ var Home = {
     },
     template: fs.readFileSync(path.join(__dirname, ".././HomeEditor.html"), "utf-8"),
     methods: {
-        refreshList: function(){
-            this.$forceUpdate();
+        checkAliasFiles: function() {
+            this.aliasFiles.forEach((alias, index) => {
+                if (!fs.existsSync(alias.filepath)) {
+                    this.aliasFiles[index].exists = false;
+                } else {
+                    this.aliasFiles[index].exists = true;
+                }
+            });
         },
         createAliasProfile: function () {
             this.profileModal.name = this.profileModal.name.length > 0 ? this.profileModal.name : "Untitled Profile";
@@ -63,14 +69,7 @@ var Home = {
 
             this.aliasFiles = BASE_USER_DATA.aliasFiles;
 
-            /**
-             * Check if the alias files still exist.
-             */
-            this.aliasFiles.forEach((alias, index) => {
-                if (!fs.existsSync(alias.filepath)) {
-                    this.aliasFiles[index].exists = false;
-                }
-            });
+            this.checkAliasFiles();
         });
     },
     mounted: function () {

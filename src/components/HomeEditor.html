@@ -1,7 +1,16 @@
 <section>
     <div class="row" style="margin: 8px;">
-        <button class="btn waves-effect light-green col s12" @click="refreshList">Refresh List</button>
-        <button data-target="newProfileModal" class="btn waves-effect blue modal-trigger col s12">New Profile</button>
+        <div class="col s4" style="padding: 0;">
+            <button data-target="newProfileModal" class="btn waves-effect purple col s12 tooltipped modal-trigger" data-tooltip="New Profile" data-position="bottom">
+                <i class="left material-icons">edit</i>
+                <b class="left">New Profile</b>
+            </button>
+        </div>
+        <div class="col s4 right" style="padding: 0;">
+            <button class="btn waves-effect light-green col s12 tooltipped" data-tooltip="Refresh" data-position="bottom" @click="checkAliasFiles">
+                <i class="material-icons">refresh</i>
+            </button>
+        </div>
     </div>
     <div class="row">
         <div id="alias_profiles" style="margin: 8px;">
