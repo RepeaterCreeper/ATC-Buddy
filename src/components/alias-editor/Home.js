@@ -3,8 +3,6 @@ const fs = require("fs");
 
 const APP_DATA_PATH = app.getPath("userData");
 
-var BASE_USER_DATA = {};
-
 var Home = {
     data: function () {
         return {
@@ -72,18 +70,9 @@ var Home = {
         }
     },
     created: function () {
-        /**
-         * Read user-data file to retrieve alias profiles created.
-         */
-        fs.readFile(APP_DATA_PATH + "/user-data.json", "utf-8", (err, data) => {
-            if (err) throw err;
+        this.aliasFiles = USER_DATA.aliasFiles;
 
-            BASE_USER_DATA = JSON.parse(data);
-
-            this.aliasFiles = BASE_USER_DATA.aliasFiles;
-
-            this.checkAliasFiles();
-        });
+        this.checkAliasFiles();
     },
     mounted: function () {
         this.$nextTick(function () {
@@ -92,8 +81,9 @@ var Home = {
     },
     watch: {
         aliasFiles: function (val) {
-            BASE_USER_DATA.aliasFiles = val;
-            fs.writeFile(APP_DATA_PATH + "/user-data.json", JSON.stringify(BASE_USER_DATA), function (err) {
+            USER_DATA.aliasFiles = val;
+
+            fs.writeFile(`${APP_DATA_PATH}/user-data.json`, JSON.stringify(USER_DATA), function (err) {
                 if (err) throw err;
             });
         }
