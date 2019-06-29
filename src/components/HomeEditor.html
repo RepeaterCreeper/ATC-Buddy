@@ -58,14 +58,15 @@
                             <button class="btn waves-effect blue" @click="openAliasDialog">Load Alias File</button>
                         </div>
                         <div class="col s8">
-                            <input placeholder="" v-model="profileModal.filepath" type="text" disabled>
+                            <input placeholder="" v-model="profileModal.filepath" v-bind:class="{ invalid: !filePathExists }" type="text" disabled>
+                            <span class="helper-text" data-error="File path required!"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="modal-footer">
-            <button class="btn-flat white-text waves-effect green waves-light modal-close" @click="createAliasProfile">Create</button>
+            <button class="btn-flat white-text waves-effect green waves-light" @click="createAliasProfile">Create</button>
         </div>
     </div>
 </section>

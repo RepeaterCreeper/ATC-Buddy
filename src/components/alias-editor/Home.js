@@ -12,6 +12,7 @@ var Home = {
                 name: "",
                 filepath: ""
             },
+            filePathExists: false,
             aliasFiles: []
         };
     },
@@ -26,18 +27,29 @@ var Home = {
                 }
             });
         },
-        createAliasProfile: function () {
-            this.profileModal.name = this.profileModal.name.length > 0 ? this.profileModal.name : "Untitled Profile";
-            this.aliasFiles.push({
-                name: this.profileModal.name,
-                filepath: this.profileModal.filepath,
-                exists: true
-            });
-            /**
-             * Reset Profile Modal Data
-             */
-            this.profileModal.name = "";
-            this.profileModal.filepath = "";
+        createAliasProfile: function (e) {
+            if (this.profileModal.filepath.length > 0) {
+                this.profileModal.name = this.profileModal.name.length > 0 ? this.profileModal.name : "Untitled Profile";
+
+                this.aliasFiles.push({
+                    name: this.profileModal.name,
+                    filepath: this.profileModal.filepath,
+                    exists: true
+                });
+                /**
+                 * Reset Profile Modal Data
+                 */
+                this.profileModal.name = "";
+                this.profileModal.filepath = "";
+
+                let modal = document.querySelector("#newProfileModal"),
+                    modalInstance = M.Modal.init(modal);
+                
+                modalInstance.close();
+                this.editAlias(this.aliasFiles.length - 1);
+            } else {
+                this.filePathExists = false;
+            }
         },
         deleteAliasProfile: function (id) {
             this.aliasFiles.splice(id, 1);
@@ -51,6 +63,7 @@ var Home = {
             }, (filePaths) => {
                 if (filePaths) {
                     this.profileModal.filepath = filePaths[0];
+                    this.filePathExists = true;
                 }
             });
         },

@@ -35,7 +35,7 @@ function init() {
     
     mainWin.loadFile(path.join(__dirname, "./src/index.html"));
     mainWin.setIcon(path.join(__dirname, "./src/icons/icon.png"));
-
+    
     ipcMain.once("atc-buddy", function(event, messages){
         mainWin.show();
 

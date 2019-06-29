@@ -58,6 +58,7 @@ const Alias = {
     },
     template: fs.readFileSync(path.join(__dirname, ".././MainEditor.html"), "utf-8"),
     created: function(){
+
         let { filepath } = this.$route.query.aliasFileData;
         
         fs.readFile(filepath, "utf-8", (err, data) => {
