@@ -17,6 +17,7 @@ var Home = {
     template: fs.readFileSync(path.join(__dirname, ".././HomeEditor.html"), "utf-8"),
     methods: {
         checkAliasFiles: function() {
+            // Check if each alias file still exists.
             this.aliasFiles.forEach((alias, index) => {
                 if (!fs.existsSync(alias.filepath)) {
                     this.aliasFiles[index].exists = false;
