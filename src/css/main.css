@@ -1,0 +1,90 @@
+:root {
+    --nav-active: #F8F;
+}
+
+html, body {
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+}
+
+header, main, section {
+    padding-left: 300px;
+}
+
+li.active {
+    background-color: var(--nav-active) !important;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, section {
+        padding-left: 0;
+    }
+}
+
+.aliasNavigationTabs li a {
+    color: white !important;
+}
+
+.tecroute__card .card-header {
+    padding: 8px;
+    background-color: #864A9F;
+}
+
+.tecroute_card .card-content {
+    background-color: #DEDEDE;
+}
+
+.tecroute__card .card-footer {
+    background-color: rgba(205, 117, 255, .5);
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.tecroute__card .card-footer button {
+    position: absolute;
+    right: 0;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2c3e50;
+    border-radius: 16px;
+}
+
+.aliasMenu_button {
+    cursor: pointer;
+}
+
+.aliasMenu_button:hover {
+    color: blue;
+}
+
+.no-select {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+}
+
+/**
+ *  Overrides
+ */
+kbd {
+    background-color: #34495e;
+    color: white;
+    padding: 4px;
+    margin-right: 16px;
+    border-radius: 4px;
+}

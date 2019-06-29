@@ -1,6 +1,9 @@
 # Directories
 node_modules
+changelog
+dist
 atc-buddy-win32-x64
+atc-buddy-linux-x64
 
 # Files
 package-lock.json

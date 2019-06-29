@@ -1,0 +1,72 @@
+<section>
+    <div class="row" style="margin: 8px;">
+        <div class="col s4" style="padding: 0;">
+            <button data-target="newProfileModal" class="btn waves-effect purple col s12 tooltipped modal-trigger" data-tooltip="New Profile" data-position="bottom">
+                <i class="left material-icons">edit</i>
+                <b class="left">New Profile</b>
+            </button>
+        </div>
+        <div class="col s4 right" style="padding: 0;">
+            <button class="btn waves-effect light-green col s12 tooltipped" data-tooltip="Refresh" data-position="bottom" @click="checkAliasFiles">
+                <i class="material-icons">refresh</i>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div id="alias_profiles" style="margin: 8px;">
+            <!-- This is where all Alias Profiles will be listed. -->
+            <div class="card hoverable"
+                :key="index"
+                v-for="(item, index) in aliasFiles"
+            >
+                <div class="card-content row">
+                    <div class="col s10">
+                        <b>{{ item.name }}</b><br>
+                        <small>{{ item.filepath }}</small>
+                    </div>
+                    <div class="col s2" style="height: 42px; display: flex; align-items: center; justify-content: space-evenly;">
+                        <i
+                            class="no-select material-icons small"
+                            v-bind:class="{ 'green-text': item.exists, 'red-text': !item.exists }"
+                        >
+                            <span v-if="item.exists">check_circle_outline</span>
+                            <span v-else>error_outline</span>
+                        </i>
+                        <i class="no-select material-icons small aliasMenu_button" @click="editAlias(index)" v-if="item.exists">edit</i>
+                        <i class="no-select material-icons small aliasMenu_button" @click="deleteAliasProfile(index)">close</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alias Dialog -->
+    <div id="newProfileModal" class="modal">
+        <div class="modal-header indigo darken-4 white-text" style="padding: 17px;">
+            <h4 style="margin: 0;">Alias Profile</h4>
+            <p style="margin: 0;">Create your Alias Profile by following the prompt!</p>
+        </div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input v-model="profileModal.name" id="profileName" type="text" class="validate">
+                    <label for="profileName">Profile Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <div class="row">
+                        <div class="col s4">
+                            <button class="btn waves-effect blue" @click="openAliasDialog">Load Alias File</button>
+                        </div>
+                        <div class="col s8">
+                            <input placeholder="" v-model="profileModal.filepath" v-bind:class="{ invalid: !filePathExists }" type="text" disabled>
+                            <span class="helper-text" data-error="File path required!"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-flat white-text waves-effect green waves-light" @click="createAliasProfile">Create</button>
+        </div>
+    </div>
+</section>
