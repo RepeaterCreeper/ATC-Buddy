@@ -15,7 +15,7 @@
 
 <body>
     <div id="app">
-        <nav class="blue darken-3">
+        <nav class="blue darken-3 no-select">
             <ul id="slide-out" class="sidenav sidenav-fixed">
                 <li style="padding: 32px;" class="blue">
                     <h4 style="text-align: center; letter-spacing: 4px;">ATC Buddy</h4>
@@ -114,10 +114,10 @@
         <router-view></router-view>
 
         <!-- About Modal -->
-        <div id="aboutModal" class="modal">
+        <div id="aboutModal" class="no-select modal">
             <div class="modal-content" style="background-color: whitesmoke; font-weight: lighter;">
                 <h5>ATC Buddy</h5>
-                <small>v1.1.0 - LATEST</small>
+                <small>v1.1.1 (Latest)</small>
                 <p>
                     The ATC Buddy software was created to provide a simple and efficient way to serve the VATSIM community. Not
                     only does it provide information about Aircrafts, but it also automates certain redundant processes that usually
@@ -125,7 +125,7 @@
                     and many others.
                 </p>
                 <p>
-                    This software is under the GPL 3.0 license. The source code is available at <a @click="openLink('https://github.com/RepeaterCreeper/ATC-Buddy')">GitHub</a>.
+                    This software is under the GPL 3.0 license. The source code is available at <a style="cursor: pointer;" @click="openLink('https://github.com/RepeaterCreeper/ATC-Buddy')">GitHub</a>.
                 </p>
             </div>
             <div class="modal-footer">

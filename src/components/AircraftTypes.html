@@ -18,7 +18,7 @@
                     v-for="(favorite, index) in favorites"
                     >
                     <div class="row" style="margin-bottom: 0; display: flex; overflow-y: hidden;">
-                        <div class="col s8" style="height: 42px;">
+                        <div class="col s7" style="height: 42px;">
                             <b>{{ favorite.manufacturer }}</b><br>
                             <p style="margin: 0">{{ favorite.model }}</p>
                         </div>
@@ -31,7 +31,7 @@
                         <div class="col s1" style="display: table; height: 42px;">
                             <span style="vertical-align: middle; display: table-cell;">{{ favorite.weight_class }}</span>
                         </div>
-                        <div style="position: absolute; right: 8px;">
+                        <div class="col s1" style="display: table; height: 42px;">
                             <button class="btn red waves-effect" @click="removeFavorite(index)">
                                 <i class="material-icons">favorite</i>
                             </button>
@@ -86,22 +86,27 @@
                 <div class="input-field col s12">
                     <input id="newEntry__manufacturer" v-model="entryPreview.manufacturer" type="text" class="validate">
                     <label for="newEntry__manufacturer">Manufacturer</label>
+                    <span class="helper-text" data-error="Required"></span>
                 </div>
                 <div class="input-field col s12">
                     <input id="newEntry__model" v-model="entryPreview.model" type="text" class="validate">
                     <label for="newEntry__model">Model</label>
+                    <span class="helper-text" data-error="Required"></span>
                 </div>
                 <div class="input-field col s12">
                     <input id="newEntry__code" v-model="entryPreview.code" type="text" class="validate">
                     <label for="newEntry__code">Code</label>
+                    <span class="helper-text" data-error="Required"></span>
                 </div>
                 <div class="input-field col s12">
-                    <input id="newEntry__tecClass" v-model="entryPreview.tec_class" type="text" class="validate">
-                    <label for="newEntry__tecClass">TEC Class</label>
+                    <input id="newEntry__tec_class" v-model="entryPreview.tec_class" type="text" class="validate">
+                    <label for="newEntry__tec_class">TEC Class</label>
+                    <span class="helper-text" data-error="Required"></span>
                 </div>
                 <div class="input-field col s12">
-                    <input id="newEntry__weightClass" v-model="entryPreview.weight_class" type="text" class="validate">
-                    <label for="newEntry__weightClass">Weight Class</label>
+                    <input id="newEntry__weight_class" v-model="entryPreview.weight_class" type="text" class="validate">
+                    <label for="newEntry__weight_class">Weight Class</label>
+                    <span class="helper-text" data-error="Required"></span>
                 </div>
             </div>
             <div class="row">

@@ -21,8 +21,6 @@ const EQUIPMENT_SUFFIXES = require("./data/equipment_suffixes.json");
 const SCRATCHPAD_CODES = require("./data/scratchpad_codes.json");
 const TEC_ROUTES = require("./data/tec_routes.json");
 
-const USER_CUSTOM_DATA = require("./data/custom/user-manual-data.json");
-
 const MEMES = [
     "https://www.youtube.com/watch?v=lhckuhUxcgA", // Laugh
     "https://www.youtube.com/watch?v=lXMskKTw3Bc", // Never gonna Give you up
@@ -42,6 +40,15 @@ let USER_DATA = {
         "tec_routes": []
     }
 };
+
+let USER_CUSTOM_DATA = {
+    "aircraft_types": [],
+    "airlines": [],
+    "airports": [],
+    "scratchpad_codes": [],
+    "tec_routes": []
+};
+
 
 const APP_DATA_PATH = app.getPath("userData");
 
@@ -125,7 +132,7 @@ function voiceServerListener(frequency) {
 }
 
 function saveCustomData(){
-    fs.writeFile(path.join(__dirname, "data/custom/user-manual-data.json"), JSON.stringify(USER_CUSTOM_DATA), (err) => {
+    fs.writeFile(`${APP_DATA_PATH}/user-custom-data.json`, JSON.stringify(USER_CUSTOM_DATA), (err) => {
         if (err) throw err;
-    })
+    });
 }

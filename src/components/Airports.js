@@ -21,11 +21,22 @@ const Airports = {
             this.favorites.splice(index, 1);
         },
         addEntry: function(){
-            USER_CUSTOM_DATA["airports"].push(this.entryPreview);
+            if (!Object.values(this.entryPreview).includes("")) {
+                USER_CUSTOM_DATA["airports"].push(this.entryPreview);
 
-            saveCustomData();
+                saveCustomData();
 
-            this.modalInstance.close();
+                this.modalInstance.close();
+
+                // Push it right away to the results so that it can be shown.
+                this.results.push(this.entryPreview);
+            } else {
+                for (const key in this.entryPreview) {
+                    if (this.entryPreview[key].length == 0) {
+                        document.querySelector(`#newEntry__${key}`).classList.add("invalid");
+                    }
+                }
+            }
         },
         openModal: function(){
             this.modalInstance.open();
@@ -45,6 +56,8 @@ const Airports = {
             fs.writeFile(`${APP_DATA_PATH}/user-data.json`, JSON.stringify(USER_DATA), (err) => {
                 if (err) throw err;
             });
+
+            this.results = Utils.showResults(this.inputText, AIRPORTS, "airports");
         }
     },
     mounted: function(){

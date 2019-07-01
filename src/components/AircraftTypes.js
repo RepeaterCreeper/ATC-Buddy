@@ -22,11 +22,23 @@ const AircraftTypes = {
             this.favorites.splice(index, 1);
         },
         addEntry: function() {
-            USER_CUSTOM_DATA["aircraft_types"].push(this.entryPreview);
+            if (!Object.values(this.entryPreview).includes("")) {
+                USER_CUSTOM_DATA["aircraft_types"].push(this.entryPreview);
 
-            saveCustomData();
-            
-            acTypeEntryInstance.close();
+                saveCustomData();
+
+                this.modalInstance.close();
+
+                if (Object.values(this.entryPreview).includes(this.inputText)) {
+                    this.results.push(this.entryPreview);
+                }
+            } else {
+                for (const key in this.entryPreview) {
+                    if (this.entryPreview[key].length == 0) {
+                        document.querySelector(`#newEntry__${key}`).classList.add("invalid");
+                    }
+                }
+            }
         },
         openModal: function(){
             this.modalInstance.open();
@@ -35,7 +47,7 @@ const AircraftTypes = {
     template: fs.readFileSync(path.join(__dirname, "./AircraftTypes.html"), "utf-8"),
     watch: {
         inputText: function(val) {
-            this.results = Utils.showResults(val, AIRCRAFT_TYPES, "aircraft_types")
+            this.results = Utils.showResults(val, AIRCRAFT_TYPES, "aircraft_types");
         },
         favorites: function(val) {
             USER_DATA["favorites"]["aircraft_types"] = val;
@@ -43,6 +55,9 @@ const AircraftTypes = {
             fs.writeFile(`${APP_DATA_PATH}/user-data.json`, JSON.stringify(USER_DATA), (err) => {
                 if (err) throw err;
             });
+
+            this.results = Utils.showResults(this.inputText, AIRCRAFT_TYPES, "aircraft_types");
+
         }
     },
     mounted: function(){
@@ -57,8 +72,16 @@ const AircraftTypes = {
          */
         if (fs.existsSync(`${APP_DATA_PATH}/user-data.json`)) {
             USER_DATA = JSON.parse(fs.readFileSync(`${APP_DATA_PATH}/user-data.json`).toString());
+
+            if (fs.existsSync(`${APP_DATA_PATH}/user-custom-data.json`)) {
+                USER_CUSTOM_DATA = JSON.parse(fs.readFileSync(`${APP_DATA_PATH}/user-custom-data.json`).toString());
             
-            this.favorites = USER_DATA["favorites"]["aircraft_types"];
+                this.favorites = USER_DATA["favorites"]["aircraft_types"];
+            } else {
+                fs.writeFile(`${APP_DATA_PATH}/user-custom-data.json`, JSON.stringify(USER_CUSTOM_DATA), (err) => {
+                    if (err) throw err;
+                });
+            }
         } else {
             fs.writeFile(`${APP_DATA_PATH}/user-data.json`, JSON.stringify(USER_DATA), (err) => {
                 if (err) throw err;

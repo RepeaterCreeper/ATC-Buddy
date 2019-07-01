@@ -78,14 +78,17 @@
                 <div class="input-field col s12">
                     <input id="newEntry__name" v-model="entryPreview.name" type="text" class="validate">
                     <label for="newEntry__name">Name</label>
+                    <span class="helper-text" data-error="Required"></span>
                 </div>
                 <div class="input-field col s12">
                     <input id="newEntry__code" v-model="entryPreview.code" type="text" class="validate">
                     <label for="newEntry__code">Code</label>
+                    <span class="helper-text" data-error="Required"></span>
                 </div>
                 <div class="input-field col s12">
                     <input id="newEntry__callsign" v-model="entryPreview.callsign" type="text" class="validate">
                     <label for="newEntry__callsign">Callsign</label>
+                    <span class="helper-text" data-error="Required"></span>
                 </div>
             </div>
             <div class="row">

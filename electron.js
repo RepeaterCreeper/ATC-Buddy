@@ -41,11 +41,6 @@ function init() {
 
         loadingWindow.close();
     });
-
-    /* mainWin.loadFile("./src/index.html");
-    mainWin.setIcon("./src/icons/icon.png");
-    
-    mainWin.on("ready-to-show", () => mainWin.show()); */
 }
 
 /**
@@ -60,10 +55,3 @@ app.on('window-all-closed', () => {
         app.quit()
     }
 });
-
-/**
- * IPC Event Channels
- */
-/* ipcMain.on("atc-buddy", (event, messages) => {
-    console.log(event, messages);
-}); */
