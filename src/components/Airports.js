@@ -27,7 +27,10 @@ const Airports = {
                 saveCustomData();
 
                 this.modalInstance.close();
-                this.results.push(this.entryPreview);
+                
+                if (Object.values(this.entryPreview).includes(this.inputText)) {
+                    this.results.push(this.entryPreview);
+                }
             } else {
                 for (const key in this.entryPreview) {
                     if (this.entryPreview[key].length == 0) {
