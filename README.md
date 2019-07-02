@@ -24,4 +24,5 @@ The goal of this project is to increase the simplicity of controlling, lower the
 
 - **Centralized Portal** -- Create a service where designated facility engineers can create and upload LOA and SOP files, for use by their controllers.
 
-----------
+## Packaging:
+Refer to https://github.com/electron-userland/electron-packager
