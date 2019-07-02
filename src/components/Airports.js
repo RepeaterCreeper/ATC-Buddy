@@ -27,8 +27,6 @@ const Airports = {
                 saveCustomData();
 
                 this.modalInstance.close();
-
-                // Push it right away to the results so that it can be shown.
                 this.results.push(this.entryPreview);
             } else {
                 for (const key in this.entryPreview) {

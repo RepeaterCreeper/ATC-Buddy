@@ -4,11 +4,13 @@
             <div class="row card hoverable" style="margin: 8px;">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">flight_takeoff</i>
-                    <input id="tec_route_departure" type="text" placeholder="Departure" maxlength="4">
+                    <input id="tec_route_departure" type="text" class="validate" placeholder="Departure" maxlength="4">
+                    <span class="helper-text" data-error="Required"></span>
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">flight_land</i>
-                    <input id="tec_route_arrival" type="text" placeholder="Arrival" maxlength="4">
+                    <input id="tec_route_arrival" type="text" class="validate" placeholder="Arrival" maxlength="4">
+                    <span class="helper-text" data-error="Required"></span>
                 </div>
                 <div class="col s12">
                     <button @click="findTecRoute" class="btn blue col s12" style="margin-bottom: 8px;">Search</button>

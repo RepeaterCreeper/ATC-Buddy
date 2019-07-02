@@ -13,26 +13,23 @@ const TECRoutes = {
             return this.key
         },
         findTecRoute: function() {
-            let departureAirport = document.querySelector("#tec_route_departure").value,
-                arrivalAirport = document.querySelector("#tec_route_arrival").value;
+            let departureAirport = document.querySelector("#tec_route_departure"),
+                arrivalAirport = document.querySelector("#tec_route_arrival"),
+                departureAirportValue = departureAirport.value,
+                arrivalAirportValue = arrivalAirport.value;
             
-            if (departureAirport.length > 3) departureAirport = departureAirport.slice(1);
-            if (arrivalAirport.length > 3) arrivalAirport = arrivalAirport.slice(1);
+            if (departureAirportValue.length > 3) departureAirportValue = departureAirportValue.slice(1);
+            if (arrivalAirportValue.length > 3) arrivalAirportValue = arrivalAirportValue.slice(1);
         
-            if (departureAirport.length > 0 && arrivalAirport.length > 0) {
+            if (departureAirportValue.length > 0 && arrivalAirportValue.length > 0) {
                 let results = TEC_ROUTES.filter((data) => {
-                    if (data.departure.includes(departureAirport) && data.arrival.includes(arrivalAirport)) return data;
+                    if (data.departure.includes(departureAirportValue) && data.arrival.includes(arrivalAirportValue)) return data;
                 });
+
                 this.results = results;
             } else {
-                let results = TEC_ROUTES.filter((data) => {
-                    if (departureAirport.length > 0) {
-                        if (data.departureAirport.includes(departureAirport)) return data;
-                    } else {
-                        if (data.arrivalAirport.includes(arrivalAirport)) return data;
-                    }
-                });
-                this.results = results;
+                if (departureAirportValue.length == 0) departureAirport.classList.add("invalid");
+                if (arrivalAirportValue == 0) arrivalAirport.classList.add("invalid");
             }
         },
         /**

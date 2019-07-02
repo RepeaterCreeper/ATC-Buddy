@@ -94,31 +94,6 @@ const vueApp = new Vue({
 }).$mount("#app");
 
 M.AutoInit();
-/***
- * Alias Profile
- */
-
-function createAliasProfile() {
-    // Validation
-    let profileName = document.querySelector("#profile_name").value,
-        aliasFilePath = document.querySelector("#alias_file_path").value;
-
-    if (profileName.length > 0 && aliasFilePath.length > 0) {
-        config.aliasFile.push({
-            name: profileName,
-            filePath: aliasFilePath
-        });
-
-        fs.writeFile(`${APP_DATA_PATH}/user-preference.json`, JSON.stringify(config), (err) => {
-            if (err) throw err;
-            reloadFiles();
-
-            // Clear Form
-            document.querySelector("#profile_name").value = "";
-            document.querySelector("#alias_file_path").value = "";
-        });
-    }
-}
 
 function voiceServerListener(frequency) {
     rp("http://vhf.laartcc.org:18009/?opts=-R-D").then((html) => {
