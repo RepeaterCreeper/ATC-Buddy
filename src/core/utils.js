@@ -6,33 +6,14 @@ module.exports.showResults = (queryString, typeContainer, key) => {
     queryString = queryString.toLowerCase();
 
     if (queryString.length >= 1) {
-        let results = typeContainer.filter((data) => {
-            if (Object.values(data).join(" ").toLowerCase().includes(queryString)) {
-
-                // [Temporary Fix]
-                if (!favoritesList.includes(JSON.stringify(data))) {
-                    return data;
-                }
-            }
+        let results = [...typeContainer, ...USER_CUSTOM_DATA[key]];
+        
+        results = results.filter((data) => {
+            if (Object.values(data).join(" ").toLowerCase().includes(queryString) &&
+                !favoritesList.includes(JSON.stringify(data))) return data;
         });
-
-        let customResults = USER_CUSTOM_DATA[key].filter((data) => {
-            if (Object.values(data).join(" ").toLowerCase().includes(queryString)) {
-
-                // [Temporary Fix]
-                if (!favoritesList.includes(JSON.stringify(data))) {
-                    return data;
-                }
-            }
-        });
-
-        results = [...customResults, ...results];
-
-        if (results.length) {
-            if (results.length < 100) {
-                return results;
-            }
-        }
+        
+        if (results.length < 100) return results;
     }
 
     return [];
