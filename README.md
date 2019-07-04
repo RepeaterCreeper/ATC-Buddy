@@ -14,7 +14,7 @@ The goal of this project is to increase the simplicity of controlling, lower the
 
 - **Customizability** -- A customizable application that can be adjusted to satisfy the most practical needs for any for any unique VATSIM controller.
 
-- **Automatic Flight Plan Amending** -- Check and validate flight plans and automcatically correct it as appropriate in accordance with the LOAs and SOPs specified.
+- **Automatic Flight Plan Amending** -- Check and validate flight plans and automatically correct it as appropriate in accordance with the LOAs and SOPs specified.
 
 - **Facility File Editor** -- An easy and clean environment for editing complex and previously confusing alias and POF files.
 
@@ -24,4 +24,8 @@ The goal of this project is to increase the simplicity of controlling, lower the
 
 - **Centralized Portal** -- Create a service where designated facility engineers can create and upload LOA and SOP files, for use by their controllers.
 
-----------
+## Download
+[Releases](https://github.com/RepeaterCreeper/ATC-Buddy/releases)
+
+## Manual Builds
+[Electron Packager](https://github.com/electron-userland/electron-packager)
