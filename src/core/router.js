@@ -12,6 +12,14 @@ const AliasEditor = require(path.join(__dirname, "../components/AliasEditor.js")
 const EDITOR_home = require(path.join(__dirname, "../components/alias-editor/Home.js"));
 const EDITOR_alias = require(path.join(__dirname, "../components/alias-editor/Alias.js"));
 
+/**
+ * Settings
+ */
+const Settings = require(path.join(__dirname, "../components/Settings.js"));
+const SettingsHome = require(path.join(__dirname, "../components/SettingsHome.js"));
+const SettingsCBE = require(path.join(__dirname, "../components/SettingsCBE.js"));
+const SettingsCBESingle = require(path.join(__dirname, "../components/SettingsCBESingle.js"));
+
 // Router Definition
 const routes = [
     {
@@ -50,6 +58,24 @@ const routes = [
                 path: "alias/:id",
                 props: true,
                 component: EDITOR_alias
+            }
+        ]
+    },
+    {
+        path: "/settings",
+        component: Settings,
+        children: [
+            {
+                path: "",
+                component: SettingsHome
+            },
+            {
+                path: "cbe",
+                component: SettingsCBE
+            },
+            {
+                path: "cbe/:id",
+                component: SettingsCBESingle
             }
         ]
     },

@@ -1,4 +1,4 @@
-const { app, dialog } = require("electron").remote; 
+const { app, dialog } = require("electron").remote;
 const fs = require("fs");
 
 const APP_DATA_PATH = app.getPath("userData");

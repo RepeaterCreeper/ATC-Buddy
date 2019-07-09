@@ -1,0 +1,65 @@
+<section class="settings-cbe-single">
+    <div class="row">
+        <div class="col s12">
+            <h4 style="font-weight: lighter;">{{ profileData.profileName }}</h4>
+        </div>
+        <div class="col s12">
+            <div class="row">
+                <div class="col s4">
+                    <button class="btn purple darken-2 waves-effect" @click="modalInstance.open()">New Event</button>
+                </div>
+            </div>
+            <h5 style="font-weight: lighter;">Events</h5>
+            <div class="row">
+                <div class="col s12"
+                    :key="index"
+                    v-for="(item, index) in parentCBE['events']"
+                >
+                    <div class="card hoverable">
+                        <div class="card-content">
+                            <div class="row" style="margin-bottom: 0; display: flex;">
+                                <div class="col s10">
+                                    <p><b>{{ item.title }}</b></p>
+                                    <small>{{ item.content }}</small>
+                                </div>
+                                <div class="col s2">
+                                    <button class="btn red" @click="deleteCBEEvent(index)">
+                                        <i class="material-icons">delete</i>
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="newEventModal" class="modal">
+        <div class="modal-header indigo darken-4 white-text" style="padding: 8px;">
+            <h4 style="margin: 0;">New Event</h4>
+            <p style="margin: 0;">Events are what happens when a plane enters the specified coordinates.</p>
+        </div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input v-model="cbeEventModal.title" id="title" type="text" class="validate">
+                    <label for="title">Title</label>
+                </div>
+                <div class="input-field col s12">
+                    <input v-model="cbeEventModal.receiver" id="receiver" type="text" class="validate">
+                    <label for="receiver">Receiver</label>
+                    <span class="helper-text">Need help? See the <a href="https://github.com/RepeaterCreeper/ATC-Buddy/wiki/FSD-Features">docs</a>.</span>
+                </div>
+                <div class="input-field col s12">
+                    <input v-model="cbeEventModal.content" id="content" type="text" class="validate">
+                    <label for="content">Content</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-flat white-text waves-effect green waves-light" @click="newCBEEvent">Create</button>
+        </div>
+    </div>
+</section>

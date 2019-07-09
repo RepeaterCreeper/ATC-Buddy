@@ -1,0 +1,67 @@
+<section id="settings-cbe">
+    <div class="row">
+        <div class="col s12">
+            <div class="row">
+                <div class="col s6"
+                    :key="index"
+                    v-for="(item, index) in cbe">
+                    <div class="card hoverable" style="height: 205px; overflow: hidden;">
+                        <div class="card-header" style="background-color: #130f40; padding: 8px;">
+                            <b class="white-text">{{ item.profileName }}</b>
+                        </div>
+                        <div class="card-content">
+                            <p>Border Type: <b>{{ item.borderType }}</b></p>
+                            <p>Coordinates Setup: <b style="color: green;">{{ item.coordinates }}</b></p>
+                            <p>Events: {{ item.events.length }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <button class="btn waves-effect red darken-1 left col s6" @click="deleteCBEProfile(index)"><i class="material-icons">delete</i></button>
+                                <button class="btn waves-effect blue darken-1 right col s6" @click="viewCBEProfile(index)"><i class="material-icons">remove_red_eye</i></button>
+                                <div style="clear: both"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="card hoverable modal-trigger" style="height: 205px; overflow: hidden;" data-target="newCBEProfile">
+                        <div class="card-content" style="display: flex; justify-content: center; align-items: center; height: 100%; pointer-events: none;">
+                            <i class="material-icons">add</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CBE Modal -->
+    <div id="newCBEProfile" class="modal">
+        <div class="modal-header indigo darken-4 white-text" style="padding: 8px;">
+            <h4 style="margin: 0;">New Scenario</h4>
+            <p style="margin: 0;">Create a new scenario for CBE by filling out the inputs.</p>
+        </div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s12">
+                    <select v-model="cbeProfileModal.borderType" id="borderType">
+                        <option value="rectangle" selected>Rectangle</option>
+                        <option value="circle" disabled>Circle</option>
+                    </select>
+                    <label for="borderType">Border Type</label>
+                </div>
+                <div class="input-field col s12">
+                    <input v-model="cbeProfileModal.profileName" id="profileName" type="text" class="validate">
+                    <label for="profileName">Profile Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <input v-model="cbeProfileModal.coordinates" id="coordinatePairs" type="text" class="validate">
+                    <label for="coordinatePairs">Coordinate Pairs</label>
+                    <span class="helper-text">Paste the four latitude and longitude points copied.</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-flat white-text waves-effect green waves-light" @click="newCBEProfile">Create</button>
+        </div>
+    </div>
+</section>

@@ -15,9 +15,9 @@
 
 <body>
     <div id="app">
-        <nav class="blue darken-3 no-select">
+        <nav class="blue darken-4 no-select">
             <ul id="slide-out" class="sidenav sidenav-fixed">
-                <li style="padding: 32px;" class="blue">
+                <li style="padding: 32px;" class="blue darken-4">
                     <h4 style="text-align: center; letter-spacing: 4px;">ATC Buddy</h4>
                 </li>
                 <li>
@@ -80,13 +80,7 @@
                     <div class="divider"></div>
                 </li>
                 <li>
-                    <a class="subheader">USER</a>
-                </li>
-                <li>
-                    <div class="divider"></div>
-                </li>
-                <li>
-                    <a class="subheader">OTHERS</a>
+                    <a class="subheader">TOOLS</a>
                 </li>
                 <router-link
                     tag="li"
@@ -97,7 +91,21 @@
                         <i class="material-icons">edit</i> Alias Editor
                     </a>
                 </router-link>
-                
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li>
+                    <a class="subheader">OTHERS</a>
+                </li>
+                <router-link
+                    tag="li"
+                    active-class="active"
+                    to="/settings"
+                    v-on:click.native="sideNavClose">
+                    <a class="waves-effects">
+                        <i class="material-icons">settings</i> Settings
+                    </a>
+                </router-link>
                 <li>
                     <a class="waves-effect" href="#!" @click="openAbout">
                         <i class="material-icons">info</i> About
@@ -106,7 +114,7 @@
             </ul>
             
             <!-- Alias -->
-            <a href="#" v-if="aliasView" class="sidenav-trigger" @click="navigate(-1)"><i class="material-icons">chevron_left</i></a>
+            <a href="#" v-if="requireBack" class="sidenav-trigger" @click="navigate(-1)"><i class="material-icons">chevron_left</i></a>
 
             <a href="#" data-target="slide-out" class="sidenav-trigger" v-else><i class="material-icons">menu</i></a>
         </nav>

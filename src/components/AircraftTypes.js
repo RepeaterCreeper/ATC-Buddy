@@ -72,18 +72,18 @@ const AircraftTypes = {
          */
         if (fs.existsSync(`${APP_DATA_PATH}/user-data.json`)) {
             USER_DATA = JSON.parse(fs.readFileSync(`${APP_DATA_PATH}/user-data.json`).toString());
-
-            if (fs.existsSync(`${APP_DATA_PATH}/user-custom-data.json`)) {
-                USER_CUSTOM_DATA = JSON.parse(fs.readFileSync(`${APP_DATA_PATH}/user-custom-data.json`).toString());
-            
-                this.favorites = USER_DATA["favorites"]["aircraft_types"];
-            } else {
-                fs.writeFile(`${APP_DATA_PATH}/user-custom-data.json`, JSON.stringify(USER_CUSTOM_DATA), (err) => {
-                    if (err) throw err;
-                });
-            }
         } else {
             fs.writeFile(`${APP_DATA_PATH}/user-data.json`, JSON.stringify(USER_DATA), (err) => {
+                if (err) throw err;
+            });
+        }
+
+        if (fs.existsSync(`${APP_DATA_PATH}/user-custom-data.json`)) {
+            USER_CUSTOM_DATA = JSON.parse(fs.readFileSync(`${APP_DATA_PATH}/user-custom-data.json`).toString());
+        
+            this.favorites = USER_DATA["favorites"]["aircraft_types"];
+        } else {
+            fs.writeFile(`${APP_DATA_PATH}/user-custom-data.json`, JSON.stringify(USER_CUSTOM_DATA), (err) => {
                 if (err) throw err;
             });
         }
