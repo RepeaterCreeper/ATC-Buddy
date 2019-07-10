@@ -23,6 +23,8 @@ const EQUIPMENT_SUFFIXES = require("./data/equipment_suffixes.json");
 const SCRATCHPAD_CODES = require("./data/scratchpad_codes.json");
 const TEC_ROUTES = require("./data/tec_routes.json");
 
+const AIRPORTS_LOCATIONS = require("./data/airports_location.json");
+
 const VATSIM_SERVERS = [
     {
         "name": "CANADA",
@@ -88,8 +90,8 @@ let USER_DATA = {
     },
     "settings": {
         "fsd": {
-            "server": "180.200.247.40",
-            "squawkRange": [7100, 7199],
+            "server": "",
+            "squawkRange": [],
             "autocorrectAltitude": [],
             "autoAssignSquawk": [],
             "coordinateBasedEvents": []
@@ -222,62 +224,60 @@ function bindDataListener(data, socket) {
                         switch (requestType) {
                             case "FP": // Aircraft has entered our scope
                                 let callsign = data[data.length - 1];
-                                FSD_DATA["awaiting"][callsign] = {};
+                                FSD_DATA["awaiting"][callsign] = {
+                                    generalInfo: {
+                                        mode: "",
+                                        scratchpad: "",
+                                        squawk: 0000
+                                    },
+                                    flightPlanData: []
+                                };
 
                                 // If auto assign is turned on, assign squawk to the aircraft that has just entered the scope.
                                 if (USER_DATA['settings']['fsd']['autoAssignSquawk']) {
-                                    socket.write(`$CQ${USER_DATA['client']['callsign']}:@94835:BC:${callsign}:${Utils.generateSquawk()}\r\n`);
+                                    let squawk = Utils.generateSquawk();
+                                    socket.write(`$CQ${USER_DATA['client']['callsign']}:@94835:BC:${callsign}:${squawk}\r\n#TM${USER_DATA['client']['callsign']}:FP:${callsign} SET ${squawk}\r\n`);
                                 }
                             break;
                             case "SC": // Scratchpad
-                                FSD_DATA["awaiting"][data[data.length - 2]]["scratchpad"] = data[data.length - 1]
+                                // Intercept the scratchpad for future use. <REQUIRED for now>
+                                if (FSD_DATA["awaiting"][data[data.length - 2]]) {
+                                    FSD_DATA["awaiting"][data[data.length - 2]]["generalInfo"]["scratchpad"] = data[data.length - 1];
+                                }
                             break;
                             case "BC": // Squawk Assign
                                 // $CQ<your_callsign>:@94835:BC:<ac_callsign>:<squawk>
-                                FSD_DATA["awaiting"][data[data.length - 2]] = data[data.length - 1];
+                                if (FSD_DATA["awaiting"][data[data.length - 2]]) {
+                                    FSD_DATA["awaiting"][data[data.length - 2]]["generalInfo"]["squawk"] = data[data.length - 1];
+                                }
                             break;
                         }
                     break;
                     case "$FP":
-                        console.log(`Flight Plan Received: ${data}`);
-
-                        // Destructure Flight Plan Packet
-                        let [
-                            vfrifr,
-                            aircraftType,
-                            speed,
-                            origin,
-                            scheduledDeparture,
-                            scheduledDeparture2,
-                            altitude,
-                            destination,
-                            enrouteTime,
-                            fuelOnBoard,
-                            altAirport,
-                            remark,
-                            flightPlan
-                        ] = data.slice(2);
-                        
                         if (Object.keys(FSD_DATA["awaiting"]).includes(data[0].slice(3))) {
-                            if (altitude <= 1000) { // [REMOVE] in later version.
-                                FSD_DATA["awaiting"][data[0].slice(3)] = {
-                                    "vfrifr": vfrifr,
-                                    "aircraftType": aircraftType,
-                                    "speed": speed,
-                                    "origin": origin,
-                                    "scheduledDeparture": scheduledDeparture,
-                                    "scheduledDeparture": scheduledDeparture,
-                                    "altitude": altitude,
-                                    "destination": destination,
-                                    "enrouteTime": enrouteTime,
-                                    "fuelOnBoard": fuelOnBoard,
-                                    "altAirport": altAirport,
-                                    "remark": remark,
-                                    "flightPlan": flightPlan
+                            FSD_DATA["awaiting"][data[0].slice(3)]["flightPlanData"] = data.slice(2);
+
+                            if (USER_DATA['settings']['fsd']["autocorrectAltitude"]) {
+                                let origin = data.slice(2)[5],
+                                    dest = data.slice(2)[9],
+                                    altitude = data.slice(2)[8];
+
+                                let bearing = Utils.calculateBearing(AIRPORTS_LOCATIONS[origin].lat,
+                                    AIRPORTS_LOCATIONS[origin].lon,
+                                    AIRPORTS_LOCATIONS[dest].lat,
+                                    AIRPORTS_LOCATIONS[dests].lon);
+                                
+                                if ((bearing > 0 && bearing < 180) && (altitude % 2 == 0)) { // ODD
+                                    Utils.updateFP(data[0].slice(3), 8, altitude + 1000);
+                                } else if ((bearing > 180 && bearing < 360) && (altitude % 2 != 0)){ // EVEN
+                                    Utils.updateFP(data[0].slice(3), 8, altitude + 1000);
                                 }
-                            } else {
-                                delete FSD_DATA["awaiting"][data[0].slice(3)];
                             }
+                        }
+                    break;
+                    case "#DP": // Pilot Disconnect
+                        if (Object.keys(FSD_DATA["awaiting"]).includes(data[0].slice(3))) {
+                            delete FSD_DATA["awaiting"][data[0].slice(3)];
                         }
                     break;
                 }
@@ -287,7 +287,14 @@ function bindDataListener(data, socket) {
                  */
                 let [mode, callsign, squawk, rating, lat, lon, alt, groundspeed] = data.split(":");
 
-                FSD_DATA["awaiting"][callsign]["squawk"] = squawk;
+                if (Object.keys(FSD_DATA['awaiting']).includes(callsign)) {
+                    if (alt <= 1000) {
+                        FSD_DATA["awaiting"][callsign]["generalInfo"]["mode"] = mode;
+                        FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] = squawk;
+                    } else {
+                        delete FSD_DATA["awaiting"][callsign];
+                    }
+                }
 
                 USER_DATA["settings"]["fsd"]["coordinateBasedEvents"].forEach((cbe, index) => {
                     let coordinatePair1 = cbe["coordinates"][0],
@@ -295,7 +302,7 @@ function bindDataListener(data, socket) {
 
                     if (insideBoundary(lat, lon, [coordinatePair1, coordinatePair2])) {
                         cbe["events"].forEach((item) => {
-                            Utils.sendPackage(Utils.parseContent(item.content), socket);
+                            Utils.sendMessage(item, callsign, socket);
                         });
                     }
                 });
@@ -316,7 +323,7 @@ const proxyServer = net.createServer(function(ATCB){
 
         data = data.toString().split("\r\n");
 
-        bindDataListener(data);
+        bindDataListener(data, ATCB);
     });
 
     ATCB.on("data", function(data) {
@@ -335,7 +342,7 @@ const proxyServer = net.createServer(function(ATCB){
             loginPacketRetrieved = true;
         }
 
-        bindDataListener(data);
+        bindDataListener(data, ATCB);
     });
 });
 

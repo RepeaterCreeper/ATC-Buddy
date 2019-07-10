@@ -73,6 +73,12 @@ const SettingsCBE = {
         },
         deleteCBEProfile: function(id){
             this.cbe.splice(id, 1);
+
+            USER_DATA['settings']['fsd']['coordinateBasedEvents'] = this.cbe;
+
+            fs.writeFile(`${APP_DATA_PATH}/user-data.json`, JSON.stringify(USER_DATA), (err) => {
+                if (err) throw err;
+            });
         }
     },
     mounted: function(){
