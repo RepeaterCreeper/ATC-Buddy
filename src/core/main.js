@@ -228,15 +228,15 @@ function bindDataListener(data, socket) {
                                     generalInfo: {
                                         mode: "",
                                         scratchpad: "",
-                                        squawk: 0000
+                                        squawk: 0
                                     },
                                     flightPlanData: []
                                 };
 
                                 // If auto assign is turned on, assign squawk to the aircraft that has just entered the scope.
-                                if (USER_DATA['settings']['fsd']['autoAssignSquawk']) {
+                                if (USER_DATA['settings']['fsd']['autoAssignSquawk'] && FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] == 0) {
                                     let squawk = Utils.generateSquawk();
-                                    socket.write(`$CQ${USER_DATA['client']['callsign']}:@94835:BC:${callsign}:${squawk}\r\n#TM${USER_DATA['client']['callsign']}:FP:${callsign} SET ${squawk}\r\n`);
+                                    socket.write(`$CQ${USER_DATA['client']['callsign']}:@94835:BC:${callsign}:${squawk}`);
                                 }
                             break;
                             case "SC": // Scratchpad
@@ -258,19 +258,19 @@ function bindDataListener(data, socket) {
                             FSD_DATA["awaiting"][data[0].slice(3)]["flightPlanData"] = data.slice(2);
 
                             if (USER_DATA['settings']['fsd']["autocorrectAltitude"]) {
-                                let origin = data.slice(2)[5],
-                                    dest = data.slice(2)[9],
-                                    altitude = data.slice(2)[8];
+                                let origin = data.slice(2)[3],
+                                    dest = data.slice(2)[7],
+                                    altitude = data.slice(2)[6];
 
                                 let bearing = Utils.calculateBearing(AIRPORTS_LOCATIONS[origin].lat,
                                     AIRPORTS_LOCATIONS[origin].lon,
                                     AIRPORTS_LOCATIONS[dest].lat,
-                                    AIRPORTS_LOCATIONS[dests].lon);
+                                    AIRPORTS_LOCATIONS[dest].lon);
                                 
                                 if ((bearing > 0 && bearing < 180) && (altitude % 2 == 0)) { // ODD
-                                    Utils.updateFP(data[0].slice(3), 8, altitude + 1000);
+                                    Utils.updateFP(data[0].slice(3), 6, parseInt(parseInt(altitude) + 1000), socket);
                                 } else if ((bearing > 180 && bearing < 360) && (altitude % 2 != 0)){ // EVEN
-                                    Utils.updateFP(data[0].slice(3), 8, altitude + 1000);
+                                    Utils.updateFP(data[0].slice(3), 6, parseInt(parseInt(altitude) + 1000), socket);
                                 }
                             }
                         }
@@ -290,7 +290,11 @@ function bindDataListener(data, socket) {
                 if (Object.keys(FSD_DATA['awaiting']).includes(callsign)) {
                     if (alt <= 1000) {
                         FSD_DATA["awaiting"][callsign]["generalInfo"]["mode"] = mode;
-                        FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] = squawk;
+
+                        console.log(FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] = squawk);
+                        if (FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] == 0) {
+                            FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] = squawk;
+                        }
                     } else {
                         delete FSD_DATA["awaiting"][callsign];
                     }

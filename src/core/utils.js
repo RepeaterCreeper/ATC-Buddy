@@ -34,10 +34,10 @@ module.exports.calculateBearing = function(startLat, startLon, destLat, destLon)
     return ((brng + 360) % 360) - 12;
 }
 
-module.exports.updateFP = function(callsign, index, keyValue) {
+module.exports.updateFP = function(callsign, index, keyValue, socket) {
     FSD_DATA["awaiting"][callsign]["flightPlanData"][index] = keyValue;
-    console.log(`$AM${USER_DATA['client']['callsign']}:SERVER:${callsign}:${FSD_DATA['awaiting'][callsign]["flightPlanData"].join(":")}\r\n$CQSAN_TWR:@94835:FA:${callsign}:${FSD_DATA['awaiting'][callsign]['flightPlanData'][8]}\r\n`);
-    socket.write(`$AM${USER_DATA['client']['callsign']}:SERVER:${callsign}:${FSD_DATA['awaiting'][callsign]["flightPlanData"].join(":")}\r\n$CQSAN_TWR:@94835:FA:${callsign}:${FSD_DATA['awaiting'][callsign]['flightPlanData'][8]}\r\n`);
+    
+    socket.write(`$FP${callsign}:*A:${FSD_DATA['awaiting'][callsign]["flightPlanData"].join(":")}\r\n`);
 }
 
 module.exports.generateSquawk = function() {
