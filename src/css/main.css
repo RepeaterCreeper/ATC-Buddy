@@ -88,3 +88,23 @@ kbd {
     margin-right: 16px;
     border-radius: 4px;
 }
+
+#settings .row{
+    margin-bottom: 0 !important;
+    display: flex;
+}
+
+#settings .setting-name,
+#settings .setting-value {
+    display: flex;
+    align-items: center;
+}
+
+#settings .setting-value {
+    justify-content: flex-end
+}
+
+.custom-sidenavtrigger {
+    display: block !important;
+    margin-left: 312px !important;
+}

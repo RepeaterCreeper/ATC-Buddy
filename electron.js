@@ -1,5 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path")
+const net = require("net");
 
 /**
  * Variable Declarations
@@ -12,9 +13,11 @@ let mainWin;
 
 function init() {
     mainWin = new BrowserWindow({
-        resizable: false,
+        /* resizable: false,
         maxWidth: 800,
-        maxHeight: 600,
+        maxHeight: 600, */
+        minWidth: 800,
+        minHeight: 600,
         show: false,
         webPreferences: {
             // temporary, we'll transfer over to a much more secure code in later development.
@@ -36,12 +39,21 @@ function init() {
     mainWin.loadFile(path.join(__dirname, "./src/index.html"));
     mainWin.setIcon(path.join(__dirname, "./src/icons/icon.png"));
     
+    // mainWin.show();
+
     ipcMain.once("atc-buddy", function(event, messages){
         mainWin.show();
 
         loadingWindow.close();
     });
 }
+
+/**
+ * IPC Channels
+ */
+ipcMain.on("atcb-fsd", function(event, message){
+    console.log(`[Event] ${event} | [Message] ${message}`);
+});
 
 /**
  * Event Handlers

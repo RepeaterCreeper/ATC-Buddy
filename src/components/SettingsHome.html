@@ -1,0 +1,59 @@
+<section id="settings">
+    <h5 style="font-weight: lighter; margin: 8px;">FSD Features</h5>
+    <div class="card" style="margin: 8px;">
+        <ul class="collection">
+            <settings-item name="Server">
+                <select class="browser-default"
+                @change="handleChange($event)">
+                    <option
+                        v-for="(item, index) in servers"
+                        :value="item.ip"
+                        :selected="item.ip == options.server"
+                        
+                    >{{ item.name }}</option>
+                </select>
+            </settings-item>
+            <settings-item name="Autocorrect Altitude">
+                <div class="switch">
+                    <label>
+                        Off
+                        <input type="checkbox"
+                            :checked="options.autocorrectAltitude"
+                            @change="handleChange($event)"
+                            name="autocorrectAltitude"
+                        >
+                        <span class="lever"></span>
+                        On
+                    </label>
+                </div>
+            </settings-item>
+            <settings-item name="Auto Assign Squawk">
+                <div class="switch">
+                    <label>
+                        Off
+                        <input type="checkbox"
+                            :checked="options.autoAssignSquawk"
+                            @change="handleChange($event)"
+                            name="autoAssignSquawk"
+                        >
+                        <span class="lever"></span>
+                        On
+                    </label>
+                </div>
+            </settings-item>
+            <settings-item name="Squawk Range">
+                <div class="row">
+                    <div class="col s6">
+                        <input name="squawkMin" v-model="options.squawkRange[0]" @change="handleChange($event)" placeholder="Min" type="number" min="1000" max="9999" maxlength="4" minlength="4" class="validate col s12">
+                    </div>
+                    <div class="col s6">
+                        <input name="squawkMax" v-model="options.squawkRange[1]" @change="handleChange($event)" placeholder="Max" type="number" min="1000" max="9999" maxlength="4" minlength="4" class="validate col s12">
+                    </div>
+                </div>
+            </settings-item>
+            <settings-item name="Coordinate Based Events">
+                <button class="btn blue darken-3 waves-effect" @click="navigateToCBE">View All</button>
+            </settings-item>
+        </ul>
+    </div>
+</section>
