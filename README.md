@@ -1,7 +1,7 @@
 # ATC Buddy
 ![](https://img.shields.io/github/license/RepeaterCreeper/ATC-Buddy.svg?style=for-the-badge) ![](https://img.shields.io/github/repo-size/RepeaterCreeper/ATC-Buddy.svg?style=for-the-badge)
 
-ATC Buddy is a desktop application that is planned to contain a suite of ATC tools for use on the VATSIM network.
+ATC Buddy is a work-in-progress desktop application that contains a suite of ATC tools for use on the VATSIM network.
 
 The goal of this project is to increase the simplicity of controlling, lower the amount of human mistakes caused by complex 'Lines of Agreements' and 'Standard Operating Procedures', and promote a generally more pleasureable ATC experience.
 
@@ -10,22 +10,38 @@ The goal of this project is to increase the simplicity of controlling, lower the
 - HTML, CSS, and JS (Front-end)
 - Node.JS (Backend)
 
+## Implemented Features
+
+- **Basic Info Tool Information** -- All ZLA Info Tool information included by default
+
+- **Automatic Altitude and Squawk Amendments** -- Automatically detect and change invalid altitudes and assign squawks
+
+- **Coordinate Based Events** -- Define an area on your scope, and ATC Buddy will perform a specified action when an aircraft enters the area
+
 ## Planned Features
 
-- **Customizability** -- A customizable application that can be adjusted to satisfy the most practical needs for any for any unique VATSIM controller.
+- **More Customizability** -- A customizable application that can be adjusted to satisfy the most practical needs for any for any unique VATSIM controller.
 
-- **Automatic Flight Plan Amending** -- Check and validate flight plans and automatically correct it as appropriate in accordance with the LOAs and SOPs specified.
+- **Fully Automatic Flight Plan Amendments** -- Check and validate flight plans and automatically correct it as appropriate in accordance with the LOAs and SOPs specified.
 
 - **Facility File Editor** -- An easy and clean environment for editing complex and previously confusing alias and POF files.
 
-- **Voice Channel Finder** -- Display the callsign of the user that is currently talking over an ATC voice channel.
+- **Voice Channel Finder** -- Display the callsign of the user that is currently talking over an ATC voice channel. (Will be switched to Audio for VATSIM if they have an API)
  
 - **Automatic TEC Route Update** -- Automatically check and update TEC routings for your own ARTCC, which can be used in lieu with automatic flight plan amending.
 
 - **Centralized Portal** -- Create a service where designated facility engineers can create and upload LOA and SOP files, for use by their controllers.
 
+## Usage
+
+**Coordinate Based Events**
+- 1) In the VRC general settings, turn OFF the "Format mouse coordinates DEG/MIN/SEC"
+- 2) To copy mouse coordinates, press and hold CTRL + ALT + SHIFT, while double right clicking the first corner of the rectangular trigger box (bottom left corner). Paste the coordinate set in the command line of VRC for ease, and repeat this process for next three ones.
+- 3) After you have all 4 coordinates copy each coordinate set separated by spaces into the VRC command window, and send them. Make sure each of them is separated by a space.
+- 4) Press CREATE
+
 ## Download
-[Releases](https://github.com/RepeaterCreeper/ATC-Buddy/releases)
+[Release Page](https://github.com/RepeaterCreeper/ATC-Buddy/releases)
 
 ## Manual Builds
 [Electron Packager](https://github.com/electron-userland/electron-packager)
