@@ -34,6 +34,9 @@ The goal of this project is to increase the simplicity of controlling, lower the
 
 ## Usage
 
+**FSD Features**
+- For all FSD configuration and setup, refer to the `Settings` page within ATC-Buddy
+
 **Coordinate Based Events**
 - 1) In the VRC general settings, turn OFF the "Format mouse coordinates DEG/MIN/SEC"
 - 2) To copy mouse coordinates, press and hold CTRL + ALT + SHIFT, while double right clicking the first corner of the rectangular trigger box (bottom left corner). Paste the coordinate set in the command line of VRC for ease, and repeat this process for next three ones.
