@@ -40,7 +40,7 @@ The goal of this project is to increase the simplicity of controlling, lower the
 **Coordinate Based Events**
 - 1) In the VRC general settings, turn OFF the "Format mouse coordinates DEG/MIN/SEC"
 - 2) Open ATC Buddy, go to Settings > Coordinate Based Events > New (+)
-- 3) Confirgure your profile name and border type.
+- 3) Configure your profile name and border type.
 - 4) In VRC, to copy mouse coordinates, press and hold CTRL + ALT + SHIFT then double right click the first corner of the rectangular trigger box (the bottom left corner should be the first). Paste the coordinate set in the ATC-Buddy window, and repeat this process for next three coordinate sets. Make sure everything is separated by spaces.
 - 5) Press Create
 - 6) Going back to the CBE page, you can configure events for your newly created trigger box.
