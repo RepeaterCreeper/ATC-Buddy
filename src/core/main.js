@@ -291,7 +291,6 @@ function bindDataListener(data, socket) {
                     if (alt <= 1000) {
                         FSD_DATA["awaiting"][callsign]["generalInfo"]["mode"] = mode;
 
-                        console.log(FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] = squawk);
                         if (FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] == 0) {
                             FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] = squawk;
                         }

@@ -1,4 +1,6 @@
-
+/**
+ * This file contains all Airlines specific data and methods.
+ */
 const Airlines = {
     data: function() {
         return {
@@ -24,19 +26,30 @@ const Airlines = {
             this.favorites.splice(index, 1);
         },
         addEntry: function(){
+            /**
+             * Check if the entryPreview object contains any empty strings ("")
+             * If it does, trigger the adding of invalid class for EACH of the element
+             * that is empty.
+             */
             if (!Object.values(this.entryPreview).includes("")) {
                 USER_CUSTOM_DATA["airlines"].push(this.entryPreview);
-
                 saveCustomData();
 
                 this.modalInstance.close();
-
+                
+                /**
+                 * If the current search query is about the added data, push it in the result stack
+                 * this way the user will be able to see it IMMEDIATLY after creating it.
+                 */
                 if (Object.values(this.entryPreview).includes(this.inputText)) {
                     this.results.push(this.entryPreview);
                 }
             } else {
-                for (const key in this.entryPreview) {
-                    if (this.entryPreview[key].length == 0) {
+                /**
+                 * Adds invalid class for if the user enters nothing for the 'New Entry' Modal.
+                 */
+                for (const key in this.entryPreview) { // Goes through every key entryPreview item
+                    if (this.entryPreview[key].length == 0) { // If the length is 0 trigger the adding of "invalid" class to this specific element;
                         document.querySelector(`#newEntry__${key}`).classList.add("invalid");
                     }
                 }
