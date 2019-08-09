@@ -116,7 +116,7 @@ let USER_CUSTOM_DATA = {
 };
 
 let FSD_DATA = {
-    awaiting: {}
+    inscope: {}
 }
 
 const APP_DATA_PATH = app.getPath("userData");
@@ -135,12 +135,13 @@ const vueApp = new Vue({
     },
     methods: {
         meme: function(){
-            shell.openExternal(MEMES[(Math.random() * 2).toFixed(0)]);
+            // shell.openExternal(MEMES[(Math.random() * 2).toFixed(0)]); If I can't accept donations, then I'll just put this back.
+            shell.openExternal("https://paypal.me/RepeaterCreeper");
         },
         openLink: function(url){
             shell.openExternal(url);
         },
-        sideNavClose: () => {
+        sideNavClose: function() {
             if (document.querySelector(".sidenav-trigger").clientWidth > 0) {
                 this.sidenavFixed = true;
                 M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
@@ -177,7 +178,6 @@ function voiceServerListener(frequency) {
     rp("http://vhf.laartcc.org:18009/?opts=-R-D").then((html) => {
         const $ = cheerio.load(html);
 
-        console.log($(`a:contains('${frequency}')`).text);
         /*$(`p:contains('${frequency}')`).next().text().split("\n").filter((data) => {
             if (data != "") return data;
         });*/
@@ -214,7 +214,6 @@ function bindDataListener(data, socket) {
     data.forEach((data, index) => {
         if (data.length > 0) {
             if (data.charAt(0) != "@") { // Three letter PREFIX
-                // $CQZLA_CE_OBS:SERVER:FP:DAL565
                 data = data.split(":");
 
                 switch (data[0].slice(0, 3)) {
@@ -224,7 +223,7 @@ function bindDataListener(data, socket) {
                         switch (requestType) {
                             case "FP": // Aircraft has entered our scope
                                 let callsign = data[data.length - 1];
-                                FSD_DATA["awaiting"][callsign] = {
+                                FSD_DATA["inscope"][callsign] = {
                                     generalInfo: {
                                         mode: "",
                                         scratchpad: "",
@@ -234,28 +233,28 @@ function bindDataListener(data, socket) {
                                 };
 
                                 // If auto assign is turned on, assign squawk to the aircraft that has just entered the scope.
-                                if (USER_DATA['settings']['fsd']['autoAssignSquawk'] && FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] == 0) {
+                                if (USER_DATA['settings']['fsd']['autoAssignSquawk'] && FSD_DATA["inscope"][callsign]["generalInfo"]["squawk"] == 0) {
                                     let squawk = Utils.generateSquawk();
                                     socket.write(`$CQ${USER_DATA['client']['callsign']}:@94835:BC:${callsign}:${squawk}`);
                                 }
                             break;
                             case "SC": // Scratchpad
                                 // Intercept the scratchpad for future use. <REQUIRED for now>
-                                if (FSD_DATA["awaiting"][data[data.length - 2]]) {
-                                    FSD_DATA["awaiting"][data[data.length - 2]]["generalInfo"]["scratchpad"] = data[data.length - 1];
+                                if (FSD_DATA["inscope"][data[data.length - 2]]) {
+                                    FSD_DATA["inscope"][data[data.length - 2]]["generalInfo"]["scratchpad"] = data[data.length - 1];
                                 }
                             break;
                             case "BC": // Squawk Assign
                                 // $CQ<your_callsign>:@94835:BC:<ac_callsign>:<squawk>
-                                if (FSD_DATA["awaiting"][data[data.length - 2]]) {
-                                    FSD_DATA["awaiting"][data[data.length - 2]]["generalInfo"]["squawk"] = data[data.length - 1];
+                                if (FSD_DATA["inscope"][data[data.length - 2]]) {
+                                    FSD_DATA["inscope"][data[data.length - 2]]["generalInfo"]["squawk"] = data[data.length - 1];
                                 }
                             break;
                         }
                     break;
                     case "$FP":
-                        if (Object.keys(FSD_DATA["awaiting"]).includes(data[0].slice(3))) {
-                            FSD_DATA["awaiting"][data[0].slice(3)]["flightPlanData"] = data.slice(2);
+                        if (Object.keys(FSD_DATA["inscope"]).includes(data[0].slice(3))) {
+                            FSD_DATA["inscope"][data[0].slice(3)]["flightPlanData"] = data.slice(2);
 
                             if (USER_DATA['settings']['fsd']["autocorrectAltitude"]) {
                                 let origin = data.slice(2)[3],
@@ -276,8 +275,8 @@ function bindDataListener(data, socket) {
                         }
                     break;
                     case "#DP": // Pilot Disconnect
-                        if (Object.keys(FSD_DATA["awaiting"]).includes(data[0].slice(3))) {
-                            delete FSD_DATA["awaiting"][data[0].slice(3)];
+                        if (Object.keys(FSD_DATA["inscope"]).includes(data[0].slice(3))) {
+                            delete FSD_DATA["inscope"][data[0].slice(3)];
                         }
                     break;
                 }
@@ -289,13 +288,13 @@ function bindDataListener(data, socket) {
 
                 if (Object.keys(FSD_DATA['awaiting']).includes(callsign)) {
                     if (alt <= 1000) {
-                        FSD_DATA["awaiting"][callsign]["generalInfo"]["mode"] = mode;
+                        FSD_DATA["inscope"][callsign]["generalInfo"]["mode"] = mode;
 
-                        if (FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] == 0) {
-                            FSD_DATA["awaiting"][callsign]["generalInfo"]["squawk"] = squawk;
+                        if (FSD_DATA["inscope"][callsign]["generalInfo"]["squawk"] == 0) {
+                            FSD_DATA["inscope"][callsign]["generalInfo"]["squawk"] = squawk;
                         }
                     } else {
-                        delete FSD_DATA["awaiting"][callsign];
+                        delete FSD_DATA["inscope"][callsign];
                     }
                 }
 

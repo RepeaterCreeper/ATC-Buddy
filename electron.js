@@ -1,10 +1,11 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
-const path = require("path")
-const net = require("net");
+const path = require("path");
 
 /**
  * Variable Declarations
  */
+const VERSION = "1.2.1";
+
 let mainWin;
 
 /**
@@ -12,6 +13,8 @@ let mainWin;
  */
 
 function init() {
+    //checkUpdate();
+
     mainWin = new BrowserWindow({
         /* resizable: false,
         maxWidth: 800,
