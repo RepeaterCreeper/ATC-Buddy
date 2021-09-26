@@ -3,7 +3,7 @@
 
 ATC Buddy is a work-in-progress desktop application that contains a suite of ATC tools for use on the VATSIM network.
 
-The goal of this project is to increase the simplicity of controlling, lower the amount of human mistakes caused by complex 'Lines of Agreements' and 'Standard Operating Procedures', and promote a generally more pleasureable ATC experience.
+The goal of this project is to increase the simplicity of controlling, lower the amount of human mistakes caused by complex 'Letter of Agreements' and 'Standard Operating Procedures', and promote a generally more pleasureable ATC experience.
 
 ### Stack
 - Electron (Building desktop application)
